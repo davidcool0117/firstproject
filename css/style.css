@@ -1,0 +1,166 @@
+@charset "utf-8";
+[class*="_cover"] {width: 100%; max-width: 1280px; margin: 0 auto;}
+[class*="_cover"] {height: inherit;}
+
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  word-wrap: break-word;
+  word-break: keep-all;
+  font-family: "Malgun Gothic", "맑은 고딕", Dotum, "돋움체", Arial, sans-serif;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  background: url(../images/background_img1.jpg) no-repeat left top / cover;
+}
+
+#wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+#header {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  height: 110px;
+  box-sizing: border-box;
+  font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+}
+
+#header h1.logo {
+  position: absolute;
+  left: 2%;
+  top: 42px;
+  z-index: 990;
+  width: 125px;
+  height: 43px;
+}
+
+#header .toputil {
+  position: absolute;
+  right: 2%;
+}
+
+#header .toputil .util li {
+  float: left;
+  padding: 12px 12px;
+}
+
+#header .toputil .util li a {
+  position: relative;
+  display: block;
+  color: #ccc;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#header .toputil .util li.eng {
+  border-right: 1px solid #ccc;
+}
+
+#header .toputil .util li a:hover {
+  text-decoration: underline;
+}
+
+#header .toputil .btns .search {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+}
+
+#header .toputil .btns .search input[type="text"] {
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 13px;
+  height: 38px;
+  width: 180px;
+}
+
+#header .toputil .btns .search input[type="submit"] {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  background:url(../images/search_ico.png);
+  width: 25px;
+  height: 25px;
+  text-indent: -99999px;
+  background-size: contain;
+  cursor: pointer;
+  border: 0;
+}
+
+#header .toputil a.allmenu_btn_open {
+  display: block;
+  float: left;
+  position: absolute;
+  top: 60px;
+  right: 5px;
+  background-image: url(../images/allmenu_ico.png);
+  width: 31px;
+  height: 32px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+#header #gnb {
+  width: 100%;
+  height: 110px;
+  margin: 0 auto;
+}
+
+#header #gnb .nav {
+  width: 80%;
+  height: 110px;
+  margin: 0 auto;
+}
+
+#header #gnb .nav li {
+  float: left;
+  text-align: center;
+}
+
+#header #gnb ul li.sub02 {
+  width:18%;
+}
+
+#header #gnb ul li a {
+  display:inline-block; 
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 40px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+#header #gnb ul li a span {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  padding: 58px 0 0 0;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-weight: 500;
+}
+
