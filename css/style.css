@@ -142,6 +142,28 @@ body {
   width:18%;
 }
 
+#header #gnb .nav .sub01 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub02 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub03 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub04 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub05 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub06 ul>*{
+  display: none;
+}
+#header #gnb .nav .sub07 ul>*{
+  display: none;
+}
+
 #header #gnb ul li a {
   display:inline-block; 
   box-sizing: border-box;
