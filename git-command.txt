@@ -43,11 +43,8 @@ git congig --list
 	깃 버전생성 메시지 "메시지내용"
 	깃 커밋시 메시지 내용은 공동작업자가 이해할수 있도록 수정내용을 구체적으로 작성해야 한다
 
-
-	
-	
-
-
+3. git push origin 브랜치명
+	 git push origin main
 
 
 
