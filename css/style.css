@@ -1,6 +1,8 @@
 @charset "utf-8";
 [class*="_cover"] {width: 100%; max-width: 1280px; margin: 0 auto;}
 [class*="_cover"] {height: inherit;}
+.w100{width: 100%;}
+.inner{max-width: 1280px; width: 100%; margin: auto;}
 
 html {
 	overflow-y: scroll;
@@ -12,7 +14,7 @@ body {
   position: relative;
   word-wrap: break-word;
   word-break: keep-all;
-  font-family: "Malgun Gothic", "맑은 고딕", Dotum, "돋움체", Arial, sans-serif;
+  font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
 }
 
 #bg {
@@ -28,15 +30,12 @@ body {
 }
 
 #wrap {
-  position: relative;
   overflow: hidden;
 }
 
 #header {
-  position: relative;
   left: 0;
   top: 0;
-  z-index: 900;
   width: 100%;
   height: 110px;
   box-sizing: border-box;
@@ -59,7 +58,7 @@ body {
 
 #header .toputil .util li {
   float: left;
-  padding: 12px 12px;
+  padding: 12px 7px;
 }
 
 #header .toputil .util li a {
@@ -124,65 +123,30 @@ body {
 #header #gnb {
   width: 100%;
   height: 110px;
-  margin: 0 auto;
 }
 
-#header #gnb .nav {
-  width: 80%;
+#header #gnb ul {
+  width: 100%;
   height: 110px;
-  margin: 0 auto;
-}
-
-#header #gnb .nav li {
-  float: left;
   text-align: center;
 }
 
-#header #gnb ul li.sub02 {
-  width:18%;
-}
-
-#header #gnb .nav .sub01 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub02 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub03 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub04 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub05 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub06 ul>*{
-  display: none;
-}
-#header #gnb .nav .sub07 ul>*{
-  display: none;
-}
-
-#header #gnb ul li a {
-  display:inline-block; 
-  box-sizing: border-box;
-  font-size: 18px;
+#header #gnb ul li {
+  height: 50px;
+  line-height: 100px;
   text-align: center;
-  text-decoration: none;
-  color: #fff;
-  padding-top: 40px;
-  margin: 30px;
-  font-weight: bold;
-}
-
-#header #gnb ul li a span {
   display: inline-block;
-  vertical-align: top;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px;
+}
+#header #gnb ul li a{
+  color: #fff;
+}
+
+#header #gnb ul li ul li{
+  display: none;
+  width: 100%;
   height: 100%;
-  padding: 58px 0 0 0;
-  box-sizing: border-box;
-  line-height: 24px;
-  font-weight: 500;
 }
 
