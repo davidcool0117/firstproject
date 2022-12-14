@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 body {
     width: 100%;
     position: relative;
@@ -19,9 +21,9 @@ body {
 #bg {
     position: fixed;
     top: 0;
-    left: -40px;
-    width: 1960px;
-    height: 100%;
+    left: 0;
+    width: auto;
+    height: auto;
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
@@ -35,7 +37,7 @@ header{
 #header_nav{
     width:100%;
     height:125px;
-    position:fixed; 
+    position:fixed;
 }
 h1 .logo{
     background:url(/images/logo.png) no-repeat center;
@@ -43,8 +45,8 @@ h1 .logo{
     height:43px;
     display: block;
     position:absolute;
-    left:40px;
-    top:45px;
+    left:38px;
+    top:43px;
     z-index: 100;
 }
 h1 .logo:after{
@@ -62,7 +64,6 @@ h1 .logo:after{
     width:100%;
     position:relative;
     height:125px;
-    
     background:transparent;
 }
 #gnb{
@@ -78,7 +79,7 @@ h1 .logo:after{
     padding:0;
     height:0;
     overflow: hidden;
-    background:#e9e9e9;  
+    background:#e9e9e9;
 }
 .m_width{
     max-width:1500px;
@@ -235,34 +236,29 @@ h1 .logo:after{
     font-weight:300;
     color:#acacac;
     margin-right:6px;
-}
-#header_top .top_menu li{
-    cursor:default;
+    padding: 0 1px;
 }
 #header_top{
     position:absolute;
-    top:25px;
+    top:17px;
     right:2%;
 }
 #header_nav .search_map{
     position:absolute;
-    top:65px;
+    top:55px;
     right:2%;
-}
-#header_nav .search_map form label{
-    display:none;
 }
 #header_nav .search_map .search{
     width:220px;
-    border:1px solid #f0f0f0;
-    border-radius:30px;
+    border:1px solid rgb(243, 243, 243, .7);
+    border-radius:35px;
 }
 #header_nav .search_map form #search_txt{
     width:150px;
-    height:34px;
-    line-height:34px;
+    height:36px;
+    line-height:36px;
     padding:0 13px;
-    color:#ffffff;
+    color:#fff;
     background:transparent;
     border:none;
 }
@@ -276,6 +272,11 @@ h1 .logo:after{
     text-indent:-9999px;
     cursor: pointer;
 }
+#header_nav .search_map form input::placeholder{
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -2px;
+}
 #header_nav .search_map form input#search_btn:after{
     background-color:transparent;
     background:url(/images/search_ico_.png) no-repeat center;
@@ -283,8 +284,6 @@ h1 .logo:after{
     border:none;
     width:32px;
     height:32px;
-    text-indent:-9999px;
-    cursor: pointer;
 }
 #header_nav .search_map .site_map h3 a{
     background:url(/images/allmenu_ico.png) no-repeat center;
@@ -312,8 +311,6 @@ h1 .logo:after{
     border:none;
     width:32px;
     height:32px;
-    text-indent:-9999px;
-    cursor: pointer;
 }
 #header_nav:hover .search_map .site_map h3 a{
     background:url(/images/allmenu_ico2.png) no-repeat center;
@@ -333,4 +330,89 @@ h1 .logo:after{
     bottom:0;
     background:rgba(0, 0, 0, .6);
     z-index: -1;
+}
+/* container */
+
+/* .slogan */
+#container .slogan{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    margin-left: -640px;
+    color: white;
+}
+#container .slogan .eng{
+    letter-spacing: 8px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+}
+#container .slogan .subject{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 36px;
+    line-height: 73px;
+}
+#container .slogan a{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    border: 0.1px solid rgb(255, 255, 255, 0.5);
+    letter-spacing: -1px;
+}
+#container .slogan a:hover{
+    color: #333;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+/* .control */
+#container .control {
+    position: absolute;
+    left: 50%;
+    top: 81%;
+    padding: 0;
+    height: 24px;
+    margin-left: -640px;
+    z-index: 100;
+    width: auto;
+}
+#container .control ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    height: 10px;
+}
+#container .control ul li:first-child a{
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 4px;
+    background: #fff;
+    margin-right: -3px;
+}
+#container .control ul li:nth-child(n+2) a{
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 4px;
+    background: rgb(145, 145, 145);
+    margin-right: -3px;
+}
+#container .control a.btn_play {
+    background-image: url(/images/visual_control_play.png);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-color: rgba(255,255,255,0.2);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    right: -28px;
+    top: -10px;
 }
