@@ -8,6 +8,7 @@ body {
     top: 0;
     background-color: #000;
     color: #fff;
+    font-weight: bold;
     padding: 10px 15px;
     text-decoration: none;
     transform: translateY(-100%);
@@ -18,19 +19,18 @@ body {
 #bg {
     position: fixed;
     top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
+    left: -40px;
+    width: 1960px;
+    height: 100%;
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
     background: url(/images/background_img1.jpg) no-repeat left top / cover;
 }  
 header{
-    width:100%;
+    width:1440px;
     height:100vh;
     position: relative;
-    overflow-x: hidden;
 }
 #header_nav{
     width:100%;
@@ -43,7 +43,6 @@ h1 .logo{
     height:43px;
     display: block;
     position:absolute;
-    overflow:hidden;
     left:40px;
     top:45px;
     z-index: 100;
@@ -55,7 +54,6 @@ h1 .logo:after{
     content:'';
     display:none;
     position:absolute;
-    overflow:hidden;
     left:0px;
     top:0px;
     z-index: 100;
