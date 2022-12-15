@@ -27,7 +27,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
-    background: url(images/background_img1.jpg) no-repeat left top / cover;
+    background: url(/images/background_img1.jpg) no-repeat left top / cover;
 }  
 header{
     width:1440px;
@@ -40,7 +40,7 @@ header{
     position:fixed;
 }
 h1 .logo{
-    background:url(images/logo.png) no-repeat center;
+    background:url(/images/logo.png) no-repeat center;
     width:125px;
     height:43px;
     display: block;
@@ -50,7 +50,7 @@ h1 .logo{
     z-index: 100;
 }
 h1 .logo:after{
-    background:url(images/logo2.png) no-repeat center;
+    background:url(/images/logo2.png) no-repeat center;
     width:125px;
     height:43px;
     content:'';
@@ -139,7 +139,7 @@ h1 .logo:after{
     text-align:right;
     position: relative;
     left:-8%;
-    background-image:url(images/blind_bg.png);
+    background-image:url(/images/blind_bg.png);
     background-repeat:no-repeat;
     background-position:10% 120%;
     padding-right:5%;
@@ -173,7 +173,7 @@ h1 .logo:after{
     display:block;
     width:45px;
     height:50px;
-    background:url(images/blind_bg2.png) no-repeat;
+    background:url(/images/blind_bg2.png) no-repeat;
     position:relative;
     top:80px;
     left:375px;
@@ -264,7 +264,7 @@ h1 .logo:after{
 }
 #header_nav .search_map form input#search_btn{
     background-color:transparent;
-    background:url(images/search_ico.png) no-repeat center;
+    background:url(/images/search_ico.png) no-repeat center;
     background-size:80%;
     border:none;
     width:32px;
@@ -279,14 +279,14 @@ h1 .logo:after{
 }
 #header_nav .search_map form input#search_btn:after{
     background-color:transparent;
-    background:url(images/search_ico_.png) no-repeat center;
+    background:url(/images/search_ico_on.png) no-repeat center;
     background-size:80%;
     border:none;
     width:32px;
     height:32px;
 }
 #header_nav .search_map .site_map h3 a{
-    background:url(images/allmenu_ico.png) no-repeat center;
+    background:url(/images/allmenu_ico.png) no-repeat center;
     width:31px;
     height:32px;
     color:transparent;
@@ -306,14 +306,14 @@ h1 .logo:after{
     color:#222;
 }
 #header_nav:hover .search_map #search_btn{
-    background:url(images/search_ico_on.png) no-repeat center;
+    background:url(/images/search_ico_on.png) no-repeat center;
     background-size:80%;
     border:none;
     width:32px;
     height:32px;
 }
 #header_nav:hover .search_map .site_map h3 a{
-    background:url(images/allmenu_ico2.png) no-repeat center;
+    background:url(/images/allmenu_ico2.png) no-repeat center;
     width:31px;
     height:32px;
     color:transparent;
@@ -405,7 +405,7 @@ h1 .logo:after{
     margin-right: -3px;
 }
 #container .control a.btn_play {
-    background-image: url(images/visual_control_play.png);
+    background-image: url(/images/visual_control_play.png);
     background-repeat: no-repeat;
     background-position: center 50%;
     background-color: rgba(255,255,255,0.2);
