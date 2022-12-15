@@ -64,7 +64,6 @@ h1 .logo:after{
     width:100%;
     position:relative;
     height:125px;
-    background:transparent;
 }
 #gnb{
     width:850px;
@@ -75,7 +74,6 @@ h1 .logo:after{
     position:absolute;
     left:0;
     top:125px;
-    z-index:21;
     padding:0;
     height:0;
     overflow: hidden;
@@ -87,6 +85,8 @@ h1 .logo:after{
     margin:auto;
     border-top:1px solid #fff;
     position:relative;
+    z-index: 100;
+
 }
 .m_width::after{
     width:100%;
@@ -340,16 +340,18 @@ h1 .logo:after{
     top: 34%;
     margin-left: -640px;
     color: white;
-    z-index: 20;
 }
 #container .slogan .eng{
+    position: relative;
     letter-spacing: 8px;
     font-size: 14px;
     line-height: 25px;
     font-weight: bold;
     font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+    z-index: -1;
 }
 #container .slogan .subject{
+    position: relative;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 58px;
     line-height: 68px;
@@ -357,6 +359,7 @@ h1 .logo:after{
     margin-top: 25px;
     margin-bottom: 36px;
     line-height: 73px;
+    z-index: -1;
 }
 #container .slogan a{
     display: inline-block;
