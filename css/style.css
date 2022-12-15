@@ -340,6 +340,7 @@ h1 .logo:after{
     top: 34%;
     margin-left: -640px;
     color: white;
+    z-index: 20;
 }
 #container .slogan .eng{
     letter-spacing: 8px;
@@ -379,7 +380,6 @@ h1 .logo:after{
     padding: 0;
     height: 24px;
     margin-left: -640px;
-    z-index: 100;
     width: auto;
 }
 #container .control ul li {
