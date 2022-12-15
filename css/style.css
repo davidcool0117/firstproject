@@ -27,7 +27,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
-    background: url(/images/background_img1.jpg) no-repeat left top / cover;
+    background: url(../images/background_img1.jpg) no-repeat left top / cover;
 }  
 header{
     width:1440px;
