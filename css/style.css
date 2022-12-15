@@ -1,8 +1,26 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-
+@media screen and (max-width:1470px) {
+    #wrap{
+        width: 100%;
+    }
+    .search{
+        visibility: hidden;
+    }
+    .search_map .search #search_btn{
+        visibility: visible;
+    }
+    #wrap #header_nav #nav li a{
+        font-size:20px;
+        font-weight: bold;
+    }
+    #header_nav #nav #gnb{
+        width:880px;
+        margin:auto;
+    }    
+}
 body {
     width: 100%;
     position: relative;
+    font-family: 'NotoSans',sans-serif;
 }  
 .skip_menu {
     position: fixed;
@@ -66,7 +84,7 @@ h1 .logo:after{
     height:125px;
 }
 #gnb{
-    width:850px;
+    width:810px;
     margin:auto;
 }
 .width100{
@@ -97,17 +115,18 @@ h1 .logo:after{
     left:300px;
     z-index:-1;
 }
-#nav li a{
+#header_nav #nav li a{
     display:block;
     line-height:10px;
-    font-size:15px;
-    font-weight:bold;
+    font-size:19px;
+    font-weight: bold;
+    margin: 0 2px;
 }
 #nav #gnb .width100 .m_width li:nth-child(n+2):nth-child(-n+10){
     margin:30px 130px 0 -70px
 }
 #nav #gnb .width100 .m_width li{
-    margin-left: -50px;
+    margin-left: -30px;
 }
 #nav #gnb .width100 .m_width li.safe{
     padding-left: 20px;
@@ -124,6 +143,9 @@ h1 .logo:after{
 }
 #nav #gnb .width100 .m_width li>h3{
     margin-bottom: 20px;
+}
+#header_nav #nav #gnb .width100 .m_width li h3 a{
+    font-weight: bold;
 }
 #nav #gnb .width100 .m_width li ul>li>a:nth-child(n+1):nth-child(-n+11){
     font-size:14px;
@@ -183,7 +205,7 @@ h1 .logo:after{
     font-size:19px;
     font-weight:500;
     color:#fff;
-    padding:70px 20px 43px;
+    padding:70px 15px 43px;
     border-bottom:2px solid transparent;   
 }
 #nav .m_width li{
@@ -233,7 +255,7 @@ h1 .logo:after{
 /* header_top */
 #header_top .top_menu a,#header_top .top_menu li{
     font-size:14px;
-    font-weight:300;
+    font-weight:600;
     color:#acacac;
     margin-right:6px;
     padding: 0 1px;
@@ -245,12 +267,14 @@ h1 .logo:after{
 }
 #header_nav .search_map{
     position:absolute;
-    top:55px;
+    top:56px;
     right:2%;
 }
 #header_nav .search_map .search{
+    position: absolute;
+    right: 48px;
     width:220px;
-    border:1px solid rgb(243, 243, 243, .7);
+    border:1px solid rgb(243, 243, 243, .6);
     border-radius:35px;
 }
 #header_nav .search_map form #search_txt{
@@ -285,12 +309,12 @@ h1 .logo:after{
     width:32px;
     height:32px;
 }
-#header_nav .search_map .site_map h3 a{
+#header_nav .search_map .btns h3 a.allmenu_btn_open{
     background:url(../images/allmenu_ico.png) no-repeat center;
     width:31px;
     height:32px;
     color:transparent;
-    padding-bottom:7px;
+    display: block;
 }
 #header_nav:hover #header_top li>a{
     color:#333;
@@ -312,7 +336,7 @@ h1 .logo:after{
     width:32px;
     height:32px;
 }
-#header_nav:hover .search_map .site_map h3 a{
+#header_nav:hover .search_map .btns h3 a.allmenu_btn_open{
     background:url(../images/allmenu_ico2.png) no-repeat center;
     width:31px;
     height:32px;
