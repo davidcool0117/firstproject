@@ -21,7 +21,15 @@ body {
     width: 100%;
     position: relative;
     font-family: 'NotoSans',sans-serif;
-}  
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: 500;
+}
 .skip_menu {
     position: fixed;
     left: 0;
@@ -36,20 +44,9 @@ body {
 .skip_menu:focus{
     transform: translateY(0);
 }
-#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    background: url(../images/background_img1.jpg) no-repeat left top / cover;
-}  
 header{
     width:1440px;
-    height:100vh;
+    height: 100%;
     position: relative;
 }
 #header_nav{
@@ -355,26 +352,43 @@ h1 .logo:after{
     background:rgba(0, 0, 0, .6);
     z-index: -1;
 }
-/* container */
 
-/* .slogan */
-#container .slogan{
-    position: absolute;
-    left: 50%;
-    top: 34%;
-    margin-left: -640px;
-    color: white;
+/* content */
+#content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: -1;
 }
-#container .slogan .eng{
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 970px;
+    z-index: -100;
+    background: url(../images/background_img1.jpg) no-repeat left top / cover;
+}  
+
+#content .visual .slogan{
+    position: absolute;
+    top: 340px;
+    left: 17%;
+}
+
+#content .visual .slogan .subject_eng{
     position: relative;
     letter-spacing: 8px;
     font-size: 14px;
     line-height: 25px;
     font-weight: bold;
     font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
-    z-index: -1;
+    color: white;
 }
-#container .slogan .subject{
+
+#content .visual .slogan .slogan_subject{
     position: relative;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 58px;
@@ -383,9 +397,11 @@ h1 .logo:after{
     margin-top: 25px;
     margin-bottom: 36px;
     line-height: 73px;
-    z-index: -1;
+    color: white;
 }
-#container .slogan a{
+
+#content .visual .slogan a{
+    position: relative;
     display: inline-block;
     color: white;
     font-size: 15px;
@@ -394,28 +410,25 @@ h1 .logo:after{
     border: 0.1px solid rgb(255, 255, 255, 0.5);
     letter-spacing: -1px;
 }
-#container .slogan a:hover{
+
+#content .visual a:hover{
     color: #333;
     background-color: rgb(255, 255, 255, 0.8);
 }
 
-/* .control */
-#container .control {
+/* control */
+#content .visual .control {
     position: absolute;
-    left: 50%;
-    top: 81%;
-    padding: 0;
-    height: 24px;
-    margin-left: -640px;
-    width: auto;
+    top: 780px;
+    left: 17%;
 }
-#container .control ul li {
+#content .visual .control ul li {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 0 0;
     height: 10px;
 }
-#container .control ul li:first-child a{
+#content .visual .control ul li:first-child a{
     display: block;
     position: relative;
     width: 34px;
@@ -423,7 +436,7 @@ h1 .logo:after{
     background: #fff;
     margin-right: -3px;
 }
-#container .control ul li:nth-child(n+2) a{
+#content .visual .control ul li:nth-child(n+2) a{
     display: block;
     position: relative;
     width: 34px;
@@ -431,7 +444,7 @@ h1 .logo:after{
     background: rgb(145, 145, 145);
     margin-right: -3px;
 }
-#container .control a.btn_play {
+#content .visual .control a.btn_play {
     background-image: url(../images/visual_control_play.png);
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -442,4 +455,300 @@ h1 .logo:after{
     position: absolute;
     right: -28px;
     top: -10px;
+}
+
+/* news */
+.news{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 970px;
+}
+.news .layout{
+    width: 1280px;
+    height: 1300px;
+    padding: 90px 0;
+    margin: 0 auto;
+}
+.news .layout h3.title{
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 45px 0;
+    font-family: "Nanum Square";
+    color: #222;
+    position: relative;
+}
+.news .layout h4{
+    font-size: 20px;
+    line-height: 26px;
+    color: #111;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+/* bodo */
+.news .layout .bodo .move{
+    width: 100%;
+}
+.news .layout .bodo .move ul {
+    border: 1px solid #ccc;
+}
+.news .layout .bodo .move ul li{
+    float: left;
+    margin: 0 12px;
+}
+.news .layout .bodo .move ul li a{
+    display: block;
+    width: 400px;
+    height: 325px;
+    position: relative;
+    border: 1px solid #eee;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.news .layout .bodo .move ul li a .txt{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 22px 6%;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    text-align: left;
+    background: rgba(0,0,0,0.6);
+    font-weight: bold;
+}
+.news .layout .bodo .move ul li a .txt span{
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    left: auto;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+}
+
+.news .layout .bodo .move ul li a .txt strong{
+    display: block;
+    height: 52px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.news .layout .bodo .move ul li a .photo{
+    position: relative;
+    width: auto;
+    height: 325px;
+    text-align: center;
+}
+.news .layout .bodo .move ul li a .photo img{
+    height: 100%;
+}
+
+/* notice */
+.news .layout .notice {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px 20px 0;
+    float: left;
+}
+
+.news .layout .notice .mar{
+    border: 1px solid #cfcfcf;
+    border-top: 1px solid #111;
+    height: 280px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.news .layout .notice .mar h4{
+    padding: 20px 30px;
+    font-weight: bold;
+}
+
+.news .layout .notice .mar ul{
+    padding: 30px 4.5%;
+}
+
+.news .layout .notice .mar ul li:first-child{
+    margin-top: 0;
+}
+
+.news .layout .notice .mar ul li{
+    margin-top: 17px;
+    margin-left: 15px;
+    padding: 0 110px 0 0px;
+    position: relative;
+    list-style:square
+}
+
+.news .layout .notice .mar ul li span.subject a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.news .layout .notice .mar ul li span.subject a:hover, 
+.news .layout .notice .mar ul li span.subject a:active {
+    color: #0a4594;
+}
+
+.news .layout .notice .mar ul li span.date {
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #787878;
+    font-weight: 300;
+}
+
+.news .letter {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px 20px 10px;
+    float: left;
+}
+
+.news .letter .mar {
+    border: 1px solid #cfcfcf;
+    border-top: 1px solid #111;
+    height: 280px;
+    position: relative;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.news .letter h4 {
+    padding: 20px 15px;
+    font-weight: bold;
+}
+
+.news .letter h4 span {
+    font-size: 14px;
+    color: #666;
+    margin-left: 8px;
+}
+
+.news .letter .list {
+    width: 135px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.news .letter .list a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.news .letter .list img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* job */
+.news .job {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 0 20px 10px;
+    float: left;
+}
+.news .job .mar {
+    border: 1px solid #cfcfcf;
+    border-top: 1px solid #111;
+    height: 280px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.news .job .mar a {
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 26px 9%;
+    text-decoration: none;
+    position: relative;
+}
+.news .job h4 {
+    padding: 10px 15px;
+    border-bottom: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    background: #111;
+    display: inline-block;
+    vertical-align: top;
+}
+.news .job .list {
+    margin-top: 20px;
+}
+.news .job .list p.title {
+    font-size: 17px;
+    line-height: 24px;
+    color: #222;
+    height: 72px;
+    overflow: hidden;
+}
+.news .job .list p.infor {
+    font-size: 14px;
+    line-height: 19px;
+    color: #787C80;
+    margin-top: 50px;
+}
+.news .job .list p.infor span {
+    display: block;
+}
+.news .job .list p.infor span strong {
+    color: #222;
+    margin-right: 10px;
+}
+.news .job .mar a:after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 60px;
+    background: url(../images/job_bg.png) no-repeat center 50%;
+    background-size: 100% auto;
+    position: absolute;
+    right: 9%;
+    bottom: 30px;
+}
+.news .job .mar a:hover:after, 
+.news .job .mar a:active:after {
+    background: url(../images/job_bg_on.png) no-repeat center 50%;
+}
+.news .job .mar a:hover h4{
+    background-color:#0a4594
+}
+.news .job .mar a:hover .title{
+    color:#0a4594
+}
+.news .job .mar a:hover .infor{
+    color:#0a4594
+}
+.news .job .mar a:hover .infor strong{
+    color:#0a4594
 }
