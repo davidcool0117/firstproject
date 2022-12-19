@@ -1727,10 +1727,10 @@ position: relative;
     font-weight: 700;
 }
 #footer .site_box {
-    width: 600px;
+    width: 800px;
     position:absolute; 
     z-index:10; 
-    right:150px;
+    right:100px;
 }
 #footer .site_box:after {
     content:""; 
@@ -1791,7 +1791,7 @@ position: relative;
 }
 #footer .relate_site {
     float:left; 
-    width:200px; 
+    width:150px; 
     position:relative;
 }
 #footer .relate_site a {
