@@ -1744,6 +1744,10 @@ position: relative;
     float:left; 
     padding-right: 10px;
 }
+#footer .webwatch_wrap a.val img{
+    width:88px; 
+    height:31px;
+}
 
 #footer .sns_link {
     float:left; 
@@ -1860,6 +1864,7 @@ position: relative;
 #footer .relate_site ul li a:active {
     background:#111;
 }
+
 #footer address,
 #footer .copy{
     display:block;
