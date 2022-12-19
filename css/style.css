@@ -19,6 +19,8 @@
 }
 body {
     width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
     position: relative;
     font-family: 'NotoSans',sans-serif;
     -webkit-font-smoothing: antialiased; 
@@ -383,7 +385,7 @@ a.logo:after{
 }
 
 /* content */
-.content {
+#content {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -399,12 +401,12 @@ a.logo:after{
     z-index: -100;
     background: url(../images/background_img1.jpg) no-repeat left top / cover;
 }  
-.content .visual .slogan{
+#content .visual .slogan{
     position: absolute;
     top: 340px;
     left: 17%;
 }
-.content .visual .slogan .subject_eng{
+#content .visual .slogan .subject_eng{
     position: relative;
     letter-spacing: 8px;
     font-size: 14px;
@@ -413,7 +415,7 @@ a.logo:after{
     font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
     color: white;
 }
-.content .visual .slogan .slogan_subject{
+#content .visual .slogan .slogan_subject{
     position: relative;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 58px;
@@ -424,7 +426,7 @@ a.logo:after{
     line-height: 73px;
     color: white;
 }
-.content .visual .slogan a{
+#content .visual .slogan a{
     position: relative;
     display: inline-block;
     color: white;
@@ -434,24 +436,24 @@ a.logo:after{
     border: 0.1px solid rgb(255, 255, 255, 0.5);
     letter-spacing: -1px;
 }
-.content .visual a:hover{
+#content .visual a:hover{
     color: #333;
     background-color: rgb(255, 255, 255, 0.8);
 }
 
 /* control */
-.content .visual .control {
+#content .visual .control {
     position: absolute;
     top: 780px;
     left: 17%;
 }
-.content .visual .control ul li {
+#content .visual .control ul li {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 0 0;
     height: 10px;
 }
-.content .visual .control ul li:first-child a{
+#content .visual .control ul li:first-child a{
     display: block;
     position: relative;
     width: 34px;
@@ -459,7 +461,7 @@ a.logo:after{
     background: #fff;
     margin-right: -3px;
 }
-.content .visual .control ul li:nth-child(n+2) a{
+#content .visual .control ul li:nth-child(n+2) a{
     display: block;
     position: relative;
     width: 34px;
@@ -467,7 +469,7 @@ a.logo:after{
     background: rgb(145, 145, 145);
     margin-right: -3px;
 }
-.content .visual .control a.btn_play {
+#content .visual .control a.btn_play {
     background-image: url(../images/visual_control_play.png);
     background-repeat: no-repeat;
     background-position: center 50%;
