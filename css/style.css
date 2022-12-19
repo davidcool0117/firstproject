@@ -933,6 +933,9 @@ h1 .logo:after{
     top: 224px;
     z-index: 10;
 }
+.news .popupzone .mar .control:hover {
+    background: rgba(0,0,0);
+}
 .news .popupzone .mar .control ul{
     display: flex;
     position: absolute;
@@ -1061,7 +1064,7 @@ position: relative;
     float: left;
     position: relative;
 }
-.service .layout .suggest:after {
+.service .layout .suggest:hover:after {
     content: "";
     background: url(../images/service_minwon_bg.jpg) no-repeat center 50%;
     display: block;
@@ -1082,6 +1085,11 @@ position: relative;
     border: 1px solid #3868a8;
     border-top: 1px solid #fff;
 }
+.service .layout .suggest a:hover {
+    background: #073067;
+    border: 1px solid #073067;
+}
+
 .service .layout .suggest h4 {
     margin: 0;
     color: #fff;
@@ -1166,6 +1174,10 @@ position: relative;
     padding: 30px 10%;
     border-left: 1px solid #3868a8;
 }
+.service .layout .link ul li.ty2 a:hover {
+    background: #073067;
+    border: 1px solid #073067;
+}
 .service .layout .link ul li.ty2 a:before {
     position: absolute;
     right: 9%;
@@ -1195,6 +1207,14 @@ position: relative;
     border: 1px solid #3868a8;
     border-left: 0;
 }
+.service .layout .link ul li a:hover{
+    background: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    border-left: 0;
+}
+.service .layout .link ul li a:hover p span{
+    color: #195bb1;
+}
 .service .layout .link ul li a:before {
     content: "";
     display: block;
@@ -1210,17 +1230,32 @@ position: relative;
 .service .layout .link ul li.bn01 a:before {
     background-image: url(../images/service_link_ico1.png);
 }
+.service .layout .link ul li.bn01 a:hover:before {
+    background-image: url(../images/service_link_ico1_on.png);
+}
 .service .layout .link ul li.bn02 a:before {
     background-image: url(../images/service_link_ico2.png);
+}
+.service .layout .link ul li.bn02 a:hover:before {
+    background-image: url(../images/service_link_ico2_on.png);
 }
 .service .layout .link ul li.bn03 a:before {
     background-image: url(../images/service_link_ico3.png);
 }
+.service .layout .link ul li.bn03 a:hover:before {
+    background-image: url(../images/service_link_ico3_on.png);
+}
 .service .layout .link ul li.bn04 a:before {
     background-image: url(../images/service_link_ico4.png);
 }
+.service .layout .link ul li.bn04 a:hover:before {
+    background-image: url(../images/service_link_ico4_on.png);
+}
 .service .layout .link ul li.bn05 a:before {
     background-image: url(../images/service_link_ico5.png);
+}
+.service .layout .link ul li.bn05 a:hover:before {
+    background-image: url(../images/service_link_ico5_on.png);
 }
 .service .layout .link ul li.bn06 a:before {
     background-image: url(../images/service_link_ico6.png);
