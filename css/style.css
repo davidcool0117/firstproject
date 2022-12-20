@@ -26,6 +26,35 @@ body {
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
 }
+/* layer popuo */
+#layer{
+    display: block;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    z-index: 9999999999999999999999;
+    font-size: 1.8em;
+    padding: 3em;
+    box-sizing: border-box;
+    line-height: 2;
+    top: 50px;
+    left: 150px;
+    box-shadow: 1px 1px 3px #fff;
+    opacity: 0.9;
+}
+#layer button{
+    position: absolute;
+    cursor: pointer;
+    padding: 10px 20px;
+    right: 0;
+    top: 0;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.5em;
+    font-weight: bold;
+}
 #wrap{
     width: 100%;
     height: 100%;
@@ -618,6 +647,19 @@ a.logo:after{
     margin-top: 30px;
     overflow: hidden;
 }
+.news .layout .bodo .move ul li a:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/bodo_more.png) no-repeat center 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
 .news .layout .bodo .move ul li a span.new {
     left: 5%;
     top: 10px;
@@ -668,12 +710,12 @@ a.logo:after{
 }
 .news .layout .bodo .move ul li a .photo{
     position: relative;
-    width: auto;
-    height: 325px;
+    height: 100%;
     text-align: center;
 }
 .news .layout .bodo .move ul li a .photo img{
     height: 100%;
+    transition: all 0.3s ease;
 }
 
 /* notice */
