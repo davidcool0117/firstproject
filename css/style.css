@@ -17,6 +17,11 @@
         margin:auto;
     }    
 }
+@media screen and (max-width:1240px) {
+    #wrap{
+        width: 100%;
+    }
+}
 body {
     width: 100%;
     font-size: 16px;
@@ -26,7 +31,7 @@ body {
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
 }
-/* layer popuo */
+/* layer popup */
 #layer{
     display: block;
     position: fixed;
@@ -58,6 +63,7 @@ body {
 #wrap{
     width: 100%;
     height: 100%;
+    background-color: #fff;
 }
 h3.title {
     font-size: 36px;
@@ -158,7 +164,7 @@ a.logo:after{
     transition: all 0.3s ease-in-out;
 }
 .m_width{
-    max-width:1500px;
+    max-width:1470px;
     height:100%;
     margin:auto;
     border-top:1px solid #fff;
@@ -422,7 +428,20 @@ a.logo:after{
     position: relative;
     z-index: -1;
 }
-.bg {
+#content .visual {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+#content .visual .layout{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+
+#content .visual .bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -431,10 +450,11 @@ a.logo:after{
     z-index: -100;
     background: url(../images/background_img1.jpg) no-repeat left top / cover;
 }  
+
 #content .visual .slogan{
     position: absolute;
     top: 340px;
-    left: 17%;
+    left: 0;
 }
 #content .visual .slogan .subject_eng{
     position: relative;
@@ -476,7 +496,8 @@ a.logo:after{
 #content .visual .control {
     position: absolute;
     top: 780px;
-    left: 17%;
+    left: 0;
+    z-index: 1;
 }
 #content .visual .control ul li {
     display: inline-block;
@@ -514,7 +535,7 @@ a.logo:after{
 }
 #content .visual #quick {
     position: absolute;
-    right: 40px;
+    right: -250px;
     top: 320px;
     z-index: 700;
     width: 84px;
@@ -574,14 +595,17 @@ a.logo:after{
 .news{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     top: 970px;
+    background-color: #fff;
 }
 .news .layout{
+    position: relative;
     width: 1280px;
     height: 1300px;
     padding: 90px 0;
     margin: 0 auto;
+    background-color: #fff;
 }
 .news .layout h3.title{
     font-size: 36px;
@@ -624,7 +648,7 @@ a.logo:after{
     background-position: center 50%;
     background-size: 100% auto;
     position: absolute;
-    right: 10px;
+    right: 0;
     top: 120px;
 }
 .news .layout .bodo .move{
@@ -1110,6 +1134,7 @@ a.logo:after{
     width: 1280px;
     margin: 0 auto;
     padding: 110px 0;
+    background-color: #0a4594;
 }
 .service .layout:before {
     content: "";
@@ -1413,6 +1438,14 @@ position: relative;
     padding-top: 110px;
     padding-bottom: 50px;
 }
+.business .layout{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 110px 0;
+    background-color: #ebedef;
+}
+
 .business h3.title {
     max-width: 1280px;
     margin: 0 auto;
@@ -1477,15 +1510,16 @@ position: relative;
     overflow: hidden;
     position: relative;
     height: 100%;
+    width: 100%;
 }
 .business .slider .move ul {
-    width: 30000px;
     position: relative;
     left: 0;
     height: 100%;
 }
 .business .slider .move ul li {
-    width: 1903px;
+    width: 100%;
+    margin: 0 auto;
     height: 100%;
     float: left;
     display: list-item;
@@ -1510,13 +1544,13 @@ position: relative;
 .business .slider .move ul li .inner a:hover .title {
     background:url(../images/business_titlebg_on.png) no-repeat right top;
 }
-.business .slider .move ul li .inner .title {
+.business .slider .move ul li .inner a .title {
     background: url(../images/business_titlebg.png) no-repeat right top;
     background-size: 100% auto;
     width: 191px;
     height: 165px;
     position: absolute;
-    left: 0;
+    left: 0%;
     top: 50%;
     margin-top: -82px;
     text-align: left;
@@ -1649,7 +1683,8 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 4370px;
+    top: 4365px;
+    background-color: #fff;
 }
 .link_banner .layout{
     position: relative;
@@ -1754,7 +1789,7 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 4448px;
+    top: 4443px;
 }
 #footer:after {
     content: "";
