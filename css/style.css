@@ -432,6 +432,7 @@ a.logo:after{
 
 /* content */
 #content {
+    width: 100%;
     height: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -448,7 +449,7 @@ a.logo:after{
 }
 .visual .layout{
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
     height: 100%;
     margin: 0 auto;
     padding: 110px 0;
@@ -536,33 +537,30 @@ a.logo:after{
     right: -28px;
     top: -10px;
 }
-.visual #quick {
+
+/* quick */
+#quick{
     position: absolute;
-    right: -250px;
-    top: 320px;
-    z-index: 700;
-    width: 84px;
+    top: 40%;
+    right: 5%;
     display: block;
+    width: 84px;
 }
-.visual #quick ul li.hid {
-    display: none;
-}
-.visual #quick ul li a {
+#quick ul li a {
     display: block;
     text-align: center;
     background: rgba(0,0,0,0.8);
     color: rgba(255,255,255,0.8);
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 13px;
     line-height: 17px;
     padding: 15px 5px;
     box-sizing: border-box;
     height: 85px;
 }
-.visual #quick ul li:nth-child(odd) a {
+#quick ul li:nth-child(odd) a {
     background: rgba(70,70,70,0.8);
 }
-.visual #quick ul li a:before {
+#quick ul li a:before {
     content: "";
     display: block;
     margin-bottom: 7px;
@@ -570,30 +568,30 @@ a.logo:after{
     background-repeat: no-repeat;
     background-position: center 50%;
 }
-.visual #quick ul li a:hover {
-    text-decoration: underline;
-}
-
-.visual #quick ul li.bn01 a:before {
+#quick ul li.bn01 a:before {
     background-image: url(../images/quick_ico1.png);
 }
-.visual #quick ul li.bn02 a:before {
+#quick ul li.bn02 a:before {
     background-image: url(../images/quick_ico2.png);
 }
-.visual #quick ul li.bn03 a:before {
+#quick ul li.bn03 a:before {
     background-image: url(../images/quick_ico3.png);
 }
-.visual #quick .btn_more {
+#quick .btn_more {
     display: block;
     text-align: center;
     background: #fff;
     text-decoration: none;
-    color: #222;
+    color: #222 !important;
     font-size: 14px;
     padding: 2px 5px;
     border: 1px solid #000;
     border-top: 0;
 }
+#quick ul li a:hover {
+    text-decoration: underline;
+}
+
 /* news */
 .news{
     position: absolute;
@@ -601,9 +599,22 @@ a.logo:after{
     height: auto;
     top: 970px;
 }
+.news:after {
+    background-image: url(../images/news_bg2.png);
+    width: 213px;
+    height: 275px;
+    right: 1%;
+    top: 10%;
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: 100% auto;
+}
 .news .layout{
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
     height: 100%;
     padding: 90px 0;
     margin: 0 auto;
@@ -640,19 +651,6 @@ a.logo:after{
 }
 
 /* bodo */
-.news .layout .bodo:after{
-    content: "";
-    display: block;
-    background-image: url(../images/news_bg2.png);
-    width: 213px;
-    height: 275px;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    background-size: 100% auto;
-    position: absolute;
-    right: -290px;
-    top: 120px;
-}
 .news .layout .bodo .move{
     width: 100%;
 }
@@ -734,11 +732,15 @@ a.logo:after{
     margin-top: 15px;
 }
 .news .layout .bodo .move ul li a .photo{
+    overflow: hidden;
     position: relative;
     height: 100%;
     text-align: center;
 }
 .news .layout .bodo .move ul li a .photo img{
+    display: block;
+    margin: 0 auto;
+    width: auto;
     height: 100%;
     transition: all 0.3s ease;
 }
@@ -1064,12 +1066,6 @@ a.logo:after{
 .news .popupzone .mar .control:hover {
     background: rgba(0,0,0);
 }
-.news .popupzone .mar .control ul{
-    display: flex;
-    position: absolute;
-    left: 335px;
-    top: 14px;
-}
 .news .popupzone .mar .control ul li{
     margin: 10px;
 }
@@ -1129,16 +1125,9 @@ a.logo:after{
     height: auto;
     top: 2275px;
     background-color:#0a4594;
+    overflow-x: hidden;
 }
-.service .layout{
-    position: relative;
-    width: 1280px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 110px 0;
-    background-color: #0a4594;
-}
-.service .layout:before {
+.service:before {
     content: "";
     display: block;
     width: 285px;
@@ -1146,8 +1135,16 @@ a.logo:after{
     background: url(../images/service_bg.png) no-repeat center 50%;
     background-size: 100% auto;
     position: absolute;
-    right: -370px;
-    top: 50px;
+    right: -50px;
+    top: 10%;
+}
+.service .layout{
+    position: relative;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 110px 0;
+    background-color: #0a4594;
 }
 .service .layout:after {
     content: "";
