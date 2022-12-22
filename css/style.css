@@ -1,5 +1,6 @@
-@media screen and (max-width:1470px) {
+/* @media screen and (max-width:1470px) {
     #wrap{
+        max-width: 1470px;
         width: 100%;
     }
     .search{
@@ -17,11 +18,12 @@
         margin:auto;
     }    
 }
-@media screen and (max-width:1240px) {
+@media screen and (max-width:1280px) {
     #wrap{
+        max-width: 1280px;
         width: 100%;
     }
-}
+} */
 body {
     width: 100%;
     font-size: 16px;
@@ -34,6 +36,7 @@ body {
 /* layer popup */
 #layer{
     display: block;
+    display: none;
     position: fixed;
     width: 500px;
     height: 500px;
@@ -420,43 +423,43 @@ a.logo:after{
     z-index: -1;
 }
 
+/* container */
+#container{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
 /* content */
 #content {
-    width: 100%;
     height: 100%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
     position: relative;
     z-index: -1;
 }
-#content .visual {
+.visual {
     position: absolute;
     width: 100%;
-    height: auto;
+    margin: 0 auto;
+    height: 970px;
     top: 0;
+    background: url(../images/background_img1.jpg)no-repeat left top / cover;
 }
-#content .visual .layout{
+.visual .layout{
     position: relative;
     width: 1280px;
+    height: 100%;
     margin: 0 auto;
     padding: 110px 0;
 }
 
-#content .visual .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 970px;
-    z-index: -100;
-    background: url(../images/background_img1.jpg) no-repeat left top / cover;
-}  
-
-#content .visual .slogan{
+.visual .slogan{
     position: absolute;
     top: 340px;
     left: 0;
 }
-#content .visual .slogan .subject_eng{
+.visual .slogan .subject_eng{
     position: relative;
     letter-spacing: 8px;
     font-size: 14px;
@@ -465,7 +468,7 @@ a.logo:after{
     font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
     color: white;
 }
-#content .visual .slogan .slogan_subject{
+.visual .slogan .slogan_subject{
     position: relative;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 58px;
@@ -476,7 +479,7 @@ a.logo:after{
     line-height: 73px;
     color: white;
 }
-#content .visual .slogan a{
+.visual .slogan a{
     position: relative;
     display: inline-block;
     color: white;
@@ -487,25 +490,25 @@ a.logo:after{
     letter-spacing: -1px;
     transition: all 0.3s ease-in-out;
 }
-#content .visual a:hover{
+.visual a:hover{
     color: #333;
     background-color: rgb(255, 255, 255, 0.8);
 }
 
 /* control */
-#content .visual .control {
+.visual .control {
     position: absolute;
     top: 780px;
     left: 0;
     z-index: 1;
 }
-#content .visual .control ul li {
+.visual .control ul li {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 0 0;
     height: 10px;
 }
-#content .visual .control ul li:first-child a{
+.visual .control ul li:first-child a{
     display: block;
     position: relative;
     width: 34px;
@@ -513,7 +516,7 @@ a.logo:after{
     background: #fff;
     margin-right: -3px;
 }
-#content .visual .control ul li:nth-child(n+2) a{
+.visual .control ul li:nth-child(n+2) a{
     display: block;
     position: relative;
     width: 34px;
@@ -521,7 +524,7 @@ a.logo:after{
     background: rgb(145, 145, 145);
     margin-right: -3px;
 }
-#content .visual .control a.btn_play {
+.visual .control a.btn_play {
     background-image: url(../images/visual_control_play.png);
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -533,7 +536,7 @@ a.logo:after{
     right: -28px;
     top: -10px;
 }
-#content .visual #quick {
+.visual #quick {
     position: absolute;
     right: -250px;
     top: 320px;
@@ -541,10 +544,10 @@ a.logo:after{
     width: 84px;
     display: block;
 }
-#content .visual #quick ul li.hid {
+.visual #quick ul li.hid {
     display: none;
 }
-#content .visual #quick ul li a {
+.visual #quick ul li a {
     display: block;
     text-align: center;
     background: rgba(0,0,0,0.8);
@@ -556,10 +559,10 @@ a.logo:after{
     box-sizing: border-box;
     height: 85px;
 }
-#content .visual #quick ul li:nth-child(odd) a {
+.visual #quick ul li:nth-child(odd) a {
     background: rgba(70,70,70,0.8);
 }
-#content .visual #quick ul li a:before {
+.visual #quick ul li a:before {
     content: "";
     display: block;
     margin-bottom: 7px;
@@ -567,20 +570,20 @@ a.logo:after{
     background-repeat: no-repeat;
     background-position: center 50%;
 }
-#content .visual #quick ul li a:hover {
+.visual #quick ul li a:hover {
     text-decoration: underline;
 }
 
-#content .visual #quick ul li.bn01 a:before {
+.visual #quick ul li.bn01 a:before {
     background-image: url(../images/quick_ico1.png);
 }
-#content .visual #quick ul li.bn02 a:before {
+.visual #quick ul li.bn02 a:before {
     background-image: url(../images/quick_ico2.png);
 }
-#content .visual #quick ul li.bn03 a:before {
+.visual #quick ul li.bn03 a:before {
     background-image: url(../images/quick_ico3.png);
 }
-#content .visual #quick .btn_more {
+.visual #quick .btn_more {
     display: block;
     text-align: center;
     background: #fff;
@@ -597,12 +600,11 @@ a.logo:after{
     width: 100%;
     height: auto;
     top: 970px;
-    background-color: #fff;
 }
 .news .layout{
     position: relative;
     width: 1280px;
-    height: 1300px;
+    height: 100%;
     padding: 90px 0;
     margin: 0 auto;
     background-color: #fff;
@@ -648,7 +650,7 @@ a.logo:after{
     background-position: center 50%;
     background-size: 100% auto;
     position: absolute;
-    right: 0;
+    right: -290px;
     top: 120px;
 }
 .news .layout .bodo .move{
@@ -659,7 +661,6 @@ a.logo:after{
     display: flex;
 }
 .news .layout .bodo .move ul li{
-    float: left;
     margin: 0 12px;
 }
 .news .layout .bodo .move ul li a{
@@ -1126,12 +1127,13 @@ a.logo:after{
     position: absolute;
     width: 100%;
     height: auto;
-    top: 2300px;
+    top: 2275px;
     background-color:#0a4594;
 }
 .service .layout{
     position: relative;
     width: 1280px;
+    height: 100%;
     margin: 0 auto;
     padding: 110px 0;
     background-color: #0a4594;
@@ -1432,18 +1434,11 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 3022px;
+    top: 2997px;
     background: #ebedef;
     overflow: hidden;
     padding-top: 110px;
     padding-bottom: 50px;
-}
-.business .layout{
-    position: relative;
-    width: 1280px;
-    margin: 0 auto;
-    padding: 110px 0;
-    background-color: #ebedef;
 }
 
 .business h3.title {
@@ -1454,6 +1449,7 @@ position: relative;
     position: relative;
     background: url(../images/business_slider_bg.png) repeat-x center 50%;
     height: 500px;
+    width: 100%;
 }
 .business .slider:before, 
 .business .slider:after {
@@ -1580,13 +1576,14 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 3724px;
+    top: 3697px;
     overflow: hidden;
     padding: 200px 0;
 }
 .management .layout{
     position: relative;
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: 260px;
@@ -1683,12 +1680,12 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 4365px;
-    background-color: #fff;
+    top: 4338px;
 }
 .link_banner .layout{
     position: relative;
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -1789,7 +1786,7 @@ position: relative;
     position: absolute;
     width: 100%;
     height: auto;
-    top: 4443px;
+    top: 4416px;
 }
 #footer:after {
     content: "";
@@ -1804,6 +1801,7 @@ position: relative;
 #footer .layout {
     background: url(../images/footer_logo.png) no-repeat left 89px;
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
