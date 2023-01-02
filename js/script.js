@@ -51,7 +51,7 @@ $(function () {
 
   //플레이버튼
   controls();
-  controls.click(function(){
+  controls.click(function () {
     id = setInterval(function () {
       let next = current + 1; //0+1
       if (next == visual.length) {
@@ -59,8 +59,8 @@ $(function () {
       }
       button.eq(next).trigger("click");
     }, speed);
-    }) 
-  
+  })
+
   // //좌우컨트롤버튼
   // controls();
   // function controls() {
@@ -93,3 +93,48 @@ $(function () {
   //   });
   // }
 }); //jQuery
+
+
+// $(document).ready(function () {
+//   if ($(".relate_site").size() != 0) {
+//     js_relate();
+//   }
+// });
+// function js_relate() {
+//   var obj = $(".relate_site");
+
+//   obj.each(function () {
+//     var t = $(this);
+//     t.btn = t.find(">a");
+//     t.ul = t.find(">ul");
+//     t.ul.li = t.ul.find(">li");
+
+//     $("<em class='hidden'>열기</em>").appendTo(t.btn);
+
+//     t.btn.on("click", function () {
+//       if (t.ul.is(":animated")) return false;
+
+//       $(this).toggleClass("on").siblings("ul").slideToggle(300);
+//       if ($(this).hasClass("on")) {
+//         $(this).find(">em").text("닫기");
+//       } else {
+//         $(this).find(">em").text("열기");
+//       }
+//       return false;
+//     });
+
+//     t.on("mouseleave", function () {
+//       $(this).find(">a").removeAttr("class");
+//       $(this).find(">ul").slideUp(300);
+//       t.btn.find(">em").text("열기");
+//       return false;
+//     });
+
+//     t.ul.li.last().find(">a").on("focusout", function () {
+//       $(this).parent().parent().siblings("a").removeAttr("class");
+//       $(this).parent().parent().slideUp(300);
+//       t.btn.find(">em").text("열기");
+//       return false;
+//     });
+//   });
+// }
