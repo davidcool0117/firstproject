@@ -467,19 +467,19 @@ a.logo:after{
 }
 
 .visual .visual_slide li.visual_0{
-    background-image: url(/images/background_img1.jpg);
+    background-image: url(../images/background_img1.jpg);
     left: 0%;
 }
 .visual .visual_slide li.visual_1{
-    background-image: url(/images/background_img2.jpg);
+    background-image: url(../images/background_img2.jpg);
     left: 100%;
 }
 .visual .visual_slide li.visual_2{
-    background-image: url(/images/background_img3.jpg);
+    background-image: url(../images/background_img3.jpg);
     left: 200%;
 }
 .visual .visual_slide li.visual_3{
-    background-image: url(/images/background_img4.jpg);
+    background-image: url(../images/background_img4.jpg);
     left: 300%;
 
 }
