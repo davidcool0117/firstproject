@@ -1,4 +1,4 @@
-/* @media screen and (max-width:1470px) {
+@media screen and (max-width:1470px) {
     #wrap{
         max-width: 1470px;
         width: 100%;
@@ -14,16 +14,17 @@
         font-weight: bold;
     }
     #header_nav #nav #gnb{
-        width:880px;
+        width:850px;
         margin:auto;
     }    
 }
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) {
     #wrap{
-        max-width: 1280px;
+        max-width: 1024px;
         width: 100%;
     }
-} */
+}
+
 body {
     width: 100%;
     font-size: 16px;
@@ -441,26 +442,54 @@ a.logo:after{
 }
 .visual {
     position: absolute;
+    overflow: hidden;
     width: 100%;
     margin: 0 auto;
     height: 970px;
     top: 0;
-    background: url(../images/background_img1.jpg)no-repeat left top / cover;
 }
-.visual .layout{
+.visual .visual_slide {
     position: relative;
-    max-width: 1280px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 110px 0;
+    width: 100%;
+    height: 970px;
+  }
+
+.visual .visual_slide li{
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    position:absolute;
+}
+.visual .visual_slide li div.on{
+    z-index: 10;
 }
 
-.visual .slogan{
-    position: absolute;
-    top: 340px;
-    left: 0;
+.visual .visual_slide li.visual_0{
+    background-image: url(/images/background_img1.jpg);
+    left: 0%;
 }
-.visual .slogan .subject_eng{
+.visual .visual_slide li.visual_1{
+    background-image: url(/images/background_img2.jpg);
+    left: 100%;
+}
+.visual .visual_slide li.visual_2{
+    background-image: url(/images/background_img3.jpg);
+    left: 200%;
+}
+.visual .visual_slide li.visual_3{
+    background-image: url(/images/background_img4.jpg);
+    left: 300%;
+
+}
+
+.visual .visual_slide .slogan{
+    position: absolute;
+    top: 33%;
+    left: 17%;
+}
+.visual .visual_slide .slogan .subject_eng{
     position: relative;
     letter-spacing: 8px;
     font-size: 14px;
@@ -469,18 +498,31 @@ a.logo:after{
     font-family: 'NotoSans','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
     color: white;
 }
-.visual .slogan .slogan_subject{
+.visual .visual_slide .slogan .slogan_subject{
     position: relative;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 58px;
     line-height: 68px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 25px;
     margin-bottom: 36px;
     line-height: 73px;
+    word-spacing: -8px;
     color: white;
 }
-.visual .slogan a{
+.visual .visual_slide .slogan .slogan_subject .yellow{
+    color: yellow;
+}
+.visual .visual_slide .slogan .txt1{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.visual .visual_slide .slogan .txt2{
+    color: white;
+}
+.visual .visual_slide .slogan a{
     position: relative;
     display: inline-block;
     color: white;
@@ -496,36 +538,29 @@ a.logo:after{
     background-color: rgb(255, 255, 255, 0.8);
 }
 
+
 /* control */
-.visual .control {
+.visual #buttonList {
+    display: flex;
     position: absolute;
-    top: 780px;
-    left: 0;
-    z-index: 1;
+    top: 81%;
+    left: 17%;
+    z-index: 10;
 }
-.visual .control ul li {
-    display: inline-block;
+.visual #buttonList li {
     vertical-align: top;
     margin: 0 10px 0 0;
-    height: 10px;
-}
-.visual .control ul li:first-child a{
-    display: block;
-    position: relative;
-    width: 34px;
-    height: 4px;
-    background: #fff;
-    margin-right: -3px;
-}
-.visual .control ul li:nth-child(n+2) a{
-    display: block;
-    position: relative;
     width: 34px;
     height: 4px;
     background: rgb(145, 145, 145);
-    margin-right: -3px;
 }
-.visual .control a.btn_play {
+.visual #buttonList li.on {
+    background: #fff;
+}
+.visual #buttonList li:hover {
+    cursor: pointer;
+}
+.visual .controls .btn_play.on {
     background-image: url(../images/visual_control_play.png);
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -534,24 +569,33 @@ a.logo:after{
     height: 24px;
     border-radius: 50%;
     position: absolute;
-    right: -28px;
-    top: -10px;
+    left: 26%;
+    top: 80%;
+    cursor: pointer;
+}
+.visual .controls .btn_play:active {
+    background-image: url(../images/visual_control_stop.png);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    cursor: pointer;
 }
 
 /* quick */
 #quick{
     position: absolute;
-    top: 40%;
-    right: 5%;
+    top: 33%;
+    right: 2%;
     display: block;
     width: 84px;
+    z-index: 10;
 }
 #quick ul li a {
     display: block;
     text-align: center;
     background: rgba(0,0,0,0.8);
     color: rgba(255,255,255,0.8);
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: bold;
     line-height: 17px;
     padding: 15px 5px;
     box-sizing: border-box;
@@ -653,10 +697,21 @@ a.logo:after{
 /* bodo */
 .news .layout .bodo .move{
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1;
 }
 .news .layout .bodo .move ul {
     border-top: 1px solid #ccc;
     display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: content-box;
 }
 .news .layout .bodo .move ul li{
     margin: 0 12px;

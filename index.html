@@ -37,6 +37,8 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <a href="#header" class="skip_menu">상단메뉴 바로가기</a>
@@ -475,22 +477,58 @@
       <div id="container">
         <div id="content">
           <div class="section visual">
-            <div class="layout">
-              <div class="slogan">
-                <p class="subject_eng">CREATING<br>TRUST&amp;VALUE</p>
-                <h2 class="slogan_subject">한국조폐공사가 실현하는<br>세계 최고 수준의 기술</h2>
-                <a href="https://www.youtube.com/watch?v=rupY8AUswDk">홍보영상 바로가기</a>
-              </div>
-              <div class="control">
-                <ul>
-                  <li><a href="#" class=""></a></li>
-                  <li><a href="#" class=""></a></li>
-                  <li><a href="#" class=""></a></li>
-                  <li><a href="#" class=""></a></li>
-                </ul>
-                <a href="#" class="btn_play"></a>
-              </div>
+            <div id="brandVisual">
+              <ul class="visual_slide">
+                <li class="visual_0">
+                    <div class="container">
+                        <div class="slogan">
+                            <p class="subject_eng">CREATING<br>TRUST&amp;VALUE</p>
+                            <h2 class="slogan_subject">한국조폐공사가 실현하는<br>세계 최고 수준의 기술</h2>
+                            <a href="https://www.youtube.com/watch?v=rupY8AUswDk">홍보영상 바로가기</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="visual_1">
+                    <div class="container">
+                        <div class="slogan">
+                            <p class="subject_eng">KOMSCO STORY</p>
+                            <h2 class="slogan_subject">100-<span class="yellow">1</span>=0</h2>
+                            <p class="txt1">완벽한 품질로 고객의 신뢰를 얻기 위해 최선을 다하겠습니다.</p>
+                            <p class="txt2">100개의 제품 중 99개의 제품이 완벽해도 1개의 제품에 이상이 있다면 <br>고객 만족은 0과 같다는 슬로건아래 최선을 다하겠습니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="visual_2">
+                    <div class="container">
+                        <div class="slogan">
+                            <p class="subject_eng">KOMSCO STORY</p>
+                            <h2 class="slogan_subject">NO.<span class="yellow">1</span></h2>
+                            <p class="txt1">세계 최고의 조폐·인증·보안 서비스 기업으로 도약합니다.</p>
+                            <p class="txt2">한국조폐공사는 우수한 기술력으로 전 세계 40여 개국에 은행권, 주화,<br>제지제품(은행권용지), 특수잉크, 여권 등을 수출하고 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="visual_3">
+                    <div class="container">
+                        <div class="slogan">
+                            <p class="subject_eng">KOMSCO STORY</p>
+                            <h2 class="slogan_subject">국민신뢰<span class="yellow">1위</span></h2>
+                            <p class="txt1">행복한 세상을 만들기 위해 다양한 사회공헌으로 국민께 보답합니다.</p>
+                            <p class="txt2">국가의 기업으로서 사회적 책임을 다하고, 사랑과 나눔을 실천하며<br>국민과 더불어 사는 사회 구현에 앞장서고 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+              </ul>
             </div>
+            <ul id="buttonList">
+              <li class="on"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="controls">
+              <li class="btn_play on"><a href="#"></a></li>
+            </ul>
             <div id="quick">
               <ul>
                 <li class="bn01"><a href="#">국민이정하다</a></li>
@@ -809,6 +847,66 @@
       <!--//footer-->
       <a href="#top" class="btn_top" style="display: inline;">TOP</a>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+    $(function () {
+      const visual = $("#brandVisual>ul>li");
+      const button = $("#buttonList>li");
+      let current = 0; //현재
+      let btnIdx = 0; //클릭한 페이저 버튼의 인덱스
+      let id; //setIntervalId
+      const speed = 3000;
+      //버튼클릭함수
+      button.click(function () {
+        btnIdx = $(this).index();
+        button.removeClass("on");
+        $(this).addClass("on");
+        move();
+      });
+
+      //시간마다실행
+      timer();
+      function timer() {
+        id = setInterval(function () {
+          let next = current + 1; //0+1
+          if (next == visual.length) {
+            next = 0;
+          }
+          button.eq(next).trigger("click");
+        }, speed);
+      }
+
+      //이동시키는 함수
+      function move() {
+        if (current == btnIdx) return;
+        let cu = visual.eq(current);
+        let ne = visual.eq(btnIdx);
+        cu.css("left", "0").stop().animate({ left: "-100%" });
+        ne.css("left", "100%").stop().animate({ left: "0%" });
+        current = btnIdx;
+      }
+      //clearInterval
+      clearAuto();
+      function clearAuto() {
+        $("#brandVisual,#buttonList").mouseenter(function () {
+          clearInterval(id);
+        });
+        $("#brandVisual,#buttonList").mouseleave(function () {
+          timer();
+        });
+      }
+
+      //플레이버튼
+      controls();
+      controls.click(function(){
+        id = setInterval(function () {
+          let next = current + 1; //0+1
+          if (next == visual.length) {
+            next = 0;
+          }
+          button.eq(next).trigger("click");
+        }, speed);
+        })    
+      }); //jQuery
+    </script>
   </body>
 </html>
