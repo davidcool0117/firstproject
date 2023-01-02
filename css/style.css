@@ -583,22 +583,26 @@ a.logo:after {
 }
 
 .visual .scroll {
-    content: "";
-    display: block;
-    width: 26px;
-    height: 63px;
-    background: url(../images/sd_icon2.png) no-repeat;
-    position: absolute;
-    z-index: 300;
-    left: 50%;
-    bottom: 35px;
-    margin: 0 0 0 -13px;
-    opacity: 1;
-    animation: move .6s ease-in-out .3s infinite alternate;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 63px;
+  background: url(../images/sd_icon2.png) no-repeat;
+  position: absolute;
+  z-index: 300;
+  left: 50%;
+  bottom: 35px;
+  margin: 0 0 0 -13px;
+  opacity: 1;
+  animation: move 0.6s ease-in-out 0.3s infinite alternate;
 }
 @keyframes move {
-	0%   {bottom:40px;}
-	100% {bottom:55px;}
+  0% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 55px;
+  }
 }
 
 /* quick */
@@ -714,8 +718,39 @@ a.logo:after {
   padding: 20px 0;
   border-bottom: 1px solid #cfcfcf;
 }
+.news .btn_more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: -9999px;
+  position: absolute;
+  top: 18px;
+}
+.news .btn_more:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/btn_more_bul.png) no-repeat center 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.news .btn_more.btn_more_white:after {
+  background: url(../images/btn_more_bul_white.png) no-repeat center 50%;
+}
+.news .btn_more:hover:after,
+.news .btn_more:active:after {
+  transform: rotate(180deg);
+}
 
 /* bodo */
+.news .layout .bodo .btn_more {
+    right: 0;
+    top: 100px;
+}
 .news .layout .bodo .move {
   width: 100%;
   margin-left: auto;
@@ -828,14 +863,14 @@ a.logo:after {
   height: 100%;
 }
 .news .bodo .js_slide ul li ul li a p.photo span {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 2000px;
-    height: 100%;
-    margin-left: -1000px;
-    text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2000px;
+  height: 100%;
+  margin-left: -1000px;
+  text-align: center;
 }
 .news .layout .bodo .move ul li a p.photo img {
   display: block;
@@ -1098,7 +1133,11 @@ a.logo:after {
   top: 50%;
   margin: -13px 0 0 -10px;
 }
-
+.news .movie .btn_more,
+.news .cardnews .btn_more {
+    z-index: 10;
+    right: 5.5%;
+}
 /* cardnews */
 .news .cardnews {
   width: 33.333%;
