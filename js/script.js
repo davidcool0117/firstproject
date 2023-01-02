@@ -41,43 +41,55 @@ $(function () {
   //clearInterval
   clearAuto();
   function clearAuto() {
-    $("#brandVisual,#buttonList,.btn_play").mouseenter(function () {
+    $("#brandVisual,#buttonList").mouseenter(function () {
       clearInterval(id);
     });
-    $("#brandVisual,#buttonList,.btn_play").mouseleave(function () {
+    $("#brandVisual,#buttonList").mouseleave(function () {
       timer();
     });
   }
 
-  //좌우컨트롤버튼
+  //플레이버튼
   controls();
-  function controls() {
-    $(".controls .prev").click(function () {
-      //console.log(btnIdx = btnIdx - 1);
-      btnIdx = btnIdx - 1;
-      if (current == 0) {
-        btnIdx = visual.length - 1;
+  controls.click(function(){
+    id = setInterval(function () {
+      let next = current + 1; //0+1
+      if (next == visual.length) {
+        next = 0;
       }
-      button.removeClass("on");
-      button.eq(btnIdx).addClass("on");
-      let cu = visual.eq(current);
-      let pr = visual.eq(btnIdx);
-      cu.css("left", "0").stop().animate({ left: "100%" });
-      pr.css("left", "-100%").stop().animate({ left: "0%" });
-      current = btnIdx;
-    });
-    $(".controls .next").click(function () {
-      btnIdx = btnIdx + 1;
-      if (btnIdx == visual.length) {
-        btnIdx = 0;
-      }
-      button.removeClass("on");
-      button.eq(btnIdx).addClass("on");
-      let cu = visual.eq(current);
-      let ne = visual.eq(btnIdx);
-      cu.css("left", "0").stop().animate({ left: "-100%" });
-      ne.css("left", "100%").stop().animate({ left: "0%" });
-      current = btnIdx;
-    });
-  }
+      button.eq(next).trigger("click");
+    }, speed);
+    }) 
+  
+  // //좌우컨트롤버튼
+  // controls();
+  // function controls() {
+  //   $(".controls .prev").click(function () {
+  //     //console.log(btnIdx = btnIdx - 1);
+  //     btnIdx = btnIdx - 1;
+  //     if (current == 0) {
+  //       btnIdx = visual.length - 1;
+  //     }
+  //     button.removeClass("on");
+  //     button.eq(btnIdx).addClass("on");
+  //     let cu = visual.eq(current);
+  //     let pr = visual.eq(btnIdx);
+  //     cu.css("left", "0").stop().animate({ left: "100%" });
+  //     pr.css("left", "-100%").stop().animate({ left: "0%" });
+  //     current = btnIdx;
+  //   });
+  //   $(".controls .next").click(function () {
+  //     btnIdx = btnIdx + 1;
+  //     if (btnIdx == visual.length) {
+  //       btnIdx = 0;
+  //     }
+  //     button.removeClass("on");
+  //     button.eq(btnIdx).addClass("on");
+  //     let cu = visual.eq(current);
+  //     let ne = visual.eq(btnIdx);
+  //     cu.css("left", "0").stop().animate({ left: "-100%" });
+  //     ne.css("left", "100%").stop().animate({ left: "0%" });
+  //     current = btnIdx;
+  //   });
+  // }
 }); //jQuery
