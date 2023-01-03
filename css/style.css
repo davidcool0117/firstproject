@@ -24,19 +24,23 @@
     width: 100%;
   }
 }
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 body {
   width: 100%;
   font-size: 16px;
   line-height: 1.7;
   position: relative;
-  font-family: "NotoSans", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 /* layer popup */
 #layer {
   display: block;
+  display: none;
   position: fixed;
   width: 500px;
   height: 500px;
@@ -457,6 +461,9 @@ a.logo:after {
   width: 100%;
   height: 970px;
 }
+.visual .visual_slide .active {
+  z-index: 10;
+}
 
 .visual .visual_slide li {
   width: 100%;
@@ -466,25 +473,18 @@ a.logo:after {
   background-size: cover;
   position: absolute;
 }
-.visual .visual_slide li div.on {
-  z-index: 10;
-}
 
 .visual .visual_slide li.visual_0 {
   background-image: url(../images/background_img1.jpg);
-  left: 0%;
 }
 .visual .visual_slide li.visual_1 {
   background-image: url(../images/background_img2.jpg);
-  left: 100%;
 }
 .visual .visual_slide li.visual_2 {
   background-image: url(../images/background_img3.jpg);
-  left: 200%;
 }
 .visual .visual_slide li.visual_3 {
   background-image: url(../images/background_img4.jpg);
-  left: 300%;
 }
 
 .visual .visual_slide .slogan {
@@ -498,7 +498,7 @@ a.logo:after {
   font-size: 14px;
   line-height: 25px;
   font-weight: bold;
-  font-family: "NotoSans", "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
+  font-family: 'Noto Sans KR', "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
   color: white;
 }
 .visual .visual_slide .slogan .slogan_subject {
@@ -516,14 +516,29 @@ a.logo:after {
 .visual .visual_slide .slogan .slogan_subject .yellow {
   color: yellow;
 }
-.visual .visual_slide .slogan .txt1 {
+.visual .visual_slide .slogan p.txt1 {
   color: white;
-  font-weight: bold;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
 }
-.visual .visual_slide .slogan .txt2 {
+.visual .visual_slide .slogan p.txt2 {
   color: white;
+  font-size: 17px;
+  font-family: 'Noto Sans KR','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+}
+.visual .visual_slide .visual_1 .slogan .slogan_subject {
+  font-size: 80px;
+  font-weight: 600;
+}
+.visual .visual_slide .visual_2 .slogan .slogan_subject {
+  font-size: 80px;
+  font-weight: 600;
+}
+.visual .visual_slide .visual_3 .slogan .slogan_subject {
+  font-size: 80px;
+  font-weight: 600;
 }
 .visual .visual_slide .slogan a {
   position: relative;
@@ -542,28 +557,28 @@ a.logo:after {
 }
 
 /* control */
-.visual #buttonList {
+.visual #buttonList1 {
   display: flex;
   position: absolute;
   top: 81%;
   left: 17%;
   z-index: 10;
 }
-.visual #buttonList li {
+.visual #buttonList1 li {
   vertical-align: top;
   margin: 0 10px 0 0;
   width: 34px;
   height: 4px;
   background: rgb(145, 145, 145);
 }
-.visual #buttonList li.on {
+.visual #buttonList1 li.active {
   background: #fff;
 }
-.visual #buttonList li:hover {
+.visual #buttonList1 li:hover {
   cursor: pointer;
 }
-.visual .controls .btn_play.on {
-  background-image: url(../images/visual_control_play.png);
+.visual .controls .btn_stop {
+  background-image: url(../images/visual_control_stop.png);
   background-repeat: no-repeat;
   background-position: center 50%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -574,11 +589,19 @@ a.logo:after {
   left: 26%;
   top: 80%;
   cursor: pointer;
+  z-index: 10;
 }
-.visual .controls .btn_play:active {
-  background-image: url(../images/visual_control_stop.png);
+.visual .controls .btn_play {
+  background-image: url(../images/visual_control_play.png);
   background-repeat: no-repeat;
   background-position: center 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 26%;
+  top: 80%;
   cursor: pointer;
 }
 
@@ -651,7 +674,7 @@ a.logo:after {
   text-align: center;
   background: #fff;
   text-decoration: none;
-  color: #222 !important;
+  color: #222;
   font-size: 14px;
   padding: 2px 5px;
   border: 1px solid #000;
@@ -747,11 +770,15 @@ a.logo:after {
 }
 
 /* bodo */
-.news .layout .bodo .btn_more {
+.news .bodo .btn_more {
     right: 0;
     top: 100px;
 }
-.news .layout .bodo .move {
+.news .bodo .js_slide {
+  border-top: 1px solid #c8c8c8;
+  height: 357px;
+}
+.news .bodo .move {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -760,7 +787,7 @@ a.logo:after {
   padding: 0;
   z-index: 1;
 }
-.news .layout .bodo .move ul {
+.news .bodo .move ul {
   border-top: 1px solid #ccc;
   display: flex;
   position: relative;
@@ -769,10 +796,26 @@ a.logo:after {
   z-index: 1;
   box-sizing: content-box;
 }
-.news .layout .bodo .move ul li {
+.news .bodo .move ul.movelist2{
+  display: none;
+}
+.news .bodo .move ul li {
   margin: 0 12px;
 }
-.news .layout .bodo .move ul li a {
+.news .bodo .move ul li a:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/bodo_more.png) no-repeat center 50%;
+  position: absolute;
+  right: 7%;
+  top: 7%;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.news .bodo .move ul li a {
   display: block;
   width: 400px;
   height: 325px;
@@ -781,7 +824,7 @@ a.logo:after {
   margin-top: 30px;
   overflow: hidden;
 }
-.news .layout .bodo ul li a:after {
+.news .bodo .move ul li a:after {
   content: "";
   display: block;
   width: 100%;
@@ -790,28 +833,20 @@ a.logo:after {
   position: absolute;
   left: 0;
   bottom: 0;
+  transition: all 0.2s ease-in-out;
 }
-.news .bodo .js_slide ul li ul li a:hover:after,
-.news .bodo .js_slide ul li ul li a:active:after {
+.news .bodo .move ul li a:hover:after,
+.news .bodo .move ul li a:active:after {
   height: 100%;
 }
-
-.news .layout .bodo .move ul li a:before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: url(../images/bodo_more.png) no-repeat center 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 20;
-  opacity: 0;
-  transition: all 0.3s ease;
+.news .bodo .move ul li a:hover:before, 
+.news .bodo .move ul li a:active:before {
+  opacity: 1;
+  transform: rotate(180deg);
 }
-.news .layout .bodo .move ul li a span.new {
-  left: 5%;
-  top: 10px;
+.news .bodo .move ul li span.new {
+  left: 3%;
+  top: 15px;
   position: absolute;
   z-index: 101;
   width: auto;
@@ -820,10 +855,10 @@ a.logo:after {
   color: #fff;
   text-align: center;
   height: auto;
-  padding: 8px 14px;
+  padding: 6px 14px;
   font-size: 15px;
 }
-.news .layout .bodo .move ul li a .txt {
+.news .bodo .move ul li a p.txt {
   position: absolute;
   box-sizing: border-box;
   padding: 22px 6%;
@@ -835,8 +870,13 @@ a.logo:after {
   text-align: left;
   background: rgba(0, 0, 0, 0.6);
   font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
-.news .layout .bodo .move ul li a .txt span {
+.news .bodo .move ul li a:hover p.txt,
+.news .bodo .move ul li a:active p.txt {
+  background: rgba(0, 0, 0, 0);
+}
+.news .bodo .move ul li a p.txt span {
   display: block;
   position: relative;
   width: auto;
@@ -847,7 +887,7 @@ a.logo:after {
   color: #fff;
   font-size: 14px;
 }
-.news .layout .bodo .move ul li a .txt strong {
+.news .bodo .move ul li a p.txt strong {
   display: block;
   height: 52px;
   overflow: hidden;
@@ -857,12 +897,12 @@ a.logo:after {
   font-weight: 400;
   margin-top: 15px;
 }
-.news .layout .bodo .move ul li a p.photo {
+.news .bodo .move ul li a p.photo {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
-.news .bodo .js_slide ul li ul li a p.photo span {
+.news .bodo .move ul li a p.photo span {
   display: block;
   position: absolute;
   left: 50%;
@@ -872,22 +912,42 @@ a.logo:after {
   margin-left: -1000px;
   text-align: center;
 }
-.news .layout .bodo .move ul li a p.photo img {
+.news .bodo .move ul li a p.photo img {
   display: block;
   margin: 0 auto;
   width: auto;
   height: 100%;
   transition: all 0.3s ease;
 }
+.news .bodo #buttonList2 {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 47%;
+  z-index: 10;
+}
+.news .bodo #buttonList2 li {
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  width: 34px;
+  height: 4px;
+  background: #d7d7d7;
+}
+.news .bodo #buttonList2 li.active {
+  background: #0a4594;
+}
+.news .bodo #buttonList2 li:hover {
+  cursor: pointer;
+}
 
 /* notice */
-.news .layout .notice {
+.news .notice {
   width: 50%;
   box-sizing: border-box;
   padding: 0 10px 20px 0;
   float: left;
 }
-.news .layout .notice .mar {
+.news .notice .mar {
   border: 1px solid #cfcfcf;
   border-top: 1px solid #111;
   height: 280px;
@@ -895,24 +955,24 @@ a.logo:after {
   box-sizing: border-box;
   margin-top: 100px;
 }
-.news .layout .notice .mar h4 {
+.news .notice .mar h4 {
   padding: 20px 30px;
   font-weight: bold;
 }
-.news .layout .notice .mar ul {
+.news .notice .mar ul {
   padding: 30px 4.5%;
 }
-.news .layout .notice .mar ul li:first-child {
+.news .notice .mar ul li:first-child {
   margin-top: 0;
 }
-.news .layout .notice .mar ul li {
+.news .notice .mar ul li {
   margin-top: 17px;
   margin-left: 15px;
   padding: 0 110px 0 0px;
   position: relative;
   list-style: square;
 }
-.news .layout .notice .mar ul li span.subject a {
+.news .notice .mar ul li span.subject a {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
@@ -927,11 +987,11 @@ a.logo:after {
   font-size: 17px;
   line-height: 22px;
 }
-.news .layout .notice .mar ul li span.subject a:hover,
-.news .layout .notice .mar ul li span.subject a:active {
+.news .notice .mar ul li span.subject a:hover,
+.news .notice .mar ul li span.subject a:active {
   color: #0a4594;
 }
-.news .layout .notice .mar ul li span.date {
+.news .notice .mar ul li span.date {
   display: block;
   text-align: right;
   position: absolute;
@@ -942,6 +1002,10 @@ a.logo:after {
   color: #787878;
   font-weight: 300;
 }
+.news .notice .btn_more {
+    right: 3.5%;
+}
+
 .news .letter {
   width: 25%;
   box-sizing: border-box;
@@ -981,6 +1045,9 @@ a.logo:after {
   margin: 0 auto;
   width: 100%;
   box-shadow: -5px 5px 5px #ccc;
+}
+.news .letter .btn_more {
+    right: 7%;
 }
 
 /* job */
@@ -1122,6 +1189,18 @@ a.logo:after {
   height: 134%;
   margin-top: -48px;
 }
+.news .movie .mar .list a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.4);
+  transition: all 0.2s ease-in-out;
+}
+.news .movie .mar .list:hover a:before {
+  background-color: rgba(0, 0, 0, 0);
+}
 .news .movie .mar .list a:after {
   content: "";
   display: block;
@@ -1166,13 +1245,25 @@ a.logo:after {
   top: 0;
   left: 0;
 }
-.news .cardnews .list a {
+.news .cardnews .mar .list a {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+}
+.news .cardnews .mar .list a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.4);
+  transition: all 0.2s ease-in-out;
+}
+.news .cardnews .mar .list:hover a:before {
+  background-color: rgba(0, 0, 0, 0);
 }
 .news .cardnews .list a img {
   display: block;
@@ -1192,43 +1283,6 @@ a.logo:after {
   position: relative;
   box-sizing: border-box;
   background: #eee;
-}
-.news .popupzone .mar .control {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  height: 56px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 224px;
-  z-index: 10;
-}
-.news .popupzone .mar .control:hover {
-  background: rgba(0, 0, 0);
-}
-.news .popupzone .mar .control ul li {
-  margin: 10px;
-}
-.news .popupzone .mar .control ul li a.on {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.news .popupzone .mar .control ul li a {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ccc;
-}
-.news .popupzone .mar .control .btn_play {
-  background: url(../images/popupzone_control_play.png) no-repeat center 50%;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 10px;
-  top: 13px;
 }
 
 /* slide */
@@ -1349,6 +1403,7 @@ a.logo:after {
   position: relative;
   border: 1px solid #3868a8;
   border-top: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .suggest a:hover {
   background: #073067;
@@ -1416,6 +1471,10 @@ a.logo:after {
   height: 165px;
   margin-bottom: 20px;
 }
+.service .layout .link ul li.bn06 ul {
+  display: none;
+  border: 0;
+}
 .service .layout .link ul li.ty2 {
   width: 32%;
   margin: 0;
@@ -1440,6 +1499,7 @@ a.logo:after {
 .service .layout .link ul li.ty2 a {
   padding: 30px 10%;
   border-left: 1px solid #3868a8;
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.ty2 a:hover {
   background: #073067;
@@ -1473,6 +1533,7 @@ a.logo:after {
   position: relative;
   border: 1px solid #3868a8;
   border-left: 0;
+  transition: all 0.3s ease-in-out;
 }
 .service .layout .link ul li a:hover {
   background: #f8f8f8;
@@ -1496,30 +1557,35 @@ a.logo:after {
 }
 .service .layout .link ul li.bn01 a:before {
   background-image: url(../images/service_link_ico1.png);
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.bn01 a:hover:before {
   background-image: url(../images/service_link_ico1_on.png);
 }
 .service .layout .link ul li.bn02 a:before {
   background-image: url(../images/service_link_ico2.png);
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.bn02 a:hover:before {
   background-image: url(../images/service_link_ico2_on.png);
 }
 .service .layout .link ul li.bn03 a:before {
   background-image: url(../images/service_link_ico3.png);
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.bn03 a:hover:before {
   background-image: url(../images/service_link_ico3_on.png);
 }
 .service .layout .link ul li.bn04 a:before {
   background-image: url(../images/service_link_ico4.png);
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.bn04 a:hover:before {
   background-image: url(../images/service_link_ico4_on.png);
 }
 .service .layout .link ul li.bn05 a:before {
   background-image: url(../images/service_link_ico5.png);
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.bn05 a:hover:before {
   background-image: url(../images/service_link_ico5_on.png);
@@ -1550,6 +1616,7 @@ a.logo:after {
   display: block;
   color: #dee2ec;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 .service .layout .link ul li.ty2 a p {
   text-align: left;
@@ -1622,6 +1689,7 @@ a.logo:after {
   margin-top: -31px;
   background-size: 100% auto;
   z-index: 10;
+  transition: all 0.2s ease-in-out;
 }
 .business .slider .control:hover {
   opacity: 1;
@@ -1685,6 +1753,7 @@ a.logo:after {
   text-align: left;
   padding: 50px 32px;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 .business .slider .move ul li .inner .title p {
   color: #e6f03e;
@@ -1728,6 +1797,7 @@ a.logo:after {
 }
 .management .summery h3.title {
   margin-bottom: 15px;
+  font-family: "Nanum Square";
 }
 .management .summery p {
   color: #222;
@@ -1736,6 +1806,7 @@ a.logo:after {
   display: block;
   font-size: 14px;
   font-weight: bold;
+  font-family: "Nanum Square";
 }
 .management ul {
   padding-left: 11%;
@@ -1775,6 +1846,7 @@ a.logo:after {
   border: 1px solid #0a4594;
   background: #0a4594;
   color: #cfd8e8;
+  font-family: "Nanum Square";
 }
 .management ul li a p {
   color: #222;
@@ -1792,8 +1864,9 @@ a.logo:after {
 }
 .management ul li a p span {
   display: block;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .management ul li a span.view {
   display: block;
@@ -1805,6 +1878,8 @@ a.logo:after {
   text-align: center;
   font-size: 15px;
   font-weight: bold;
+  font-family: "Nanum Square";
+  transition: all 0.3s ease-in-out;
 }
 
 /* link_banner */

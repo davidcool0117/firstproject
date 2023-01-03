@@ -2,139 +2,57 @@ document.querySelector("#layer button").addEventListener("click", function () {
   document.querySelector("#layer").style.display = "none";
 });
 
-$(function () {
-  const visual = $("#brandVisual>ul>li");
-  const button = $("#buttonList>li");
-  let current = 0; //현재
-  let btnIdx = 0; //클릭한 페이저 버튼의 인덱스
-  let id; //setIntervalId
-  const speed = 3000;
-  //버튼클릭함수
-  button.click(function () {
-    btnIdx = $(this).index();
-    button.removeClass("on");
-    $(this).addClass("on");
-    move();
+let now_img, next_img;
+function fade_change() {
+  now_img = $(".visual_slide li:eq(0)");
+  next_img = $(".visual_slide li:eq(1)");
+  next_img.addClass("active").css("opacity", 0).animate({ "opacity": 1 }, 1000, function () {
+    $(".visual_slide").append(now_img);
+    now_img.removeClass("active");
   });
+}
+let timer = setInterval("fade_change()", 4000);
 
-  //시간마다실행
-  timer();
-  function timer() {
-    id = setInterval(function () {
-      let next = current + 1; //0+1
-      if (next == visual.length) {
-        next = 0;
-      }
-      button.eq(next).trigger("click");
-    }, speed);
-  }
+$("#buttonList1 li").click(function () {
+  clearInterval(timer);
+});
 
-  //이동시키는 함수
-  function move() {
-    if (current == btnIdx) return;
-    let cu = visual.eq(current);
-    let ne = visual.eq(btnIdx);
-    cu.css("left", "0").stop().animate({ left: "-100%" });
-    ne.css("left", "100%").stop().animate({ left: "0%" });
-    current = btnIdx;
-  }
-  //clearInterval
-  clearAuto();
-  function clearAuto() {
-    $("#brandVisual,#buttonList").mouseenter(function () {
-      clearInterval(id);
-    });
-    $("#brandVisual,#buttonList").mouseleave(function () {
-      timer();
-    });
-  }
+const visual = $("#brandVisual>ul>li");
+const button = $("#buttonList1>li");
+let btnIdx = 0; //클릭한 페이지 버튼의 인덱스
+let viIdx = $(visual).index(); //메인 비주얼 이미지 인덱스
 
-  //플레이버튼
-  controls();
-  controls.click(function () {
-    id = setInterval(function () {
-      let next = current + 1; //0+1
-      if (next == visual.length) {
-        next = 0;
-      }
-      button.eq(next).trigger("click");
-    }, speed);
-  })
-
-  // //좌우컨트롤버튼
-  // controls();
-  // function controls() {
-  //   $(".controls .prev").click(function () {
-  //     //console.log(btnIdx = btnIdx - 1);
-  //     btnIdx = btnIdx - 1;
-  //     if (current == 0) {
-  //       btnIdx = visual.length - 1;
-  //     }
-  //     button.removeClass("on");
-  //     button.eq(btnIdx).addClass("on");
-  //     let cu = visual.eq(current);
-  //     let pr = visual.eq(btnIdx);
-  //     cu.css("left", "0").stop().animate({ left: "100%" });
-  //     pr.css("left", "-100%").stop().animate({ left: "0%" });
-  //     current = btnIdx;
-  //   });
-  //   $(".controls .next").click(function () {
-  //     btnIdx = btnIdx + 1;
-  //     if (btnIdx == visual.length) {
-  //       btnIdx = 0;
-  //     }
-  //     button.removeClass("on");
-  //     button.eq(btnIdx).addClass("on");
-  //     let cu = visual.eq(current);
-  //     let ne = visual.eq(btnIdx);
-  //     cu.css("left", "0").stop().animate({ left: "-100%" });
-  //     ne.css("left", "100%").stop().animate({ left: "0%" });
-  //     current = btnIdx;
-  //   });
-  // }
-}); //jQuery
-
-
-// $(document).ready(function () {
-//   if ($(".relate_site").size() != 0) {
-//     js_relate();
+//버튼을 클릭 했을 때
+// $(function () {
+//   button.click(function () {
+//     btnIdx = $(this).index();
+//     button.removeClass("active");
+//     $(this).addClass("active");
+//     visual.removeClass("active");
+//     $(this).addClass("active");
+//     move();
+//   });
+//   function move() {
+//     if (viIdx == btnIdx) return;
+//     let cu = visual.eq(viIdx);
+//     let ne = visual.eq(btnIdx);
+//     cu.css("opacity", 0).animate({ "opacity": 1 });
+//     ne.css("opacity", 1).animate({ "opacity": 0 });
+//     viIdx = btnIdx;
 //   }
 // });
-// function js_relate() {
-//   var obj = $(".relate_site");
 
-//   obj.each(function () {
-//     var t = $(this);
-//     t.btn = t.find(">a");
-//     t.ul = t.find(">ul");
-//     t.ul.li = t.ul.find(">li");
+//stop,play 버튼 클릭
+let btn_stop = $(".visual .controls .btn_stop")
+let btn_play = $(".visual .controls .btn_play")
+btn_stop.click(function () {
+  btn_stop.css("z-index", 9);
+  btn_play.css("z-index", 10);
+  clearInterval(timer);
+})
+btn_play.click(function () {
+  btn_play.css("z-index", 9);
+  btn_stop.css("z-index", 10);
+  setInterval("fade_change()", 4000);
+})
 
-//     $("<em class='hidden'>열기</em>").appendTo(t.btn);
-
-//     t.btn.on("click", function () {
-//       if (t.ul.is(":animated")) return false;
-
-//       $(this).toggleClass("on").siblings("ul").slideToggle(300);
-//       if ($(this).hasClass("on")) {
-//         $(this).find(">em").text("닫기");
-//       } else {
-//         $(this).find(">em").text("열기");
-//       }
-//       return false;
-//     });
-
-//     t.on("mouseleave", function () {
-//       $(this).find(">a").removeAttr("class");
-//       $(this).find(">ul").slideUp(300);
-//       t.btn.find(">em").text("열기");
-//       return false;
-//     });
-
-//     t.ul.li.last().find(">a").on("focusout", function () {
-//       $(this).parent().parent().siblings("a").removeAttr("class");
-//       $(this).parent().parent().slideUp(300);
-//       t.btn.find(">em").text("열기");
-//       return false;
-//     });
-//   });
-// }
