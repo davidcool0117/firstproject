@@ -25,15 +25,15 @@
   }
 }
 /* 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 
 body {
   width: 100%;
   font-size: 16px;
   line-height: 1.7;
   position: relative;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -498,7 +498,7 @@ a.logo:after {
   font-size: 14px;
   line-height: 25px;
   font-weight: bold;
-  font-family: 'Noto Sans KR', "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
+  font-family: "Noto Sans KR", "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
   color: white;
 }
 .visual .visual_slide .slogan .slogan_subject {
@@ -521,12 +521,12 @@ a.logo:after {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 600;
-  font-family: 'Noto Sans KR','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+  font-family: "Noto Sans KR", "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
 }
 .visual .visual_slide .slogan p.txt2 {
   color: white;
   font-size: 17px;
-  font-family: 'Noto Sans KR','돋움',Dotum,Helvetica,Verdana,Arial,sans-serif;
+  font-family: "Noto Sans KR", "돋움", Dotum, Helvetica, Verdana, Arial, sans-serif;
 }
 .visual .visual_slide .visual_1 .slogan .slogan_subject {
   font-size: 80px;
@@ -771,8 +771,8 @@ a.logo:after {
 
 /* bodo */
 .news .bodo .btn_more {
-    right: 0;
-    top: 100px;
+  right: 0;
+  top: 100px;
 }
 .news .bodo .js_slide {
   border-top: 1px solid #c8c8c8;
@@ -796,7 +796,7 @@ a.logo:after {
   z-index: 1;
   box-sizing: content-box;
 }
-.news .bodo .move ul.movelist2{
+.news .bodo .move ul.movelist2 {
   display: none;
 }
 .news .bodo .move ul li {
@@ -839,7 +839,7 @@ a.logo:after {
 .news .bodo .move ul li a:active:after {
   height: 100%;
 }
-.news .bodo .move ul li a:hover:before, 
+.news .bodo .move ul li a:hover:before,
 .news .bodo .move ul li a:active:before {
   opacity: 1;
   transform: rotate(180deg);
@@ -1003,7 +1003,7 @@ a.logo:after {
   font-weight: 300;
 }
 .news .notice .btn_more {
-    right: 3.5%;
+  right: 3.5%;
 }
 
 .news .letter {
@@ -1047,7 +1047,7 @@ a.logo:after {
   box-shadow: -5px 5px 5px #ccc;
 }
 .news .letter .btn_more {
-    right: 7%;
+  right: 7%;
 }
 
 /* job */
@@ -1195,7 +1195,7 @@ a.logo:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease-in-out;
 }
 .news .movie .mar .list:hover a:before {
@@ -1214,8 +1214,8 @@ a.logo:after {
 }
 .news .movie .btn_more,
 .news .cardnews .btn_more {
-    z-index: 10;
-    right: 5.5%;
+  z-index: 10;
+  right: 5.5%;
 }
 /* cardnews */
 .news .cardnews {
@@ -1259,7 +1259,7 @@ a.logo:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease-in-out;
 }
 .news .cardnews .mar .list:hover a:before {
@@ -1707,9 +1707,9 @@ a.logo:after {
   overflow: hidden;
   position: relative;
   height: 100%;
-  width: 100%;
 }
 .business .slider .move ul {
+  width: 100%;
   position: relative;
   left: 0;
   height: 100%;
@@ -1734,6 +1734,13 @@ a.logo:after {
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: auto 100%;
+  transform: scale(0.4);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.business .slider .move ul li .inner a.on {
+  transform: scale(1);
+  opacity: 1;
 }
 .business .slider .move ul li.bn01 .inner a {
   background-image: url(../images/business_slider_bg1.png);
@@ -1866,7 +1873,7 @@ a.logo:after {
   display: block;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .management ul li a span.view {
   display: block;
@@ -1983,6 +1990,114 @@ a.logo:after {
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+
+/* section_nav */
+#section_nav {
+  position: fixed;
+  right: 2%;
+  opacity: 1;
+  top: 50%;
+  margin-top: 150px;
+  z-index: 600;
+  transition: all 0.5s ease;
+}
+#section_nav.on {
+  margin-top: -95px;
+}
+#section_nav:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 164px;
+  background: #aaa;
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  z-index: 10;
+}
+#section_nav li {
+  padding-top: 10px;
+  position: relative;
+  text-align: right;
+}
+#section_nav li:nth-child(1) {
+  padding-top: 0;
+}
+#section_nav li a {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: right;
+  line-height: 30px;
+  position: relative;
+  padding: 0 35px 0 15px;
+  color: #787878;
+  text-decoration: none;
+}
+#section_nav li a span {
+  position: relative;
+  z-index: 15;
+  line-height: 30px;
+  display: inline-block;
+}
+#section_nav li a span:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #919190;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  right: -21px;
+  top: 12px;
+  z-index: 1;
+}
+#section_nav li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 12;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  top: 8px;
+  z-index: 15;
+  opacity: 0;
+  -webkit-opacity: 0;
+}
+#section_nav li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a4594;
+  opacity: 0;
+  -webkit-opacity: 0;
+  box-sizing: border-box;
+}
+#section_nav li a.active {
+  color: #fff;
+}
+#section_nav li a.active span:after {
+  background: #0a4594;
+}
+#section_nav li a.active:before {
+  opacity: 1;
+}
+#section_nav li a.active:after {
+  opacity: 1;
 }
 
 /* footer */
@@ -2141,6 +2256,7 @@ a.logo:after {
   float: left;
   width: 165px;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 #footer .relate_site a {
   display: block;
@@ -2154,6 +2270,7 @@ a.logo:after {
   border: 1px solid #595959;
   line-height: 36px;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 #footer .relate_site a:after {
   content: "";
@@ -2183,6 +2300,7 @@ a.logo:after {
   display: none;
   max-height: 210px;
   overflow: auto;
+  opacity: 0;
 }
 #footer .relate_site ul li {
   display: block;
@@ -2200,6 +2318,7 @@ a.logo:after {
   font-size: 14px;
   line-height: 19px;
   opacity: 0.9;
+  transition: all 0.3s ease-in-out;
 }
 #footer .relate_site ul li a:after {
   display: none;
