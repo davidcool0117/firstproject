@@ -125,7 +125,17 @@ function top_btn (){
 
 //relate_site 드롭 업
 function js_relate() {
-	var obj = $("#footer .site_box .relate_site");
+	var t = $("#footer .site_box .relate_site");
+	t.btn = t.find(">a");
+	t.ul = t.find(">ul");
+	t.ul.li = t.ul.find(">li");
+}
+
+
+
+
+
+function js_relate() {
   
 	obj.each(function () {
 	  var t = $(this);
@@ -133,7 +143,7 @@ function js_relate() {
 	  t.ul = t.find(">ul");
 	  t.ul.li = t.ul.find(">li");
     
-	  t.btn.on("click", function () {  
+	  t.btn.click( function () {  
 		$(this).toggleClass("on").siblings("ul").slideToggle(300);
 		if ($(this).hasClass("on")) {
 		  $(this).find(">em").text("닫기");
