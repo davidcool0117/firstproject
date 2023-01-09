@@ -50,7 +50,7 @@ List the ready features here:
 
 
 ## Screenshots
-![screenshot](./proposal_img/firstproject_full_screenshot.png)
+![screenshot](./proposal_img/firstproject_screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
