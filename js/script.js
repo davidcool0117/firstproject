@@ -130,7 +130,7 @@ function business_M() {
   });
 }
 
-//limk_banner
+//link_banner
 let move_banner = $(".js_slide .move #banner");
 let btnL = $(".js_slide .control .btn_left");
 let btnR = $(".js_slide .control .btn_right");
@@ -190,14 +190,11 @@ function quick_sm() {
     var idx = $(this).parent().index();
 
     $("body,html")
-      .stop()
-      .animate(
+      .stop().animate(
         {
           scrollTop:
             obj.box.eq(idx).offset().top - $("#header").height() + "px",
-        },
-        500
-      );
+        },500);
     return false;
   });
 
