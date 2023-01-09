@@ -259,6 +259,7 @@ function top_btn() {
 }
 
 let id2;
+let current3=0;
 timer2();
 function timer2() {
   id2 = setInterval(function () {
