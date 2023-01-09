@@ -1,5 +1,3 @@
- [Proposal](https://github.com/davidcool0117/firstproject/blob/main/project1_proposal.pdf)
- 
 # project_1
 > 힌국조폐공사 웹
 > 구현화면보기 [_here_](https://davidcool0117.github.io/firstproject/)
