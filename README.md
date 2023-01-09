@@ -1,4 +1,4 @@
- [text](https://github.com/davidcool0117/firstproject/blob/main/project1_proposal.pdf)
+ [project1_proposal](https://github.com/davidcool0117/firstproject/blob/main/project1_proposal.pdf)
  
 # project_1
 > 힌국조폐공사 웹
