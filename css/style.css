@@ -417,7 +417,7 @@ a.logo:after {
 }
 #header_nav .search_map .btns h3 a.allmenu_btn_open {
   background: url(../images/allmenu_ico.png) no-repeat center;
-  width: 31px;
+  width: 50px;
   height: 32px;
   color: transparent;
   display: block;
@@ -445,10 +445,10 @@ a.logo:after {
 }
 #header_nav:hover .search_map .btns h3 a.allmenu_btn_open {
   background: url(../images/allmenu_ico2.png) no-repeat center;
-  width: 31px;
-  height: 32px;
+  width: 50px;
+  height: 22px;
   color: transparent;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 /* scroll add class */
 #header_nav.on #header_top li > a {
