@@ -1787,6 +1787,7 @@ a.logo:after {
   height: 100%;
   float: left;
   display: list-item;
+  position: absolute;
 }
 .business .slider .move ul li .inner {
   height: 100%;
@@ -1804,13 +1805,30 @@ a.logo:after {
   transform: scale(0.4);
   opacity: 0;
   transition: all 1s ease;
+  z-index: 10;
 }
 .business .slider .move ul li .inner a.on {
   transform: scale(1);
   opacity: 1;
+  z-index: 11;
 }
 .business .slider .move ul li.bn01 .inner a {
   background-image: url(../images/business_slider_bg1.png);
+}
+.business .slider .move ul li.bn02 .inner a {
+  background-image: url(../images/business_slider_bg2.png);
+}
+.business .slider .move ul li.bn03 .inner a {
+  background-image: url(../images/business_slider_bg3.png);
+}
+.business .slider .move ul li.bn04 .inner a {
+  background-image: url(../images/business_slider_bg4.png);
+}
+.business .slider .move ul li.bn05 .inner a {
+  background-image: url(../images/business_slider_bg5.png);
+}
+.business .slider .move ul li.bn06 .inner a {
+  background-image: url(../images/business_slider_bg6.png);
 }
 .business .slider .move ul li .inner a:hover .title {
   background: url(../images/business_titlebg_on.png) no-repeat right top;
@@ -1832,9 +1850,16 @@ a.logo:after {
 .business .slider .move ul li .inner .title p {
   color: #e6f03e;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 26px;
   font-family: "Nanum Square";
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.business .slider .move ul li.bn05 .inner .title p {
+  color: #e6f03e;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Nanum Square";
+  margin-bottom: 10px;
 }
 .business .slider .move ul li .inner .title span {
   display: inline-block;
@@ -1963,6 +1988,7 @@ a.logo:after {
   width: 100%;
   height: auto;
   top: 4338px;
+  background-color: #fff;
 }
 .link_banner .layout {
   position: relative;
@@ -2194,9 +2220,9 @@ a.logo:after {
   height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
 #footer .menu_link {
-  height: auto;
   height: 60px;
   box-sizing: border-box;
   padding: 16px 0;
@@ -2251,10 +2277,10 @@ a.logo:after {
   font-weight: 700;
 }
 #footer .site_box {
-  width: 800px;
+  width: 620px;
   position: absolute;
   z-index: 10;
-  right: 100px;
+  right: 0;
 }
 #footer .site_box:after {
   content: "";
@@ -2324,7 +2350,6 @@ a.logo:after {
   float: left;
   width: 165px;
   position: relative;
-  transition: all 0.3s ease-in-out;
 }
 #footer .relate_site a {
   display: block;
@@ -2385,7 +2410,6 @@ a.logo:after {
   font-size: 14px;
   line-height: 19px;
   opacity: 0.9;
-  transition: all 0.3s ease-in-out;
 }
 #footer .relate_site ul li a:after {
   display: none;
