@@ -168,11 +168,11 @@ function js_relate() {
   t.ul.li = t.ul.find(">li");
 
   t.btn.click(function () {
-    $(this).toggleClass("on").siblings("ul").slideToggle(300);
+    $(this).toggleClass("on").siblings("ul").css("display");;
     if ($(this).hasClass("on")) {
-      t.ul.css("display", "block");
+      t.ul.slideDown();
     } else {
-      t.ul.css("display", "none");
+      t.ul.slideUp();
     }
     return false;
   });
