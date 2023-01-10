@@ -1,30 +1,5 @@
 @charset "UTF-8";  
-@media screen and (max-width: 1470px) {
-  #wrap {
-    max-width: 1470px;
-    width: 100%;
-  }
-  .search {
-    visibility: hidden;
-  }
-  .search_map .search #search_btn {
-    visibility: visible;
-  }
-  #wrap #header_nav #nav li a {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  #header_nav #nav #gnb {
-    width: 850px;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #wrap {
-    max-width: 1024px;
-    width: 100%;
-  }
-}
+
 /* 폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
@@ -2467,4 +2442,147 @@ a.logo:after {
   bottom: 30px;
   z-index: 101;
   border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1470px) {
+  #wrap {
+    max-width: 1470px;
+    width: 100%;
+  }
+  .search {
+    visibility: hidden;
+  }
+  .search_map .search #search_btn {
+    visibility: visible;
+  }
+  #wrap #header_nav #nav li a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #header_nav #nav #gnb {
+    width: 850px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #wrap {
+    max-width: 1024px;
+    width: 100%;
+  }
+  #header_nav{
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+  }
+  #nav{
+    display: none;
+  }
+  #header_top{
+    display: none; 
+  }
+  #header_nav a.logo {
+    background: url(../images/logo2.png) no-repeat center;
+    top: 50%;
+    margin-top: -19px;
+    left: 3%;
+  }  
+  #header_nav .search_map form #search_tx{
+    display: none;
+  }
+  #header_nav .search_map{
+    top: 30%;
+  }
+  #header_nav .search_map .search #search_btn {
+    background: url(../images/search_ico_on.png) no-repeat center;
+    width: 32px;
+    height: 36px;  
+  }
+  #header_nav .search_map .btns h3 a.allmenu_btn_open {
+    background: url(../images/allmenu_ico2.png) no-repeat center;
+    width: 31px;
+    height: 39px;  
+  }
+  #quick{
+    display: none;
+  }
+  #section_nav{
+    display: none;
+  }
+  .visual .visual_slide .slogan {
+    top: 27%;
+    left: 3%;
+  }
+  .visual #buttonList1 {
+    top: 74%;
+    left: 3%;
+  }
+  .visual .controls .btn_stop{
+    left: 21%;
+    top: 73%;
+  }
+  .visual .controls .btn_play{
+    left: 21%;
+    top: 73%;
+  }
+  .section.visual {
+    padding: 0 0;
+  }
+  .section {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .news .notice{
+    display: block;
+    width: 960px;
+  }
+  .news .bodo .move ul li a{
+    width: 290px;
+  }
+  .news .bodo #buttonList2{
+    left:44%
+  }
+  .service .layout .link {
+    width: 72%;
+  }
+  .business .slider{
+    width: 95%;
+  }
+  .business .slider .move{
+    height: 80%;
+  }
+  .business .slider .move ul{
+    top: 40px;
+  }
+  .business .slider .move ul li .inner a .title {
+    width: 162px;
+    height: 140px;
+    padding: 37px 25px;
+    margin-top: -70px;
+    margin-left: 70px;
+  }
+  .business .slider .move ul li .inner a .title p {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .business .slider .control{
+    width: 60px;
+    height: 52px;
+  }
+  .business .slider .control.prev{
+    left:70%
+  }
+  .business .slider .control.next{
+    right:70%
+  }
+
+  .management .layout{
+    padding-left: 0;
+  }
+  .management .layout .summery {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
 }
