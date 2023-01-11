@@ -188,13 +188,7 @@ function quick_sm() {
   //click
   obj.tab.click(function () {
     var idx = $(this).parent().index();
-
-    $("body,html")
-      .stop().animate(
-        {
-          scrollTop:
-            obj.box.eq(idx).offset().top - $("#header").height() + "px",
-        },500);
+    $("body,html").stop().animate({scrollTop:obj.box.eq(idx).offset().top - $("#header").height() + "px",},500);
     return false;
   });
 

@@ -1487,9 +1487,13 @@ a.logo:after {
   margin-top: 20px;
 }
 .service .layout .suggest ul li {
+  border-top: 1px dotted #688cbd;
   color: #dee2ec;
   padding: 13px 0;
   font-size: 15px;
+}
+.service .layout .suggest ul li:first-child {
+  border: 0;
 }
 .service .layout .suggest a:after {
   content: "";
@@ -2466,6 +2470,13 @@ a.logo:after {
   }
 }
 @media screen and (max-width: 1024px) {
+  #layer {
+    width: 300px;
+    height: 250px;
+    font-size: 1em;
+    top: 20px;
+    left: 50px;
+  }
   #wrap {
     max-width: 1024px;
     width: 100%;
@@ -2509,21 +2520,36 @@ a.logo:after {
   #section_nav{
     display: none;
   }
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .visual{
+    height: 760px;
+  }
+  .visual .scroll{
+    margin: 0 0 60px -13px;  
+  }
+  .visual .visual_slide{
+    height: 760px;
+  }
   .visual .visual_slide .slogan {
     top: 27%;
     left: 3%;
   }
   .visual #buttonList1 {
-    top: 74%;
+    top: 81%;
     left: 3%;
   }
   .visual .controls .btn_stop{
     left: 21%;
-    top: 73%;
+    top: 80%;
   }
   .visual .controls .btn_play{
     left: 21%;
-    top: 73%;
+    top: 80%;
   }
   .section.visual {
     padding: 0 0;
@@ -2532,21 +2558,107 @@ a.logo:after {
     padding-left: 3%;
     padding-right: 3%;
   }
+  .news{
+    top: 740px;
+    width: 94%;
+  }
+  .news:after{
+    display: none;
+  }
+  .news .layout{
+    padding: 0;
+  }
   .news .notice{
     display: block;
     width: 960px;
   }
+  .news .notice .mar{
+    margin-top: 50px;
+    height: 260px;
+  }
+  .news .notice .mar ul li{
+    margin-top: 10px;
+  }
+
   .news .bodo .move ul li a{
     width: 290px;
   }
+  .news .bodo .btn_more{
+    top: 50px;
+  }
   .news .bodo #buttonList2{
-    left:44%
+    left:47%;
+    bottom: -5%;
+  }
+  .news .job {
+    width: 65%;
+    padding: 0 10px 20px 0;
+  }
+  .news .job .mar{
+    height: 220px;
+    margin-top: 0;
+  }
+  .news .job .list p.infor{
+    margin-top: 0;
+  }
+  .news .job .list p.infor span{
+    float: left;
+    margin-right: 20px;
+  }
+  .news .letter {
+    width: 35%;
+    float: right;
+    position: relative;
+    right: -12px;
+  }
+  .news .letter .list {
+    width: 100px;
+    padding: 10px 0;
+  }
+  .news .letter .mar{
+    height: 220px;
+    margin-top: 0;
+  }
+  .news .movie{
+    width: 33.333%;
+  }
+  .news .cardnews{
+    width: 33.333%;
+  }
+  .news .popupzone{
+    width: 33.333%;
+  }
+  .news .popupzone .mar .slide a img{
+    left: -175px;
+  }
+  .service{
+    top: 2200px;
+  }
+  .service .layout {
+    padding: 0;
   }
   .service .layout .link {
     width: 72%;
   }
+  .service .layout .suggest h4 {
+    background-size: 40px;
+  }
+  .service .layout .suggest h4 strong {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .service .layout .suggest h4 span{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 30px 0px 0px;
+  }
+  .business{
+    top: 2840px;
+    padding-bottom: 0;
+  }
   .business .slider{
     width: 95%;
+    height: 400px;
   }
   .business .slider .move{
     height: 80%;
@@ -2575,7 +2687,10 @@ a.logo:after {
   .business .slider .control.next{
     right:70%
   }
-
+  .management {
+    width: 95%;
+    top: 3350px;
+  }
   .management .layout{
     padding-left: 0;
   }
@@ -2584,5 +2699,83 @@ a.logo:after {
     left: auto;
     top: auto;
     width: auto;
+  }
+  .management .layout ul {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .management .layout ul li {
+    width: auto;
+    margin-left: 10px;
+  }
+  .management .layout ul li a:hover p strong{
+    color: #fff;
+    background:#0a4594;
+  }
+  .management .layout ul li:first-child {
+    margin-left: 0;
+  }
+  .management .layout ul li a p strong {
+    margin-bottom: 0;
+    border: 1px solid #dedede;
+    background: rgba(255,255,255,0.7);
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 12px 50px;
+    transition: all 0.2cs ease-in-out;
+  }
+  .management .layout ul li:after {
+    display: none;
+  }
+  .management .layout ul li a span.view {
+    display: none;
+  }
+  .management .layout ul li a p span {
+    display: none;
+  }
+
+  .link_banner{
+    top: 3710px;
+    width: 96%;
+    padding: 20px 20px;
+  }
+  .link_banner .js_slide {
+    padding: 0 0 0 100px;
+    height: 47px;
+  }
+  .link_banner .js_slide .control{
+    margin-top: -22px;  
+  }
+  .js_slide .move ul li{
+    width: 230px;
+  }
+
+  #footer{
+    top: 3795px;
+  }
+  #footer .layout{
+    background: none;
+    max-width:1024px;
+    padding: 0 20px;
+  }  
+  #footer .site_box{
+    width: 600px;
+    right: 0;
+  }
+  #footer .relate_site{
+    width: 120px;
+  }
+  #footer .relate_site a{
+    font-size: 13px;
+  }
+  #footer address, 
+  #footer .copy{
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .link_banner .js_slide .control a[class*="btn_"]{
+    width: 42px;
+    height: 42px;
   }
 }
