@@ -2511,8 +2511,11 @@ a.logo:after {
   }
   #header_nav .search_map .btns h3 a.allmenu_btn_open {
     background: url(../images/allmenu_ico2.png) no-repeat center;
-    width: 31px;
+    width: 50px;
     height: 39px;  
+  }
+  #header_nav:hover .search_map .btns h3 a.allmenu_btn_open {
+    height: 30px;  
   }
   #quick{
     display: none;
@@ -2777,5 +2780,146 @@ a.logo:after {
   .link_banner .js_slide .control a[class*="btn_"]{
     width: 42px;
     height: 42px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #layer {
+    width: 300px;
+    height: 250px;
+    font-size: 1em;
+    top: 20px;
+    left: 50px;
+  }
+  #wrap {
+    max-width: 640px;
+    width: 100%;
+  }
+  #header {
+    height: 70px;
+  }
+  #header #header_nav{
+    height: 65px;
+  }
+  .visual{
+    height: 540px;
+  }
+  .visual .scroll {
+    margin: 0 0 -15px -13px;
+  }
+  .visual .visual_slide{
+    height: 540px;
+  }
+  .visual .visual_slide .slogan {
+    top: 23%;
+    left: 3%;
+  }
+  .visual .visual_slide .slogan .subject_eng {
+    font-size: 13px;
+  }
+  .visual .visual_slide .slogan .slogan_subject {
+    font-size: 30px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .visual .visual_slide .visual_1 .slogan .slogan_subject{
+    font-size: 50px;
+    line-height: 20px;
+  }
+  .visual .visual_slide .visual_2 .slogan .slogan_subject{
+    font-size: 50px;
+    line-height: 20px;
+  }
+  .visual .visual_slide .visual_3 .slogan .slogan_subject{
+    font-size: 50px;
+    line-height: 20px;
+  }
+  .visual .visual_slide .slogan p.txt1{
+    font-size: 17px;
+  }
+  .visual .visual_slide .slogan p.txt2{
+    font-size: 14px;
+  }
+  .visual .visual_slide .slogan a{
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+  .visual #buttonList1 {
+    top: 88%;
+    left: 3%;
+  }
+  .visual #buttonList1 li{
+    width: 30px;
+  }
+  .visual .controls .btn_stop{
+    left: 29%;
+    top: 86%;
+  }
+  .visual .controls .btn_play{
+    left: 29%;
+    top: 86%;
+  }
+
+  .news {
+    top: 520px;
+  }
+  .news .layout h3.title{
+    margin: 0 0 40px 0;
+  }
+  .news .layout h4{
+    font-size: 15px;
+  }
+  .news .bodo .move ul li a {
+    width: 265px;
+  }
+  .news .job{
+    width: 50%;
+  }
+  .news .job .mar a:after{
+    display: none;
+  }
+  .news .job .list p.title{
+    font-size: 15px;
+    height: 50px;
+  }
+  .news .notice{
+    width: 100%;
+  }
+  .news .letter{
+    width: 50%;
+    right: 0;
+  }
+  .news .movie {
+    width: 50%;
+    padding: 0 10px 10px 0;
+  }
+  .news .cardnews {
+    width: 50%;
+    padding: 0 10px 10px 10px;
+  }
+  .news .popupzone {
+    padding: 0 10px 0 0;
+    width: 100%;
+  }
+  .news .popupzone .mar{
+    height: 230px;
+  }
+  .news .popupzone .mar .slide a img{
+    left: 3%;
+  }
+  .business .slider .control.prev{
+    left: 0;
+    margin-left: 0;
+  }
+  .business .slider .control.next{
+    right: 0;
+    margin-right: 0;
+  }
+  .business .slider .move ul li .inner{
+    width: 430px;
+  }
+  .business .slider .move ul li .inner a {
+    background-size: auto 90%;
   }
 }
