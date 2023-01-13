@@ -1478,7 +1478,7 @@ a.logo:after {
 }
 .service .layout .suggest h4 span {
   display: block;
-  margin: 12px 50px 0 0;
+  margin: 12px 52px 0 0;
   color: #a5b2ce;
   font-size: 15px;
   line-height: 21px;
@@ -2726,7 +2726,7 @@ a.logo:after {
     line-height: 24px;
     font-weight: bold;
     padding: 12px 50px;
-    transition: all 0.2cs ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .management .layout ul li:after {
     display: none;
@@ -2908,6 +2908,85 @@ a.logo:after {
   .news .popupzone .mar .slide a img{
     left: 3%;
   }
+
+  .service {
+    top: 2150px;
+  }
+  .service .layout .suggest {
+    width: 94%;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  .service .layout .suggest a{
+    padding: 20px 5% 10px 5%;
+    height: 100%;
+  }
+  .service .layout .suggest a:after{
+    top: 18%;
+    left: 24%;
+    bottom: 0;
+  }
+  .service .layout  .suggest h4 {
+    padding-right: 50px;
+    background-position: right top;
+    background-size: auto 52px;
+  }
+  .service .layout .suggest ul {
+    height: 100%;
+    border: 0;
+    margin-top: 0;
+  }
+  .service .layout .suggest ul li{
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    padding: 10px 0;
+  }
+  .service .layout .suggest ul li:nth-child(2){
+    border-top: none;
+  }
+  .service .layout .link {
+    width: 94%;
+    padding-left: 0;
+  }
+  .service .layout .link ul li{
+    height: 108px;
+  }
+  .service .layout .link ul li a{
+    padding: 10px 5%;
+  }
+  .service .layout .link ul li a:before{
+    background-size: 30px;
+    margin-bottom: 0;
+    height: 45px;
+  }
+  .service .layout .link ul li a p strong{
+    line-height: 100px;
+  }
+  .service .layout .link ul li a p span{
+    font-size: 14px;
+  }
+  .service .layout .link ul li.ty2{
+    height: 120px;
+  }
+  .service .layout .link ul li.ty2 a:before{
+    right: 35%;
+    top: 10px;
+    bottom: none;
+    background-size: 45px;
+  }
+  .service .layout .link ul li.ty2 a:after{
+    display: none;
+  }
+  .service .layout .link ul li.ty2 a p{
+    text-align: center;
+  }
+  .service .layout .link ul li.ty2 a p span{
+    display: none;
+  }
+  .business {
+    top: 2820px;
+  }
   .business .slider .control.prev{
     left: 0;
     margin-left: 0;
@@ -2921,5 +3000,14 @@ a.logo:after {
   }
   .business .slider .move ul li .inner a {
     background-size: auto 90%;
+  }
+  .management {
+    top: 3330px;
+  }
+  .link_banner {
+    top: 3690px;
+  }
+  #footer{
+    top: 3845px;
   }
 }
