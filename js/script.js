@@ -270,3 +270,7 @@ function slide2() {
     current3 = 0;
   }
 }
+
+//allmenu_btn_modal
+
+let allmenu_btn_modal = $('#header_nav .search_map .btns h3 a.allmenu_btn_open')
