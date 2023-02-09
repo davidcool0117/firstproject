@@ -252,6 +252,37 @@ function top_btn() {
   });
 }
 
+var url = "https://api.odcloud.kr/api/15005962/v1/uddi:6619074c-2ac9-465c-b02e-fe53123644dc?page=1&perPage=10&serviceKey=3NVhpSRT0O0siIH2KcrZSpgHjLx5mrRimZu1GnMr6XORd6Oy%2B7AtFpfp3OOYpjtq5WRWfhSrnKNmvhy9ZdnVjQ%3D%3D";
+
+
+//채용정보 api 당겨오기
+// getPosts();
+// async function getPosts(){
+//     const res = await fetch(`${url}`);
+//     const data = await res.json();
+//     return data;
+// }
+
+// setPosts();
+// async function setPosts(){
+//     const posts = await getPosts();
+//     const datas = posts.data;
+//     console.log(datas);
+//     datas.forEach(data => {
+//         const postEl=document.createElement("div");
+//         postEl.classList.add("post");
+//         postEl.innerHTML=`
+//         <h2 class="post-title">공고명: ${data.공고명}</h2>
+//         <div class="number">공고마감일: ${data.공고마감일}</div>
+//         <div class="number">근무지: ${data.근무지}</div>
+//         `;
+//         document.body.appendChild(postEl);
+//       });
+//     }
+
+
+
+
 let id2;
 let current3=0;
 timer2();
@@ -274,3 +305,4 @@ function slide2() {
 //allmenu_btn_modal
 
 let allmenu_btn_modal = $('#header_nav .search_map .btns h3 a.allmenu_btn_open')
+
