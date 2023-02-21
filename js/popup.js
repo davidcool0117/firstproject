@@ -1,0 +1,3 @@
+$( function() {
+    $( "#layer" ).draggable();
+  } );

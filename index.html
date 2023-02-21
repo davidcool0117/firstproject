@@ -43,6 +43,7 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   </head>
   <body>
     <a href="#header" class="skip_menu">상단메뉴 바로가기</a>
@@ -466,6 +467,11 @@
             <!--//.top_menu-->
           </div>
           <!--//#header_top-->
+          <div class="section weather">
+            <ul>
+              <li class="fl"><div id="castBox"></div></li>
+            </ul><br>
+          </div>
           <div class="search_map cf">
             <div class="search fl">
               <form>
@@ -1008,9 +1014,13 @@
         </div>
       </div>
       <!--//footer-->
-      <a href="#top" class="btn_top" style="display: inline;">TOP</a>
+      <a href="#top" class="btn_top">TOP</a>
     </div>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

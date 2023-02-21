@@ -314,6 +314,10 @@ a.logo:after {
   text-decoration: underline;
   color: #222;
 }
+#header_nav:hover .weather table {
+  color: #000;
+}
+
 
 /* gnb scroll add class on */
 #header_nav.on {
@@ -329,6 +333,10 @@ a.logo:after {
 #header_nav #nav #gnb li.on .width100 {
   height: 430px;
 }
+#header_nav.on .weather table {
+  color: #000;
+}
+
 #nav.on .gnb_txt.on {
   color: #195bb1;
   border-bottom: 2px solid #195bb1;
@@ -357,6 +365,9 @@ a.logo:after {
   position: absolute;
   top: 17px;
   right: 2%;
+}
+#header_top .top_menu #castBox .table tr td{
+  padding: 0 10px;
 }
 #header_nav .search_map {
   position: absolute;
@@ -433,9 +444,8 @@ a.logo:after {
 #header_nav:hover .search_map .btns h3 a.allmenu_btn_open {
   background: url(../images/allmenu_ico2.png) no-repeat center;
   width: 50px;
-  height: 22px;
+  height: 32px;
   color: transparent;
-  padding-bottom: 10px;
 }
 /* scroll add class */
 #header_nav.on #header_top li > a {
@@ -460,10 +470,9 @@ a.logo:after {
 }
 #header_nav.on .search_map .btns h3 a.allmenu_btn_open {
   background: url(../images/allmenu_ico2.png) no-repeat center;
-  width: 31px;
+  width: 50px;
   height: 32px;
   color: transparent;
-  padding-bottom: 7px;
 }
 #blind {
   display: none;
@@ -729,6 +738,20 @@ a.logo:after {
 #quick ul li a:hover {
   text-decoration: underline;
 }
+/* weather */
+.weather{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 72%;
+  top: 57px;
+  z-index: 10;
+  color: white;
+}
+.weather table{
+  color: #acacac;
+}
+
 
 /* news */
 .news {
@@ -2438,576 +2461,17 @@ a.logo:after {
 .btn_top {
   width: 58px;
   height: 58px;
+  display: inline;
   overflow: hidden;
   text-indent: -9999px;
-  background: #000 url(../images/top_btn_arrow.png) no-repeat center 50%;
+  background: rgba(0, 0, 0, 0.7) url(../images/top_btn_arrow.png) no-repeat center 50%;
   position: fixed;
   right: 2%;
   bottom: 30px;
   z-index: 101;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
-
-
-@media screen and (max-width: 1470px) {
-  #wrap {
-    max-width: 1470px;
-    width: 100%;
-  }
-  .search {
-    visibility: hidden;
-  }
-  .search_map .search #search_btn {
-    visibility: visible;
-  }
-  #wrap #header_nav #nav li a {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  #header_nav #nav #gnb {
-    width: 850px;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #layer {
-    width: 300px;
-    height: 250px;
-    font-size: 1em;
-    top: 20px;
-    left: 50px;
-  }
-  #wrap {
-    max-width: 1024px;
-    width: 100%;
-  }
-  #header_nav{
-    background-color: #fff;
-    width: 100%;
-    height: 80px;
-  }
-  #nav{
-    display: none;
-  }
-  #header_top{
-    display: none; 
-  }
-  #header_nav a.logo {
-    background: url(../images/logo2.png) no-repeat center;
-    top: 50%;
-    margin-top: -19px;
-    left: 3%;
-  }  
-  #header_nav .search_map form #search_tx{
-    display: none;
-  }
-  #header_nav .search_map{
-    top: 30%;
-  }
-  #header_nav .search_map .search #search_btn {
-    background: url(../images/search_ico_on.png) no-repeat center;
-    width: 32px;
-    height: 36px;  
-  }
-  #header_nav .search_map .btns h3 a.allmenu_btn_open {
-    background: url(../images/allmenu_ico2.png) no-repeat center;
-    width: 50px;
-    height: 39px;  
-  }
-  #header_nav:hover .search_map .btns h3 a.allmenu_btn_open {
-    height: 30px;  
-  }
-  #quick{
-    display: none;
-  }
-  #section_nav{
-    display: none;
-  }
-  .section {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .visual{
-    height: 760px;
-  }
-  .visual .scroll{
-    margin: 0 0 60px -13px;  
-  }
-  .visual .visual_slide{
-    height: 760px;
-  }
-  .visual .visual_slide .slogan {
-    top: 27%;
-    left: 3%;
-  }
-  .visual #buttonList1 {
-    top: 81%;
-    left: 3%;
-  }
-  .visual .controls .btn_stop{
-    left: 21%;
-    top: 80%;
-  }
-  .visual .controls .btn_play{
-    left: 21%;
-    top: 80%;
-  }
-  .section.visual {
-    padding: 0 0;
-  }
-  .section {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .news{
-    top: 740px;
-    width: 94%;
-  }
-  .news:after{
-    display: none;
-  }
-  .news .layout{
-    padding: 0;
-  }
-  .news .notice{
-    display: block;
-    width: 960px;
-  }
-  .news .notice .mar{
-    margin-top: 50px;
-    height: 260px;
-  }
-  .news .notice .mar ul li{
-    margin-top: 10px;
-  }
-
-  .news .bodo .move ul li a{
-    width: 290px;
-  }
-  .news .bodo .btn_more{
-    top: 50px;
-  }
-  .news .bodo #buttonList2{
-    left:47%;
-    bottom: -5%;
-  }
-  .news .job {
-    width: 65%;
-    padding: 0 10px 20px 0;
-  }
-  .news .job .mar{
-    height: 220px;
-    margin-top: 0;
-  }
-  .news .job .list p.infor{
-    margin-top: 0;
-  }
-  .news .job .list p.infor span{
-    float: left;
-    margin-right: 20px;
-  }
-  .news .letter {
-    width: 35%;
-    float: right;
-    position: relative;
-    right: -12px;
-  }
-  .news .letter .list {
-    width: 100px;
-    padding: 10px 0;
-  }
-  .news .letter .mar{
-    height: 220px;
-    margin-top: 0;
-  }
-  .news .movie{
-    width: 33.333%;
-  }
-  .news .cardnews{
-    width: 33.333%;
-  }
-  .news .popupzone{
-    width: 33.333%;
-  }
-  .news .popupzone .mar .slide a img{
-    left: -175px;
-  }
-  .service{
-    top: 2200px;
-  }
-  .service .layout {
-    padding: 0;
-  }
-  .service .layout .link {
-    width: 72%;
-  }
-  .service .layout .suggest h4 {
-    background-size: 40px;
-  }
-  .service .layout .suggest h4 strong {
-    font-size: 17px;
-    font-weight: bold;
-  }
-  .service .layout .suggest h4 span{
-    font-size: 13px;
-    font-weight: bold;
-    margin: 10px 30px 0px 0px;
-  }
-  .business{
-    top: 2840px;
-    padding-bottom: 0;
-  }
-  .business .slider{
-    width: 95%;
-    height: 400px;
-  }
-  .business .slider .move{
-    height: 80%;
-  }
-  .business .slider .move ul{
-    top: 40px;
-  }
-  .business .slider .move ul li .inner a .title {
-    width: 162px;
-    height: 140px;
-    padding: 37px 25px;
-    margin-top: -70px;
-    margin-left: 70px;
-  }
-  .business .slider .move ul li .inner a .title p {
-    font-size: 19px;
-    line-height: 24px;
-  }
-  .business .slider .control{
-    width: 60px;
-    height: 52px;
-  }
-  .business .slider .control.prev{
-    left:70%
-  }
-  .business .slider .control.next{
-    right:70%
-  }
-  .management {
-    width: 95%;
-    top: 3350px;
-  }
-  .management .layout{
-    padding-left: 0;
-  }
-  .management .layout .summery {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: auto;
-  }
-  .management .layout ul {
-    padding-left: 0;
-    margin-top: 20px;
-  }
-  .management .layout ul li {
-    width: auto;
-    margin-left: 10px;
-  }
-  .management .layout ul li a:hover p strong{
-    color: #fff;
-    background:#0a4594;
-  }
-  .management .layout ul li:first-child {
-    margin-left: 0;
-  }
-  .management .layout ul li a p strong {
-    margin-bottom: 0;
-    border: 1px solid #dedede;
-    background: rgba(255,255,255,0.7);
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    padding: 12px 50px;
-    transition: all 0.2s ease-in-out;
-  }
-  .management .layout ul li:after {
-    display: none;
-  }
-  .management .layout ul li a span.view {
-    display: none;
-  }
-  .management .layout ul li a p span {
-    display: none;
-  }
-
-  .link_banner{
-    top: 3710px;
-    width: 96%;
-    padding: 20px 20px;
-  }
-  .link_banner .js_slide {
-    padding: 0 0 0 100px;
-    height: 47px;
-  }
-  .link_banner .js_slide .control{
-    margin-top: -22px;  
-  }
-  .js_slide .move ul li{
-    width: 230px;
-  }
-
-  #footer{
-    top: 3795px;
-  }
-  #footer .layout{
-    background: none;
-    max-width:1024px;
-    padding: 0 20px;
-  }  
-  #footer .site_box{
-    width: 600px;
-    right: 0;
-  }
-  #footer .relate_site{
-    width: 120px;
-  }
-  #footer .relate_site a{
-    font-size: 13px;
-  }
-  #footer address, 
-  #footer .copy{
-    margin-left: 5px;
-    font-size: 13px;
-  }
-  .link_banner .js_slide .control a[class*="btn_"]{
-    width: 42px;
-    height: 42px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  #layer {
-    width: 300px;
-    height: 250px;
-    font-size: 1em;
-    top: 20px;
-    left: 50px;
-  }
-  #wrap {
-    max-width: 640px;
-    width: 100%;
-  }
-  #header {
-    height: 70px;
-  }
-  #header #header_nav{
-    height: 65px;
-  }
-  .visual{
-    height: 540px;
-  }
-  .visual .scroll {
-    margin: 0 0 -15px -13px;
-  }
-  .visual .visual_slide{
-    height: 540px;
-  }
-  .visual .visual_slide .slogan {
-    top: 23%;
-    left: 3%;
-  }
-  .visual .visual_slide .slogan .subject_eng {
-    font-size: 13px;
-  }
-  .visual .visual_slide .slogan .slogan_subject {
-    font-size: 30px;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 600;
-    line-height: 40px;
-  }
-  .visual .visual_slide .visual_1 .slogan .slogan_subject{
-    font-size: 50px;
-    line-height: 20px;
-  }
-  .visual .visual_slide .visual_2 .slogan .slogan_subject{
-    font-size: 50px;
-    line-height: 20px;
-  }
-  .visual .visual_slide .visual_3 .slogan .slogan_subject{
-    font-size: 50px;
-    line-height: 20px;
-  }
-  .visual .visual_slide .slogan p.txt1{
-    font-size: 17px;
-  }
-  .visual .visual_slide .slogan p.txt2{
-    font-size: 14px;
-  }
-  .visual .visual_slide .slogan a{
-    font-size: 13px;
-    padding: 8px 20px;
-  }
-  .visual #buttonList1 {
-    top: 88%;
-    left: 3%;
-  }
-  .visual #buttonList1 li{
-    width: 30px;
-  }
-  .visual .controls .btn_stop{
-    left: 29%;
-    top: 86%;
-  }
-  .visual .controls .btn_play{
-    left: 29%;
-    top: 86%;
-  }
-
-  .news {
-    top: 520px;
-  }
-  .news .layout h3.title{
-    margin: 0 0 40px 0;
-  }
-  .news .layout h4{
-    font-size: 15px;
-  }
-  .news .bodo .move ul li a {
-    width: 265px;
-  }
-  .news .job{
-    width: 50%;
-  }
-  .news .job .mar a:after{
-    display: none;
-  }
-  .news .job .list p.title{
-    font-size: 15px;
-    height: 50px;
-  }
-  .news .notice{
-    width: 100%;
-  }
-  .news .letter{
-    width: 50%;
-    right: 0;
-  }
-  .news .movie {
-    width: 50%;
-    padding: 0 10px 10px 0;
-  }
-  .news .cardnews {
-    width: 50%;
-    padding: 0 10px 10px 10px;
-  }
-  .news .popupzone {
-    padding: 0 10px 0 0;
-    width: 100%;
-  }
-  .news .popupzone .mar{
-    height: 230px;
-  }
-  .news .popupzone .mar .slide a img{
-    left: 3%;
-  }
-
-  .service {
-    top: 2150px;
-  }
-  .service .layout .suggest {
-    width: 94%;
-    margin-bottom: 15px;
-    height: auto;
-  }
-  .service .layout .suggest a{
-    padding: 20px 5% 10px 5%;
-    height: 100%;
-  }
-  .service .layout .suggest a:after{
-    top: 18%;
-    left: 24%;
-    bottom: 0;
-  }
-  .service .layout  .suggest h4 {
-    padding-right: 50px;
-    background-position: right top;
-    background-size: auto 52px;
-  }
-  .service .layout .suggest ul {
-    height: 100%;
-    border: 0;
-    margin-top: 0;
-  }
-  .service .layout .suggest ul li{
-    width: 50%;
-    font-size: 14px;
-    float: left;
-    padding: 10px 0;
-  }
-  .service .layout .suggest ul li:nth-child(2){
-    border-top: none;
-  }
-  .service .layout .link {
-    width: 94%;
-    padding-left: 0;
-  }
-  .service .layout .link ul li{
-    height: 108px;
-  }
-  .service .layout .link ul li a{
-    padding: 10px 5%;
-  }
-  .service .layout .link ul li a:before{
-    background-size: 30px;
-    margin-bottom: 0;
-    height: 45px;
-  }
-  .service .layout .link ul li a p strong{
-    line-height: 100px;
-  }
-  .service .layout .link ul li a p span{
-    font-size: 14px;
-  }
-  .service .layout .link ul li.ty2{
-    height: 120px;
-  }
-  .service .layout .link ul li.ty2 a:before{
-    right: 35%;
-    top: 10px;
-    bottom: none;
-    background-size: 45px;
-  }
-  .service .layout .link ul li.ty2 a:after{
-    display: none;
-  }
-  .service .layout .link ul li.ty2 a p{
-    text-align: center;
-  }
-  .service .layout .link ul li.ty2 a p span{
-    display: none;
-  }
-  .business {
-    top: 2820px;
-  }
-  .business .slider .control.prev{
-    left: 0;
-    margin-left: 0;
-  }
-  .business .slider .control.next{
-    right: 0;
-    margin-right: 0;
-  }
-  .business .slider .move ul li .inner{
-    width: 430px;
-  }
-  .business .slider .move ul li .inner a {
-    background-size: auto 90%;
-  }
-  .management {
-    top: 3330px;
-  }
-  .link_banner {
-    top: 3690px;
-  }
-  #footer{
-    top: 3845px;
-  }
+.btn_top:hover {
+  background: rgba(0, 0, 0, 1) url(../images/top_btn_arrow.png) no-repeat center 50%;
 }
