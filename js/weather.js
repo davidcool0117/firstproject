@@ -8,7 +8,7 @@ rainIcon=[
     '<i class="bi bi-cloud-snow-fill"></i>',
     '<i class="bi bi-cloud-lightning-rain-fill"></i>'
 ];
-let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/"; /*URL*/
+let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/"; /*URL*/
 let params = {
     type:['getUltraSrtNcst','getVilageFcst'],//(초단기실황)(단기예보)
     key:"3NVhpSRT0O0siIH2KcrZSpgHjLx5mrRimZu1GnMr6XORd6Oy%2B7AtFpfp3OOYpjtq5WRWfhSrnKNmvhy9ZdnVjQ%3D%3D",
