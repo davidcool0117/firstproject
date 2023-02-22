@@ -27,6 +27,7 @@ url = `${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&
 async function getPosts(){
     const res = await fetch(url);
     const data = await res.json();
+    console.log(res);
     return data;
 }
 

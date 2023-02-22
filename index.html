@@ -1,1026 +1,2312 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JC79PQHEPQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JC79PQHEPQ');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="davidcool0117">
-    <meta name="description" content="한국조폐공사 웹">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="한국조폐공사">
-    <meta property="og:description" content="한국조폐공사 웹">
-    <meta property="og:image" content="https://davidcool0117.github.io/firstproject/favicon/android-icon-192x192.png">
-    <meta property="og:url" content="https://davidcool0117.github.io/firstproject/">
-    <title>한국조폐공사</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  </head>
-  <body>
-    <a href="#header" class="skip_menu">상단메뉴 바로가기</a>
-    <a href="#brandVisual" class="skip_menu">본문1 바로가기</a>
-    <a href="#brandNews" class="skip_menu">본문2 바로가기</a>
-    <a href="#brandService" class="skip_menu">본문3 바로가기</a>
-    <a href="#brandBusiness" class="skip_menu">본문4 바로가기</a>
-    <a href="#brandManagement" class="skip_menu">본문5 바로가기</a>
-    <a href="#footer" class="skip_menu">하단메뉴 바로가기</a>
-    <div id="layer">
-      <p>이 사이트는 학습용으로 제작하였으며 한국조폐공사와 무관합니다.
-        구직용 포트폴리오로 <span>상업적 목적이 없음</span>을 알립니다.
-        </p>
-        <button>닫기</button>
-    </div>
-    <div id="wrap">
-      <div id="header">
-        <div id="header_nav">
-          <a class="logo" href="index.html"></a>
-          <div id="nav">
-            <ul id="gnb" class="cf">
-              <li class="fl">
-                <a class="gnb_txt" href="#">기관소개</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>기관소개</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">일반현황</a></h3>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JC79PQHEPQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JC79PQHEPQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="davidcool0117">
+  <meta name="description" content="한국조폐공사 웹">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="한국조폐공사">
+  <meta property="og:description" content="한국조폐공사 웹">
+  <meta property="og:image" content="https://davidcool0117.github.io/firstproject/favicon/android-icon-192x192.png">
+  <meta property="og:url" content="https://davidcool0117.github.io/firstproject/">
+  <title>한국조폐공사</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <a href="#header" class="skip_menu">상단메뉴 바로가기</a>
+  <a href="#brandVisual" class="skip_menu">본문1 바로가기</a>
+  <a href="#brandNews" class="skip_menu">본문2 바로가기</a>
+  <a href="#brandService" class="skip_menu">본문3 바로가기</a>
+  <a href="#brandBusiness" class="skip_menu">본문4 바로가기</a>
+  <a href="#brandManagement" class="skip_menu">본문5 바로가기</a>
+  <a href="#footer" class="skip_menu">하단메뉴 바로가기</a>
+  <div id="layer">
+    <p>이 사이트는 학습용으로 제작하였으며 한국조폐공사와 무관합니다.
+      구직용 포트폴리오로 <span>상업적 목적이 없음</span>을 알립니다.
+    </p>
+    <button>닫기</button>
+  </div>
+  <div id="wrap">
+    <div id="slide_map">
+      <div class="inner">
+        <h3 class="title">사이트맵</h3><a href="#" class="all_open">사이트맵 전체열기</a>
+        <ul class="link">
+          <li class="mobile-gift"><a href="https://localpay.komscochak.com/" target="_blank"
+              title="새창이동, 한국조폐공사모바일상품권">모바일상품권</a></li>
+          <li class="shopping"><a href="http://www.koreamint.com" target="_blank" title="새창이동, 한국조폐공사쇼핑몰">쇼핑몰</a></li>
+          <li class="museum"><a href="https://museum.komsco.com" target="_blank" title="새창이동, 화폐박물관">화폐박물관</a></li>
+          <li class="clean"><a href="https://clean.komsco.com" target="_blank" title="새창이동, 청렴">청렴</a></li>
+          <li class="clean"><a href="https://www.komsco.com/70th/index.html" target="_blank" title="새창이동, 청렴">창립70주년</a>
+          </li>
+          <li class="eng"><a href="#" target="_blank" title="새창이동">ENG</a></li>
+          <li class="login"><a href="#">LOGIN</a></li>
+        </ul>
+        <div class="binds mCustomScrollbar _mCS_1 mCS-autoHide">
+          <div id="mCSB_1" class="mCustomScrollBox mCS-light-thin mCSB_vertical mCSB_inside" tabindex="0">
+            <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: -534px; left: 0px;"
+              dir="ltr">
+              <ul class="nav">
+                <li class="sub01">
+                  <a href="#" target="_self">
+                    <span>기관소개</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong
+                    class="tmenu_ti"><span><em>KOMSCO</em>기관소개</span>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는
+                    KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub01_01">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>일반현황</span>
+                      </a>
                       <ul>
-                        <li><a href="#">KOMSCO는</a></li>
-                        <li><a href="#">미션</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">가치체계</a></li>
+                        <li class="sub01_01_01">
+                          <a href="#" target="_self" title="">
+                            <span>KOMSCO는</span>
+                          </a>
+                        </li>
+                        <li class="sub01_01_02">
+                          <a href="#" target="_self" title="">
+                            <span>미션</span>
+                          </a>
+                        </li>
+                        <li class="sub01_01_03">
+                          <a href="#" target="_self" title="">
+                            <span>연혁</span>
+                          </a>
+                        </li>
+                        <li class="sub01_01_04">
+                          <a href="#" target="_self" title="">
+                            <span>가치체계</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">CEO</a></h3>
+                    <li class="sub01_02">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>CEO</span>
+                      </a>
                       <ul>
-                        <li><a href="#">인사말</a></li>
-                        <li><a href="#">약력</a></li>
-                        <li><a href="#">동정</a></li>
-                        <li><a href="#">CEO에 바란다</a></li>
+                        <li class="sub01_02_01">
+                          <a href="#" target="_self" title="">
+                            <span>인사말</span>
+                          </a>
+                        </li>
+                        <li class="sub01_02_02">
+                          <a href="#" target="_self" title="">
+                            <span>약력</span>
+                          </a>
+                        </li>
+                        <li class="sub01_02_03">
+                          <a href="#" target="_self" title="">
+                            <span>동정</span>
+                          </a>
+                        </li>
+                        <li class="sub01_02_04">
+                          <a href="#" target="_self" title="">
+                            <span>CEO에 바란다</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">조직안내</a></h3>
+                    <li class="sub01_03">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>조직안내</span>
+                      </a>
                       <ul>
-                        <li><a href="#">조직구성</a></li>
-                        <li><a href="#">기관소개</a></li>
-                        <li><a href="#">직원찾기</a></li>
+                        <li class="sub01_03_01">
+                          <a href="#" target="_self" title="">
+                            <span>조직구성</span>
+                          </a>
+                        </li>
+                        <li class="sub01_03_02">
+                          <a href="#" target="_self" title="">
+                            <span>기관소개</span>
+                          </a>
+                        </li>
+                        <li class="sub01_03_03">
+                          <a href="#" target="_self" title="">
+                            <span>직원찾기</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">CI</a></h3>
+                    <li class="sub01_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>CI</span>
+                      </a>
                       <ul>
-                        <li><a href="#">CI</a></li>
-                        <li><a href="#">캐릭터(위보)</a></li>
+                        <li class="sub01_04_01">
+                          <a href="#" target="_self" title="">
+                            <span>CI</span>
+                          </a>
+                        </li>
+                        <li class="sub01_04_02">
+                          <a href="#" target="_self" title="">
+                            <span>캐릭터(위보)</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">인재채용</a></h3>
+                    <li class="sub01_05">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>인재채용</span>
+                      </a>
                       <ul>
-                        <li><a href="#">인재상</a></li>
-                        <li><a href="#">NCS채용정보</a></li>
-                        <li><a href="#">채용소식</a></li>
-                        <li><a href="#">온라인 입사지원</a></li>
-                        <li><a href="#">신입직원과의 인터뷰</a></li>
+                        <li class="sub01_05_01">
+                          <a href="#" target="_self" title="">
+                            <span>인재상</span>
+                          </a>
+                        </li>
+                        <li class="sub01_05_02">
+                          <a href="#" target="_self" title="">
+                            <span>NCS채용정보</span>
+                          </a>
+                        </li>
+                        <li class="sub01_05_03">
+                          <a href="#" target="_self" title="">
+                            <span>채용소식</span>
+                          </a>
+                        </li>
+                        <li class="sub01_05_04">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>온라인 입사지원</span>
+                          </a>
+                          <ul>
+                            <li class="sub01_05_04_01">
+                              <a href="#" target="_self" title="">
+                                <span>온라인 입사지원</span>
+                              </a>
+                            </li>
+                            <li class="sub01_05_04_02">
+                              <a href="#" target="_self" title="">
+                                <span>전형결과확인</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub01_05_05">
+                          <a href="#" target="_self" title="">
+                            <span>신입직원과의 인터뷰</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">선수단</a></h3>
+                    <li class="sub01_06">
+                      <a href="#" target="_self" title="">
+                        <span>선수단</span>
+                      </a>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">오시는길</a></h3>
+                    <li class="sub01_07">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>오시는길</span>
+                      </a>
                       <ul>
-                        <li><a href="#">본사</a></li>
-                        <li><a href="#">화폐본부</a></li>
-                        <li><a href="#">제지본부</a></li>
-                        <li><a href="#">ID본부</a></li>
-                        <li><a href="#">기술연구원</a></li>
-                        <li class="pd40">
-                          <a class="nowrap" href="#">GKD(Global KOMSCO Daewoo)</a>
+                        <li class="sub01_07_01">
+                          <a href="#" target="_self" title="">
+                            <span>본사</span>
+                          </a>
+                        </li>
+                        <li class="sub01_07_02">
+                          <a href="#" target="_self" title="">
+                            <span>화폐본부</span>
+                          </a>
+                        </li>
+                        <li class="sub01_07_03">
+                          <a href="#" target="_self" title="">
+                            <span>제지본부</span>
+                          </a>
+                        </li>
+                        <li class="sub01_07_04">
+                          <a href="#" target="_self" title="">
+                            <span>ID본부</span>
+                          </a>
+                        </li>
+                        <li class="sub01_07_05">
+                          <a href="#" target="_self" title="">
+                            <span>기술연구원</span>
+                          </a>
+                        </li>
+                        <li class="sub01_07_06">
+                          <a href="#" target="_self" title="">
+                            <span>GKD(Global KOMSCO Daewoo)</span>
+                          </a>
                         </li>
                       </ul>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <!--//기관소개-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">사업 · 연구개발</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong
-                        >KOMSCO<span
-                          >사업 · <br>
-                          연구개발</span
-                        ></strong
-                      >
-                      <p>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">인쇄</a></h3>
+                </li>
+                <li class="sub02">
+                  <a href="#" target="_self">
+                    <span>사업·연구개발</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong
+                    class="tmenu_ti"><span><em>KOMSCO</em>사업·연구개발</span>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는
+                    KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub02_01">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>인쇄</span>
+                      </a>
                       <ul>
-                        <li><a href="#">은행권</a></li>
-                        <li><a href="#">수표</a></li>
-                        <li><a href="#">우표 및 채권류</a></li>
-                        <li><a href="#">상품권</a></li>
-                        <li><a href="#">특수보안용지</a></li>
+                        <li class="sub02_01_01">
+                          <a href="#" target="_self" title="">
+                            <span>은행권</span>
+                          </a>
+                        </li>
+                        <li class="sub02_01_02">
+                          <a href="#" target="_self" title="">
+                            <span>수표</span>
+                          </a>
+                        </li>
+                        <li class="sub02_01_03">
+                          <a href="#" target="_self" title="">
+                            <span>우표 및 채권류</span>
+                          </a>
+                        </li>
+                        <li class="sub02_01_04">
+                          <a href="#" target="_self" title="">
+                            <span>상품권</span>
+                          </a>
+                        </li>
+                        <li class="sub02_01_05">
+                          <a href="#" target="_self" title="">
+                            <span>특수보안용지</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">압인</a></h3>
+                    <li class="sub02_02">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>압인</span>
+                      </a>
                       <ul>
-                        <li><a href="#">주화</a></li>
-                        <li><a href="#">기념주화</a></li>
-                        <li><a href="#">기념메달</a></li>
-                        <li><a href="#">훈장</a></li>
-                        <li><a href="#">금품질인증</a></li>
-                        <li><a href="#">골드바 & 실버바</a></li>
+                        <li class="sub02_02_01">
+                          <a href="#" target="_self" title="">
+                            <span>주화</span>
+                          </a>
+                        </li>
+                        <li class="sub02_02_02">
+                          <a href="#" target="_self" title="">
+                            <span>기념주화</span>
+                          </a>
+                        </li>
+                        <li class="sub02_02_03">
+                          <a href="#" target="_self" title="">
+                            <span>기념메달</span>
+                          </a>
+                        </li>
+                        <li class="sub02_02_04">
+                          <a href="#" target="_self" title="">
+                            <span>훈장</span>
+                          </a>
+                        </li>
+                        <li class="sub02_02_05">
+                          <a href="#" target="_self" title="">
+                            <span>금품질인증</span>
+                          </a>
+                        </li>
+                        <li class="sub02_02_06">
+                          <a href="#" target="_self" title="">
+                            <span>골드바 &amp; 실버바</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">ID(여권,카드)</a></h3>
+                    <li class="sub02_03">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>ID(여권,카드)</span>
+                      </a>
                       <ul>
-                        <li><a href="#">여권</a></li>
-                        <li><a href="#">카드</a></li>
-                        <li><a href="#">보안모듈(SE)</a></li>
+                        <li class="sub02_03_01">
+                          <a href="#" target="_self" title="">
+                            <span>여권</span>
+                          </a>
+                        </li>
+                        <li class="sub02_03_02">
+                          <a href="#" target="_self" title="">
+                            <span>카드</span>
+                          </a>
+                        </li>
+                        <li class="sub02_03_03">
+                          <a href="#" target="_self" title="">
+                            <span>보안모듈(SE)</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">브랜드보호</a></h3>
+                    <li class="sub02_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>브랜드보호</span>
+                      </a>
                       <ul>
-                        <li><a href="#">브랜드보호 사업</a></li>
-                        <li><a href="#">온라인전시관</a></li>
-                        <li><a href="#">기술체험관</a></li>
-                        <li><a href="#">기술소개</a></li>
-                        <li><a href="#">기술홍보동영상</a></li>
-                        <li><a href="#">비즈니스상담 안내</a></li>
-                        <li><a href="#">협력사기술소개</a></li>
+                        <li class="sub02_04_01">
+                          <a href="#" target="_self" title="">
+                            <span>브랜드보호 사업</span>
+                          </a>
+                        </li>
+                        <li class="sub02_04_02">
+                          <a href="#" target="_self" title="">
+                            <span>온라인전시관</span>
+                          </a>
+                        </li>
+                        <li class="sub02_04_03">
+                          <a href="#" target="_blank" title="새창이동">
+                            <span>기술체험관</span>
+                          </a>
+                        </li>
+                        <li class="sub02_04_04">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>기술소개</span>
+                          </a>
+                          <ul>
+                            <li class="sub02_04_04_01">
+                              <a href="#" target="_self" title="">
+                                <span>'오키' 란</span>
+                              </a>
+                            </li>
+                            <li class="sub02_04_04_02">
+                              <a href="#" target="_self" title="">
+                                <span>육안 인식기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_04_04_03">
+                              <a href="#" target="_self" title="">
+                                <span>스마트기기 인식기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_04_04_04">
+                              <a href="#" target="_self" title="">
+                                <span>기타특수기기 인식기술</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub02_04_05">
+                          <a href="#" target="_self" title="">
+                            <span>기술홍보동영상</span>
+                          </a>
+                        </li>
+                        <li class="sub02_04_06">
+                          <a href="#" target="_self" title="">
+                            <span>비즈니스상담 안내 </span>
+                          </a>
+                        </li>
+                        <li class="sub02_04_07">
+                          <a href="#" target="_self" title="">
+                            <span>협력사기술소개</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="blockchain fl">
-                      <h3><a href="#">블록체인기반 모바일상품권</a></h3>
+                    <li class="sub02_05">
+                      <a href="#" target="_self" title="">
+                        <span>블록체인기반 모바일상품권</span>
+                      </a>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">수출</a></h3>
+                    <li class="sub02_06">
+                      <a href="#" target="_self" title="">
+                        <span>수출</span>
+                      </a>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">연구개발</a></h3>
+                    <li class="sub02_07">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>연구개발</span>
+                      </a>
                       <ul>
-                        <li><a href="#">연구개발소개</a></li>
-                        <li><a href="#">연구개발분야</a></li>
-                        <li><a href="#">이전대상기술DB</a></li>
-                        <li class="pd40"><a href="#">국제활동</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!--//연구개발-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">ESG경영</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>ESG경영</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">ESG경영</a></h3>
-                      <ul>
-                        <li><a href="#">ALIO 공시</a></li>
-                        <li><a href="#">자체공시 목록</a></li>
-                        <li><a href="#">일반현황</a></li>
-                        <li><a href="#">기관운영</a></li>
-                        <li><a href="#">대내외 평가</a></li>
-                        <li><a href="#">자회사</a></li>
-                        <li><a href="#">기타</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">환경(E)</a></h3>
-                      <ul>
-                        <li><a href="#">환경경영</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">사회(S)</a></h3>
-                      <ul>
-                        <li><a href="#">동반성장</a></li>
-                        <li><a href="#">사회공고</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">지배구조(G)</a></h3>
-                      <ul>
-                        <li><a href="#">이사회</a></li>
-                        <li><a href="#">윤리경영</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!--ESG경영-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">열린경영</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>열린경영</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">경영공시</a></h3>
-                      <ul>
-                        <li><a href="#">ALIO 공시</a></li>
-                        <li><a href="#">자체공시 목록</a></li>
-                        <li><a href="#">일반현황</a></li>
-                        <li><a href="#">기관운영</a></li>
-                        <li><a href="#">대내외 평가</a></li>
-                        <li><a href="#">자회사</a></li>
-                        <li><a href="#">기타</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">경영혁신</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">입찰정보</a></h3>
-                      <ul>
-                        <li><a href="#">입찰자료실</a></li>
-                        <li><a href="#">입찰공고</a></li>
-                        <li class="pd40"><a href="#">주요 구매예시 공고</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">사규 제ㆍ개정 예고</a></h3>
-                    </li>
-                    <li class="safe fl">
-                      <h3><a href="#">안전경영</a></h3>
-                      <ul>
-                        <li><a href="#">안전보건책임경영</a></li>
-                        <li><a href="#">안전정보 공개</a></li>
-                        <li><a href="#">안전보건 자료실</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!--열린경영-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">뉴스룸</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>뉴스룸</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">공지사항</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">보도자료</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">채용소식</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">홍보</a></h3>
-                      <ul>
-                        <li><a href="#">사보 '화폐와 행복'</a></li>
-                        <li><a href="#">홍보책자</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!--//뉴스룸-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">고객참여</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>고객참여</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">카드발급조회</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">증명서발급</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">기념주화 당첨자 발표</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">화폐본부 견학신청</a></h3>
-                      <ul>
-                        <li><a href="#">견학안내</a></li>
-                        <li><a href="#">포토갤러리</a></li>
-                        <li><a href="#">관람후기</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">고객의 소리</a></h3>
-                      <ul>
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="#">자주하는 질문</a></li>
-                        <li><a href="#">질문하기</a></li>
-                        <li><a href="#">나의 소리</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">온라인민원</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">소극행정 신고</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">국민이 正하다</a></h3>
-                      <ul>
-                        <li><a href="#">제안안내</a></li>
-                        <li><a href="#">고객제안</a></li>
-                        <li><a href="#">나의제안</a></li>
-                        <li><a href="#">이렇게 실행합니다</a></li>
-                        <li><a href="#">공사가 제안합니다</a></li>
-                        <li class="pd40"><a href="#">적극행정 국민추천</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">고객감사청구</a></h3>
-                    </li>
-                    <li class="fl move_1">
-                      <h3><a href="#">고객서비스헌장</a></h3>
-                      <ul>
-                        <li><a href="#">고객서비스 헌장 전문</a></li>
-                        <li><a href="#">고객서비스 이행표준</a></li>
-                      </ul>
-                    </li>
-                    <li class="fl move_2">
-                      <h3><a href="#">현금영수증 발급</a></h3>
-                      <ul>
-                        <li><a href="#">현금영수증 발급 신청</a></li>
-                        <li><a href="#">현금영수증 발급 이력</a></li>
+                        <li class="sub02_07_01">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>연구개발소개</span>
+                          </a>
+                          <ul>
+                            <li class="sub02_07_01_01">
+                              <a href="#" target="_self" title="">
+                                <span>기술연구원 소개</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_01_02">
+                              <a href="#" target="_self" title="">
+                                <span>위조방지센터</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub02_07_02">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>연구개발분야</span>
+                          </a>
+                          <ul>
+                            <li class="sub02_07_02_01">
+                              <a href="#" target="_self" title="">
+                                <span>일반현황</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_02_02">
+                              <a href="#" target="_self" title="">
+                                <span>보안요소 인쇄기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_02_03">
+                              <a href="#" target="_self" title="">
+                                <span>보안용지 제조기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_02_04">
+                              <a href="#" target="_self" title="">
+                                <span>고품위 압인 제조기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_02_05">
+                              <a href="#" target="_self" title="">
+                                <span>e-ID 제조 및 보안 기술</span>
+                              </a>
+                            </li>
+                            <li class="sub02_07_02_06">
+                              <a href="#" target="_self" title="">
+                                <span>위조방지요소 용어설명</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub02_07_03">
+                          <a href="#" target="_self" title="">
+                            <span>이전대상기술DB</span>
+                          </a>
+                        </li>
+                        <li class="sub02_07_04">
+                          <a href="#" target="_self" title="">
+                            <span>국제활동</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <!--//고객참여-->
-              <li class="fl">
-                <a class="gnb_txt" href="#">정보공개</a>
-                <div class="width100">
-                  <ul class="m_width cf">
-                    <li class="fl m_title">
-                      <strong>KOMSCO<span>정보공개</span></strong>
-                      <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">정보공개제도란?</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">사전정보공개</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">정보목록</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">정보공개</a></h3>
+                </li>
+                <li class="sub03">
+                  <a href="#" target="_self">
+                    <span>ESG경영</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>ESG경영</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub03_01">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>ESG경영</span>
+                      </a>
                       <ul>
-                        <li><a href="#">정보공개청구</a></li>
-                        <li><a href="#">업무처리 절차</a></li>
-                        <li><a href="#">비공개 대상정보</a></li>
-                        <li><a href="#">정보공개 방법</a></li>
-                        <li><a href="#">불복구제 절차 방법</a></li>
+                        <li class="sub03_01_01">
+                          <a href="#" target="_self" title="">
+                            <span>ESG경영 추진조직</span>
+                          </a>
+                        </li>
+                        <li class="sub03_01_02">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>핵심주제 선정</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_01_02_01">
+                              <a href="#" target="_self" title="">
+                                <span>대내외 환경분석</span>
+                              </a>
+                            </li>
+                            <li class="sub03_01_02_02">
+                              <a href="#" target="_self" title="">
+                                <span>전략목표 설정</span>
+                              </a>
+                            </li>
+                            <li class="sub03_01_02_03">
+                              <a href="#" target="_self" title="">
+                                <span>전략체계</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub03_01_03">
+                          <a href="#" target="_self" title="">
+                            <span>ESG 대외평가 성과</span>
+                          </a>
+                        </li>
+                        <li class="sub03_01_04">
+                          <a href="#" target="_self" title="">
+                            <span>ESG경영 지표 및 세부내용</span>
+                          </a>
+                        </li>
+                        <li class="sub03_01_05">
+                          <a href="#" target="_self" title="">
+                            <span>중점추진 과제별 성과</span>
+                          </a>
+                        </li>
+                        <li class="sub03_01_06">
+                          <a href="#" target="_self" title="">
+                            <span>ESG관련 대외인증</span>
+                          </a>
+                        </li>
+                        <li class="sub03_01_07">
+                          <a href="#" target="_self" title="">
+                            <span>ESG경영 데이터</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">공공데이터</a></h3>
+                    <li class="sub03_02">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>환경(E)</span>
+                      </a>
                       <ul>
-                        <li><a href="#">공공데이터개방</a></li>
-                        <li><a href="#">공공데이터 온라인 설문조사</a></li>
-                        <li><a href="#">아이디어 제안</a></li>
-                        <li><a href="#">공공데이터 품질신고</a></li>
+                        <li class="sub03_02_01">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>환경경영</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_02_01_01">
+                              <a href="#" target="_self" title="">
+                                <span>환경경영 추진조직</span>
+                              </a>
+                            </li>
+                            <li class="sub03_02_01_02">
+                              <a href="#" target="_self" title="">
+                                <span>환경경영 추진체계</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
-                    <li class="fl">
-                      <h3><a href="#">OPEN API</a></h3>
-                    </li>
-                    <li class="fl">
-                      <h3><a href="#">사업실명제</a></h3>
+                    <li class="sub03_03">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>사회(S)</span>
+                      </a>
                       <ul>
-                        <li><a href="#">실명제 사업내역서</a></li>
+                        <li class="sub03_03_01">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>동반성장</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_03_01_01">
+                              <a href="#" target="_self" title="">
+                                <span>KOMSCO 동반성장</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_02">
+                              <a href="#" target="_self" title="">
+                                <span>동반성장 추진조직</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_03">
+                              <a href="#" target="_self" title="">
+                                <span>동반성장 협력사 소개</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_04">
+                              <a href="#" target="_self" title="">
+                                <span>동반성장 관련제안</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_05">
+                              <a href="#" target="_self" title="">
+                                <span>기술이전안내</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_06">
+                              <a href="#" target="_self" title="">
+                                <span>보유기술 이전대상 목록</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_01_07">
+                              <a href="#" target="_self" title="">
+                                <span>동반성장 알림</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub03_03_02">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>사회공헌</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_03_02_01">
+                              <a href="#" target="_self" title="">
+                                <span>소개</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_02_02">
+                              <a href="#" target="_self" title="">
+                                <span>자원봉사활동</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_02_03">
+                              <a href="#" target="_self" title="">
+                                <span>공익사업활동</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_02_04">
+                              <a href="#" target="_self" title="">
+                                <span>기부협찬활동</span>
+                              </a>
+                            </li>
+                            <li class="sub03_03_02_05">
+                              <a href="#" target="_self" title="">
+                                <span>지역사회 공헌사업 현황</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub03_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>지배구조(G)</span>
+                      </a>
+                      <ul>
+                        <li class="sub03_04_01">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>이사회</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_04_01_01">
+                              <a href="#" target="_self" title="">
+                                <span>ESG경영위원회 소개</span>
+                              </a>
+                            </li>
+                            <li class="sub03_04_01_02">
+                              <a href="#" target="_self" title="">
+                                <span>ESG경영위원회 안건</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub03_04_02">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>윤리경영</span>
+                          </a>
+                          <ul>
+                            <li class="sub03_04_02_01">
+                              <a href="#" target="_self" title="">
+                                <span>윤리경영 시스템</span>
+                              </a>
+                            </li>
+                            <li class="sub03_04_02_02">
+                              <a href="#" target="_self" title="">
+                                <span>윤리규정</span>
+                              </a>
+                            </li>
+                            <li class="sub03_04_02_03">
+                              <a href="#" target="_self" title="">
+                                <span>제안의 소리</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <!--정보공개-->
-            </ul>
-          </div>
-          <span id="blind"></span>
-          <!--//.nav-->
-          <div id="header_top">
-            <div class="top_menu">
-              <ul class="cf">
-                <li class="fl"><a href="https://localpay.komscochak.com/" target="_blank" title="새창이동, 한국조폐공사모바일상품권">모바일상품권</a>·</li>
-                <li class="fl"><a href="http://www.koreamint.com" target="_blank" title="새창이동, 한국조폐공사쇼핑몰">쇼핑몰</a>·</li>
-                <li class="fl"><a href="https://museum.komsco.com" target="_blank" title="새창이동, 화폐박물관">화폐박물관</a>·</li>
-                <li class="fl"><a href="https://clean.komsco.com" target="_blank" title="새창이동, 청렴">청렴</a>·</li>
-                <li class="fl"><a href="https://www.komsco.com/70th/index.html" target="_blank" title="새창이동, 창립70주년">창립70주년</a>·</li>
-                <li class="fl"><a href="#">ENG</a>ㅣ</li>
-                <li class="fl"><a href="#">LOGIN</a></li>
+                </li>
+                <li class="sub04">
+                  <a href="#" target="_self">
+                    <span>열린경영</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>열린경영</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub04_01">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>경영공시</span>
+                      </a>
+                      <ul>
+                        <li class="sub04_01_01">
+                          <a href="#" target="_self" title="">
+                            <span>ALIO 공시</span>
+                          </a>
+                        </li>
+                        <li class="sub04_01_02">
+                          <a href="#" target="_self" title="">
+                            <span>자체공시 목록</span>
+                          </a>
+                        </li>
+                        <li class="sub04_01_03">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>일반현황</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_03_01">
+                              <a href="#" target="_self" title="">
+                                <span>경영목표</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_03_02">
+                              <a href="#" target="_self" title="">
+                                <span>운영계획</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_03_03">
+                              <a href="#" target="_self" title="">
+                                <span>예산현황</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_03_04">
+                              <a href="#" target="_self" title="">
+                                <span>사장경영계약서</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub04_01_04">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>기관운영</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_04_01">
+                              <a href="#" target="_self" title="">
+                                <span>임원 업무추진비</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_04_02">
+                              <a href="#" target="_self" title="">
+                                <span>예산 및 집행현황</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub04_01_05">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>경영현황</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_05_01">
+                              <a href="#" target="_self" title="">
+                                <span>국외유사기관</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_02">
+                              <a href="#" target="_self" title="">
+                                <span>사회공헌활동</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_03">
+                              <a href="#" target="_self" title="">
+                                <span>윤리경영</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_04">
+                              <a href="#" target="_self" title="">
+                                <span>지식재산권</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_05">
+                              <a href="#" target="_self" title="">
+                                <span>공용차량 및 운영현황</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_06">
+                              <a href="#" target="_self" title="">
+                                <span>신고물품처리결과</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_07">
+                              <a href="#" target="_self" title="">
+                                <span>부패행위자현황</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_05_08">
+                              <a href="#" target="_self" title="">
+                                <span>예산절감 및 낭비사례</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub04_01_06">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>대내외 평가</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_06_01">
+                              <a href="#" target="_self" title="">
+                                <span>내부감사계획.활동</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_06_02">
+                              <a href="#" target="_self" title="">
+                                <span>임원추천위원회회의록</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_06_03">
+                              <a href="#" target="_self" title="">
+                                <span>대외 수상 및 인증실적</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub04_01_07">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>자회사</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_07_01">
+                              <a href="#" target="_self" title="">
+                                <span>㈜콤스코투게더</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_07_02">
+                              <a href="#" target="_self" title="">
+                                <span>㈜콤스코시큐리티</span>
+                              </a>
+                            </li>
+                            <li class="sub04_01_07_03">
+                              <a href="#" target="_self" title="">
+                                <span>GKD</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub04_01_08">
+                          <a href="#" target="_self" title="" class="arrow">
+                            <span>기타</span>
+                          </a>
+                          <ul>
+                            <li class="sub04_01_08_01">
+                              <a href="#" target="_self" title="">
+                                <span>관계법률 및 시행령</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub04_02">
+                      <a href="#" target="_self" title="">
+                        <span>경영혁신</span>
+                      </a>
+                    </li>
+                    <li class="sub04_03">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>입찰정보</span>
+                      </a>
+                      <ul>
+                        <li class="sub04_03_01">
+                          <a href="#" target="_self" title="">
+                            <span>입찰자료실</span>
+                          </a>
+                        </li>
+                        <li class="sub04_03_02">
+                          <a href="https://ebid.komsco.com/intro/index_g2b_sub1.jsp" target="_blank" title="새창이동">
+                            <span>입찰공고</span>
+                          </a>
+                        </li>
+                        <li class="sub04_03_03">
+                          <a href="#" target="_self" title="">
+                            <span>주요 구매예시 공고</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub04_04">
+                      <a href="#" target="_self" title="">
+                        <span>사규 제ㆍ개정 예고</span>
+                      </a>
+                    </li>
+                    <li class="sub04_05">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>안전경영</span>
+                      </a>
+                      <ul>
+                        <li class="sub04_05_01">
+                          <a href="#" target="_self" title="">
+                            <span>안전보건책임경영</span>
+                          </a>
+                        </li>
+                        <li class="sub04_05_02">
+                          <a href="#" target="_self" title="">
+                            <span>안전정보 공개</span>
+                          </a>
+                        </li>
+                        <li class="sub04_05_03">
+                          <a href="#" target="_self" title="">
+                            <span>안전보건 자료실</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub05">
+                  <a href="#" target="_self">
+                    <span>뉴스룸</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>뉴스룸</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub05_01">
+                      <a href="#" target="_self" title="">
+                        <span>공지사항</span>
+                      </a>
+                    </li>
+                    <li class="sub05_02">
+                      <a href="#" target="_self" title="">
+                        <span>보도자료</span>
+                      </a>
+                    </li>
+                    <li class="sub05_03">
+                      <a href="#" target="_self" title="">
+                        <span>채용소식</span>
+                      </a>
+                    </li>
+                    <li class="sub05_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>홍보</span>
+                      </a>
+                      <ul>
+                        <li class="sub05_04_01">
+                          <a href="#" target="_self" title="">
+                            <span>사보 '화폐와 행복'</span>
+                          </a>
+                        </li>
+                        <li class="sub05_04_02">
+                          <a href="#" target="_self" title="">
+                            <span>홍보책자</span>
+                          </a>
+                        </li>
+                        <li class="sub05_04_03">
+                          <a href="#" target="_self" title="">
+                            <span>홍보동영상</span>
+                          </a>
+                        </li>
+                        <li class="sub05_04_04">
+                          <a href="#" target="_self" title="">
+                            <span>카드뉴스</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub06">
+                  <a href="#" target="_self">
+                    <span>고객참여</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>고객참여</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub06_01">
+                      <a href="#" target="_self" title="">
+                        <span>카드발급조회</span>
+                      </a>
+                    </li>
+                    <li class="sub06_02">
+                      <a href="#" target="_self" title="">
+                        <span>증명서발급</span>
+                      </a>
+                    </li>
+                    <li class="sub06_03">
+                      <a href="#" target="_self" title="">
+                        <span>기념주화 당첨자 발표</span>
+                      </a>
+                    </li>
+                    <li class="sub06_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>화폐본부 견학신청</span>
+                      </a>
+                      <ul>
+                        <li class="sub06_04_01">
+                          <a href="#" target="_self" title="">
+                            <span>견학안내</span>
+                          </a>
+                        </li>
+                        <li class="sub06_04_02">
+                          <a href="#" target="_self" title="">
+                            <span>포토갤러리</span>
+                          </a>
+                        </li>
+                        <li class="sub06_04_03">
+                          <a href="#" target="_self" title="">
+                            <span>관람후기</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub06_05">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>고객의 소리</span>
+                      </a>
+                      <ul>
+                        <li class="sub06_05_01">
+                          <a href="#" target="_self" title="">
+                            <span>이용안내</span>
+                          </a>
+                        </li>
+                        <li class="sub06_05_02">
+                          <a href="#" target="_self" title="">
+                            <span>자주하는 질문</span>
+                          </a>
+                        </li>
+                        <li class="sub06_05_03">
+                          <a href="#" target="_self" title="">
+                            <span>질문하기</span>
+                          </a>
+                        </li>
+                        <li class="sub06_05_04">
+                          <a href="#" target="_self" title="">
+                            <span>나의 소리</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub06_06">
+                      <a href="#" target="_self" title="">
+                        <span>온라인민원</span>
+                      </a>
+                    </li>
+                    <li class="sub06_07">
+                      <a href="#" target="_self" title="">
+                        <span>소극행정 신고</span>
+                      </a>
+                    </li>
+                    <li class="sub06_08">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>국민이 正하다</span>
+                      </a>
+                      <ul>
+                        <li class="sub06_08_01">
+                          <a href="#" target="_self" title="">
+                            <span>제안안내</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_02">
+                          <a href="#" target="_self" title="">
+                            <span>고객제안</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_03">
+                          <a href="#" target="_self" title="">
+                            <span>나의제안</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_04">
+                          <a href="#" target="_self" title="">
+                            <span>이렇게 실행합니다</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_05">
+                          <a href="#" target="_self" title="">
+                            <span>공사가 제안합니다</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_06">
+                          <a href="#" target="_self" title="">
+                            <span>적극행정 국민추천</span>
+                          </a>
+                        </li>
+                        <li class="sub06_08_07">
+                          <a href="#" target="_self" title="">
+                            <span>바른소리함</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub06_09">
+                      <a href="#" target="_self" title="">
+                        <span>고객감사청구</span>
+                      </a>
+                    </li>
+                    <li class="sub06_10">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>고객서비스헌장</span>
+                      </a>
+                      <ul>
+                        <li class="sub06_10_01">
+                          <a href="#" target="_self" title="">
+                            <span>고객서비스 헌장 전문</span>
+                          </a>
+                        </li>
+                        <li class="sub06_10_02">
+                          <a href="#" target="_self" title="">
+                            <span>고객서비스 이행표준</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub06_11">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>현금영수증 발급</span>
+                      </a>
+                      <ul>
+                        <li class="sub06_11_01">
+                          <a href="#" target="_self" title="">
+                            <span>현금영수증 발급 신청</span>
+                          </a>
+                        </li>
+                        <li class="sub06_11_02">
+                          <a href="#" target="_self" title="">
+                            <span>현금영수증 발급 이력</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub07">
+                  <a href="#" target="_self">
+                    <span>정보공개</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>정보공개</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub07_01">
+                      <a href="#" target="_self" title="">
+                        <span>정보공개제도란?</span>
+                      </a>
+                    </li>
+                    <li class="sub07_02">
+                      <a href="#" target="_self" title="">
+                        <span>사전정보공개</span>
+                      </a>
+                    </li>
+                    <li class="sub07_03">
+                      <a href="#" target="_self" title="">
+                        <span>정보목록</span>
+                      </a>
+                    </li>
+                    <li class="sub07_04">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>정보공개</span>
+                      </a>
+                      <ul>
+                        <li class="sub07_04_01">
+                          <a href="#" target="_self" title="">
+                            <span>정보공개청구</span>
+                          </a>
+                        </li>
+                        <li class="sub07_04_02">
+                          <a href="#" target="_self" title="">
+                            <span>업무처리 절차</span>
+                          </a>
+                        </li>
+                        <li class="sub07_04_03">
+                          <a href="#" target="_self" title="">
+                            <span>비공개 대상정보</span>
+                          </a>
+                        </li>
+                        <li class="sub07_04_04">
+                          <a href="#" target="_self" title="">
+                            <span>정보공개 방법</span>
+                          </a>
+                        </li>
+                        <li class="sub07_04_05">
+                          <a href="#" target="_self" title="">
+                            <span>불복구제 절차 방법</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub07_05">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>공공데이터</span>
+                      </a>
+                      <ul>
+                        <li class="sub07_05_01">
+                          <a href="#" target="_self" title="">
+                            <span>공공데이터개방</span>
+                          </a>
+                        </li>
+                        <li class="sub07_05_02">
+                          <a href="#" target="_self" title="">
+                            <span>공공데이터 온라인 설문조사</span>
+                          </a>
+                        </li>
+                        <li class="sub07_05_03">
+                          <a href="#" target="_self" title="">
+                            <span>아이디어 제안</span>
+                          </a>
+                        </li>
+                        <li class="sub07_05_04">
+                          <a href="#" target="_self" title="">
+                            <span>공공데이터 품질신고</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub07_06">
+                      <a href="#" target="_self" title="">
+                        <span>OPEN API</span>
+                      </a>
+                    </li>
+                    <li class="sub07_07">
+                      <a href="#" target="_self" title="" class="arrow">
+                        <span>사업실명제</span>
+                      </a>
+                      <ul>
+                        <li class="sub07_07_01">
+                          <a href="#" target="_self" title="">
+                            <span>실명제 사업내역서</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub08">
+                  <a href="#" target="_self">
+                    <span>이용안내</span>
+                  </a><a href="#" class="btn_toggle">열기</a><strong class="tmenu_ti"><span><em>KOMSCO</em>이용안내</span>항상
+                    국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</strong>
+                  <ul style="display: none;">
+                    <li class="sub08_01">
+                      <a href="#" target="_self" title="">
+                        <span>개인정보처리방침</span>
+                      </a>
+                    </li>
+                    <li class="sub08_02">
+                      <a href="#" target="_self" title="">
+                        <span>영상정보처리기기운영방침</span>
+                      </a>
+                    </li>
+                    <li class="sub08_03">
+                      <a href="#" target="_self" title="">
+                        <span>이메일주소무단수집거부</span>
+                      </a>
+                    </li>
+                    <li class="sub08_04">
+                      <a href="#" target="_self" title="">
+                        <span>로그인</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
-            <!--//.top_menu-->
-          </div>
-          <!--//#header_top-->
-          <div class="section weather">
-            <ul>
-              <li class="fl"><div id="castBox"></div></li>
-            </ul><br>
-          </div>
-          <div class="search_map cf">
-            <div class="search fl">
-              <form>
-                <input type="text" id="search_txt" placeholder="검색어를 입력하세요." title="검색어를 입력하세요">
-                <input type="submit" value="검색" id="search_btn">
-              </form>
-            </div>
-            <div class="btns">
-              <h3><a href="#" class="allmenu_btn_open">전체메뉴</a></h3>
+            <div id="mCSB_1_scrollbar_vertical"
+              class="mCSB_scrollTools mCSB_1_scrollbar mCS-light-thin mCSB_scrollTools_vertical"
+              style="display: block;">
+              <div class="mCSB_draggerContainer">
+                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                  style="position: absolute; min-height: 30px; display: block; height: 413px; max-height: 709px; top: 297px;"
+                  oncontextmenu="return false;">
+                  <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                </div>
+                <div class="mCSB_draggerRail"></div>
+              </div>
             </div>
           </div>
-          <!--//.search_map-->
-        </div>
-        <!--//#header_nav-->
+        </div><a href="#" class="btn_close">닫기</a>
       </div>
-      <!--//header-->
-      <div id="container">
-        <div id="content">
-          <div class="section visual">
-            <div id="brandVisual">
-              <ul class="visual_slide">
-                <li class="visual_0 active">
-                    <div class="container">
-                        <div class="slogan">
-                            <p class="subject_eng">CREATING<br>TRUST&amp;VALUE</p>
-                            <h2 class="slogan_subject">한국조폐공사가 실현하는<br>세계 최고 수준의 기술</h2>
-                            <a href="https://www.youtube.com/watch?v=rupY8AUswDk">홍보영상 바로가기</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="visual_1">
-                    <div class="container">
-                        <div class="slogan">
-                            <p class="subject_eng">KOMSCO STORY</p>
-                            <h2 class="slogan_subject">100-<span class="yellow">1</span>=0</h2>
-                            <p class="txt1">완벽한 품질로 고객의 신뢰를 얻기 위해 최선을 다하겠습니다.</p>
-                            <p class="txt2">100개의 제품 중 99개의 제품이 완벽해도 1개의 제품에 이상이 있다면 <br>고객 만족은 0과 같다는 슬로건아래 최선을 다하겠습니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="visual_2">
-                    <div class="container">
-                        <div class="slogan">
-                            <p class="subject_eng">KOMSCO STORY</p>
-                            <h2 class="slogan_subject">NO.<span class="yellow">1</span></h2>
-                            <p class="txt1">세계 최고의 조폐·인증·보안 서비스 기업으로 도약합니다.</p>
-                            <p class="txt2">한국조폐공사는 우수한 기술력으로 전 세계 40여 개국에 은행권, 주화,<br>제지제품(은행권용지), 특수잉크, 여권 등을 수출하고 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="visual_3">
-                    <div class="container">
-                        <div class="slogan">
-                            <p class="subject_eng">KOMSCO STORY</p>
-                            <h2 class="slogan_subject">국민신뢰<span class="yellow">1위</span></h2>
-                            <p class="txt1">행복한 세상을 만들기 위해 다양한 사회공헌으로 국민께 보답합니다.</p>
-                            <p class="txt2">국가의 기업으로서 사회적 책임을 다하고, 사랑과 나눔을 실천하며<br>국민과 더불어 사는 사회 구현에 앞장서고 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-              </ul>
-            </div>
-            <ul id="buttonList1">
-              <li class="active"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul class="controls">
-              <li class="btn_stop"><a href="#"></a></li>
-              <li class="btn_play"><a href="#"></a></li>
-            </ul>
-            <span class="scroll"></span>
-            <div id="quick">
-              <ul>
-                <li class="bn01"><a href="#">국민이정하다</a></li>
-                <li class="bn02"><a href="#">화폐본부견학</a></li>
-                <li class="bn03"><a href="#">카드발급조회</a></li>
-              </ul>
-              <a href="#" class="btn_more">더보기</a>
-            </div>
-          </div>
-          <div class="section news">
-            <div id="brandNews">
-              <div class="layout">
-                <h3 class="title">KOMSCO <strong>News</strong></h3>
-                <div class="bodo">
-                  <div class="move">
-                    <ul class="on">
-                      <li>
-                        <span class="new">NEW</span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-15</span>
-                            <strong>조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_first.jpg" alt="조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정"></span>
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <span class="new">NEW</span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-06</span>
-                            <strong>조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_second.jpg" alt="조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최 수상"></span>
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <span class="new0"></span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-05</span>
-                            <strong>조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_third.jpg" alt="조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬"></span>
-                          </p>
-                        </a>
-                      </li>
-                    </ul>
+    </div>
+    <!-- //hamburger_menu -->
+    <div id="header">
+      <div id="header_nav">
+        <a class="logo" href="index.html"></a>
+        <div id="nav">
+          <ul id="gnb" class="cf">
+            <li class="fl">
+              <a class="gnb_txt" href="#">기관소개</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>기관소개</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">일반현황</a></h3>
                     <ul>
-                      <li>
-                        <span class="new0"></span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-15</span>
-                            <strong>조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_fourth.jpg" alt="조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정"></span>
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <span class="new0"></span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-06</span>
-                            <strong>조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_fifth.jpg" alt="조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최 수상"></span>
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <span class="new0"></span>
-                        <a href="#">
-                          <p class="txt">
-                            <span>2022-12-05</span>
-                            <strong>조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬</strong>
-                          </p>
-                          <p class="photo">
-                            <span><img src="images/bodo_sixth.jpg" alt="조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬"></span>
-                          </p>
-                        </a>
-                      </li>
+                      <li><a href="#">KOMSCO는</a></li>
+                      <li><a href="#">미션</a></li>
+                      <li><a href="#">연혁</a></li>
+                      <li><a href="#">가치체계</a></li>
                     </ul>
-                  </div>
-                  <ul id="buttonList2">
-                    <li class="on"></li>
-                    <li></li>
-                  </ul>      
-                  <a href="#" class="btn_more btn_bodo">더보기</a>
-                </div>
-                <div class="notice">
-                  <div class="mar">
-                    <h4>공지사항</h4>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">CEO</a></h3>
                     <ul>
-                      <li>
-                        <span class="subject"><a href="#">법률자문 법인(고문변호사) 공개모집</a></span>
-                        <span class="date">2022-12-09</span>
-                      </li>
-                      <li>
-                        <span class="subject"><a href="#">한국조폐공사 2021년 부패방지 의무교육 실적 공개</a></span>
-                        <span class="date">2022-08-26</span>
-                      </li>
-                      <li>
-                        <span class="subject"><a href="#">상생협력센터 「콤비(KOMBI)」 입주기업 모집</a></span>
-                        <span class="date">2022-08-02</span>
-                      </li>
-                      <li>
-                        <span class="subject"><a href="#">공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항알림</a></span>
-                        <span class="date">2022-07-25</span>
+                      <li><a href="#">인사말</a></li>
+                      <li><a href="#">약력</a></li>
+                      <li><a href="#">동정</a></li>
+                      <li><a href="#">CEO에 바란다</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">조직안내</a></h3>
+                    <ul>
+                      <li><a href="#">조직구성</a></li>
+                      <li><a href="#">기관소개</a></li>
+                      <li><a href="#">직원찾기</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">CI</a></h3>
+                    <ul>
+                      <li><a href="#">CI</a></li>
+                      <li><a href="#">캐릭터(위보)</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">인재채용</a></h3>
+                    <ul>
+                      <li><a href="#">인재상</a></li>
+                      <li><a href="#">NCS채용정보</a></li>
+                      <li><a href="#">채용소식</a></li>
+                      <li><a href="#">온라인 입사지원</a></li>
+                      <li><a href="#">신입직원과의 인터뷰</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">선수단</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">오시는길</a></h3>
+                    <ul>
+                      <li><a href="#">본사</a></li>
+                      <li><a href="#">화폐본부</a></li>
+                      <li><a href="#">제지본부</a></li>
+                      <li><a href="#">ID본부</a></li>
+                      <li><a href="#">기술연구원</a></li>
+                      <li class="pd40">
+                        <a class="nowrap" href="#">GKD(Global KOMSCO Daewoo)</a>
                       </li>
                     </ul>
-                    <a href="#" class="btn_more">더보기</a>
-                  </div>
-                </div>
-                <div class="letter">
-                  <div class="mar">
-                    <h4>화폐와 행복<span>화폐와 행복 11+12월호</span></h4>
-                    <div class="list">
-                      <a href="#"><img src="images/letter.png" alt="화폐와 행복 11+12월호"></a>
-                    </div>
-                    <a href="#" class="btn_more">더보기</a>
-                  </div>
-                </div>
-                <div class="job">
-                  <div class="mar">
-                    <a href="#">
-                      <h4>채용정보</h4>
-                      <div class="list">
-                        <p class="title">한국조폐공사 비상임이사 모집 공고</p>
-                        <p class="infor">
-                          <span><strong>시작</strong>2022-09-05</span>
-                          <span><strong>마감</strong>2022-09-13</span>
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="movie">
-                  <div class="mar">
-                    <h4>홍보동영상</h4>
-                    <div class="list">
-                      <a href="#">
-                        <img src="https://img.youtube.com/vi/r8gMefRXdjk/sddefault.jpg" alt="하이엔드 천상열차분야지도 기념 금메달 출시 | 한국조폐공사">
-                      </a>
-                    </div>
-                    <a href="https://www.youtube.com/user/prkomsco" title="새창이동,홍보동영상" target="_blank" class="btn_more btn_more_white">더보기</a>
-                  </div>
-                </div>
-                <div class="cardnews">
-                  <div class="mar">
-                    <h4>카드뉴스</h4>
-                    <div class="list">
-                      <a href="#">
-                        <img src="images/cardnews.jpg" alt="방탄소년단 데뷔 10주년 공식 기념메달' 출시">
-                      </a>
-                    </div>
-                    <a href="https://ko-kr.facebook.com/komsco/" target="_blank" title="카드뉴스,새창이동" class="btn_more  btn_more_white">더보기</a>
-                  </div>
-                </div>
-                <div class="popupzone">
-                  <div class="mar">
-                    <div class="control">
-                      <a href="#" class="btn_play"></a>
-                    </div>
-                    <div class="slide">
-                      <a href="http://www.gov.kr" target="_blank" title="새창이동">
-                        <img src="images/popupzone1.jpg" alt="정부24 www.gov.kr - 정부의 모든 서비스를 여기서 누려보세요. 정부서비스, 민원24, 정책.정보">
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="section service">
-            <div id="brandService">
-              <div class="layout">
-                <h3 class="title">KOMSCO <strong>Service</strong></h3>
-                <div class="cont cf">
-                  <div class="suggest">
-                    <a href="#">
-                      <h4>
-                        <strong>국민이 正하다</strong>
-                        <span>고객님의 제안에 귀를 기울이고 있습니다.</span>
-                      </h4>
-                      <ul class="cf">
-                        <li>기업이미지홍보</li>
-                        <li>경영관련아이디어</li>
-                        <li>동반성장, 안전관련제안</li>
-                        <li>고객편의증진사항</li>
-                      </ul>
-                    </a>
-                  </div>
-                  <div class="link">
-                    <ul class="cf">
-                      <li class="bn01">
-                        <a href="http://whistleblower.wowsurvey.com/setOffice.php?officecd=komsco&amp;rtnurl=http://whistleblower.wowsurvey.com/declare/intro.php" target="_blank" title="클린신고,새창이동"><p><span>클린신고</span><span>안내</span></p></a>
-                      </li>
-                      <li class="bn02">
-                        <a href="#"><p><span>카드발급</span><span>조회</span></p></a>
-                      </li>
-                      <li class="bn03">
-                        <a href="#"><p><span>화폐본부</span><span>견학신청</span></p></a>
-                      </li>
-                      <li class="bn04">
-                        <a href="#"><p><span>인재채용</span><span>안내</span></p></a>
-                      </li>
-                      <li class="bn05">
-                        <a href="#" target="_blank" title="새창이동,위조지폐 확인방법"><p><span>위조지폐</span><span>확인방법</span></p></a>
-                      </li>
-                      <li class="bn06 ty2">
-                        <a href="#">
-                          <p>
-                            <strong>고객민원</strong>
-                            <span>상담/문의 및 자주하는 </span>
-                            <span>질문을 안내합니다.</span>
-                          </p>
-                        </a>
-                        <ul>
-                          <li><a href="#">고객의 소리</a></li>
-                          <li><a href="#">온라인 민원</a></li>
-                        </ul>
-                      </li>
-                      <li class="bn07 ty2">
-                        <a href="#"><p><strong>CARD NEWS</strong><span>한국조폐공사의 사업을</span><span>카드뉴스로 확인하세요.</span></p></a>
-                      </li>
-                      <li class="bn08 ty2">
-                        <a href="#"><p><strong>직원검색</strong><span>한국조폐공사의</span><span>임직원 정보를 안내합니다.</span></p></a>
-                      </li>
+            </li>
+            <!--//기관소개-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">사업 · 연구개발</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>사업 · <br>
+                        연구개발</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고 <br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">인쇄</a></h3>
+                    <ul>
+                      <li><a href="#">은행권</a></li>
+                      <li><a href="#">수표</a></li>
+                      <li><a href="#">우표 및 채권류</a></li>
+                      <li><a href="#">상품권</a></li>
+                      <li><a href="#">특수보안용지</a></li>
                     </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">압인</a></h3>
+                    <ul>
+                      <li><a href="#">주화</a></li>
+                      <li><a href="#">기념주화</a></li>
+                      <li><a href="#">기념메달</a></li>
+                      <li><a href="#">훈장</a></li>
+                      <li><a href="#">금품질인증</a></li>
+                      <li><a href="#">골드바 & 실버바</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">ID(여권,카드)</a></h3>
+                    <ul>
+                      <li><a href="#">여권</a></li>
+                      <li><a href="#">카드</a></li>
+                      <li><a href="#">보안모듈(SE)</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">브랜드보호</a></h3>
+                    <ul>
+                      <li><a href="#">브랜드보호 사업</a></li>
+                      <li><a href="#">온라인전시관</a></li>
+                      <li><a href="#">기술체험관</a></li>
+                      <li><a href="#">기술소개</a></li>
+                      <li><a href="#">기술홍보동영상</a></li>
+                      <li><a href="#">비즈니스상담 안내</a></li>
+                      <li><a href="#">협력사기술소개</a></li>
+                    </ul>
+                  </li>
+                  <li class="blockchain fl">
+                    <h3><a href="#">블록체인기반 모바일상품권</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">수출</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">연구개발</a></h3>
+                    <ul>
+                      <li><a href="#">연구개발소개</a></li>
+                      <li><a href="#">연구개발분야</a></li>
+                      <li><a href="#">이전대상기술DB</a></li>
+                      <li class="pd40"><a href="#">국제활동</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--//연구개발-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">ESG경영</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>ESG경영</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">ESG경영</a></h3>
+                    <ul>
+                      <li><a href="#">ALIO 공시</a></li>
+                      <li><a href="#">자체공시 목록</a></li>
+                      <li><a href="#">일반현황</a></li>
+                      <li><a href="#">기관운영</a></li>
+                      <li><a href="#">대내외 평가</a></li>
+                      <li><a href="#">자회사</a></li>
+                      <li><a href="#">기타</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">환경(E)</a></h3>
+                    <ul>
+                      <li><a href="#">환경경영</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">사회(S)</a></h3>
+                    <ul>
+                      <li><a href="#">동반성장</a></li>
+                      <li><a href="#">사회공고</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">지배구조(G)</a></h3>
+                    <ul>
+                      <li><a href="#">이사회</a></li>
+                      <li><a href="#">윤리경영</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--ESG경영-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">열린경영</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>열린경영</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">경영공시</a></h3>
+                    <ul>
+                      <li><a href="#">ALIO 공시</a></li>
+                      <li><a href="#">자체공시 목록</a></li>
+                      <li><a href="#">일반현황</a></li>
+                      <li><a href="#">기관운영</a></li>
+                      <li><a href="#">대내외 평가</a></li>
+                      <li><a href="#">자회사</a></li>
+                      <li><a href="#">기타</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">경영혁신</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">입찰정보</a></h3>
+                    <ul>
+                      <li><a href="#">입찰자료실</a></li>
+                      <li><a href="#">입찰공고</a></li>
+                      <li class="pd40"><a href="#">주요 구매예시 공고</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">사규 제ㆍ개정 예고</a></h3>
+                  </li>
+                  <li class="safe fl">
+                    <h3><a href="#">안전경영</a></h3>
+                    <ul>
+                      <li><a href="#">안전보건책임경영</a></li>
+                      <li><a href="#">안전정보 공개</a></li>
+                      <li><a href="#">안전보건 자료실</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--열린경영-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">뉴스룸</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>뉴스룸</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">공지사항</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">보도자료</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">채용소식</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">홍보</a></h3>
+                    <ul>
+                      <li><a href="#">사보 '화폐와 행복'</a></li>
+                      <li><a href="#">홍보책자</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--//뉴스룸-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">고객참여</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>고객참여</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">카드발급조회</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">증명서발급</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">기념주화 당첨자 발표</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">화폐본부 견학신청</a></h3>
+                    <ul>
+                      <li><a href="#">견학안내</a></li>
+                      <li><a href="#">포토갤러리</a></li>
+                      <li><a href="#">관람후기</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">고객의 소리</a></h3>
+                    <ul>
+                      <li><a href="#">이용안내</a></li>
+                      <li><a href="#">자주하는 질문</a></li>
+                      <li><a href="#">질문하기</a></li>
+                      <li><a href="#">나의 소리</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">온라인민원</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">소극행정 신고</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">국민이 正하다</a></h3>
+                    <ul>
+                      <li><a href="#">제안안내</a></li>
+                      <li><a href="#">고객제안</a></li>
+                      <li><a href="#">나의제안</a></li>
+                      <li><a href="#">이렇게 실행합니다</a></li>
+                      <li><a href="#">공사가 제안합니다</a></li>
+                      <li class="pd40"><a href="#">적극행정 국민추천</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">고객감사청구</a></h3>
+                  </li>
+                  <li class="fl move_1">
+                    <h3><a href="#">고객서비스헌장</a></h3>
+                    <ul>
+                      <li><a href="#">고객서비스 헌장 전문</a></li>
+                      <li><a href="#">고객서비스 이행표준</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl move_2">
+                    <h3><a href="#">현금영수증 발급</a></h3>
+                    <ul>
+                      <li><a href="#">현금영수증 발급 신청</a></li>
+                      <li><a href="#">현금영수증 발급 이력</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--//고객참여-->
+            <li class="fl">
+              <a class="gnb_txt" href="#">정보공개</a>
+              <div class="width100">
+                <ul class="m_width cf">
+                  <li class="fl m_title">
+                    <strong>KOMSCO<span>정보공개</span></strong>
+                    <p>항상 국민의 소리에 귀를 기울이고<br>국민에게 더욱 더 다가서는 KOMSCO</p>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">정보공개제도란?</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">사전정보공개</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">정보목록</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">정보공개</a></h3>
+                    <ul>
+                      <li><a href="#">정보공개청구</a></li>
+                      <li><a href="#">업무처리 절차</a></li>
+                      <li><a href="#">비공개 대상정보</a></li>
+                      <li><a href="#">정보공개 방법</a></li>
+                      <li><a href="#">불복구제 절차 방법</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">공공데이터</a></h3>
+                    <ul>
+                      <li><a href="#">공공데이터개방</a></li>
+                      <li><a href="#">공공데이터 온라인 설문조사</a></li>
+                      <li><a href="#">아이디어 제안</a></li>
+                      <li><a href="#">공공데이터 품질신고</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">OPEN API</a></h3>
+                  </li>
+                  <li class="fl">
+                    <h3><a href="#">사업실명제</a></h3>
+                    <ul>
+                      <li><a href="#">실명제 사업내역서</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--정보공개-->
+          </ul>
+        </div>
+        <span id="blind"></span>
+        <!--//.nav-->
+        <div id="header_top">
+          <div class="top_menu">
+            <ul class="cf">
+              <li class="fl"><a href="https://localpay.komscochak.com/" target="_blank"
+                  title="새창이동, 한국조폐공사모바일상품권">모바일상품권</a>·</li>
+              <li class="fl"><a href="http://www.koreamint.com" target="_blank" title="새창이동, 한국조폐공사쇼핑몰">쇼핑몰</a>·</li>
+              <li class="fl"><a href="https://museum.komsco.com" target="_blank" title="새창이동, 화폐박물관">화폐박물관</a>·</li>
+              <li class="fl"><a href="https://clean.komsco.com" target="_blank" title="새창이동, 청렴">청렴</a>·</li>
+              <li class="fl"><a href="https://www.komsco.com/70th/index.html" target="_blank"
+                  title="새창이동, 창립70주년">창립70주년</a>·</li>
+              <li class="fl"><a href="#">ENG</a>ㅣ</li>
+              <li class="fl"><a href="#">LOGIN</a></li>
+            </ul>
+          </div>
+          <!--//.top_menu-->
+        </div>
+        <!--//#header_top-->
+        <div class="section weather">
+          <ul>
+            <li class="fl">
+              <div id="castBox"></div>
+            </li>
+          </ul><br>
+        </div>
+        <div class="search_map cf">
+          <div class="search fl">
+            <form>
+              <input type="text" id="search_txt" placeholder="검색어를 입력하세요." title="검색어를 입력하세요">
+              <input type="submit" value="검색" id="search_btn">
+            </form>
+          </div>
+          <div class="btns">
+            <h3><a href="#" class="allmenu_btn_open">전체메뉴</a></h3>
+          </div>
+        </div>
+        <!--//.search_map-->
+      </div>
+      <!--//#header_nav-->
+    </div>
+    <!--//header-->
+    <div id="container">
+      <div id="content">
+        <div class="section visual">
+          <div id="brandVisual">
+            <ul class="visual_slide">
+              <li class="visual_0 active">
+                <div class="container">
+                  <div class="slogan">
+                    <p class="subject_eng">CREATING<br>TRUST&amp;VALUE</p>
+                    <h2 class="slogan_subject">한국조폐공사가 실현하는<br>세계 최고 수준의 기술</h2>
+                    <a href="https://www.youtube.com/watch?v=rupY8AUswDk">홍보영상 바로가기</a>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="visual_1">
+                <div class="container">
+                  <div class="slogan">
+                    <p class="subject_eng">KOMSCO STORY</p>
+                    <h2 class="slogan_subject">100-<span class="yellow">1</span>=0</h2>
+                    <p class="txt1">완벽한 품질로 고객의 신뢰를 얻기 위해 최선을 다하겠습니다.</p>
+                    <p class="txt2">100개의 제품 중 99개의 제품이 완벽해도 1개의 제품에 이상이 있다면 <br>고객 만족은 0과 같다는 슬로건아래 최선을 다하겠습니다.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="visual_2">
+                <div class="container">
+                  <div class="slogan">
+                    <p class="subject_eng">KOMSCO STORY</p>
+                    <h2 class="slogan_subject">NO.<span class="yellow">1</span></h2>
+                    <p class="txt1">세계 최고의 조폐·인증·보안 서비스 기업으로 도약합니다.</p>
+                    <p class="txt2">한국조폐공사는 우수한 기술력으로 전 세계 40여 개국에 은행권, 주화,<br>제지제품(은행권용지), 특수잉크, 여권 등을 수출하고 있습니다.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="visual_3">
+                <div class="container">
+                  <div class="slogan">
+                    <p class="subject_eng">KOMSCO STORY</p>
+                    <h2 class="slogan_subject">국민신뢰<span class="yellow">1위</span></h2>
+                    <p class="txt1">행복한 세상을 만들기 위해 다양한 사회공헌으로 국민께 보답합니다.</p>
+                    <p class="txt2">국가의 기업으로서 사회적 책임을 다하고, 사랑과 나눔을 실천하며<br>국민과 더불어 사는 사회 구현에 앞장서고 있습니다.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="section business">
-            <div id="brandBusiness">
-              <h3 class="title">KOMSCO <strong>Business</strong></h3>
-              <div class="slider">
-                <a href="#" class="control prev">이전</a>
-                <a href="#" class="control next">다음</a>
+          <ul id="buttonList1">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="controls">
+            <li class="btn_stop"><a href="#"></a></li>
+            <li class="btn_play"><a href="#"></a></li>
+          </ul>
+          <span class="scroll"></span>
+          <div id="quick">
+            <ul>
+              <li class="bn01"><a href="#">국민이정하다</a></li>
+              <li class="bn02"><a href="#">화폐본부견학</a></li>
+              <li class="bn03"><a href="#">카드발급조회</a></li>
+            </ul>
+            <a href="#" class="btn_more">더보기</a>
+          </div>
+        </div>
+        <div class="section news">
+          <div id="brandNews">
+            <div class="layout">
+              <h3 class="title">KOMSCO <strong>News</strong></h3>
+              <div class="bodo">
                 <div class="move">
+                  <ul class="on">
+                    <li>
+                      <span class="new">NEW</span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-15</span>
+                          <strong>조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_first.jpg" alt="조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정"></span>
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <span class="new">NEW</span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-06</span>
+                          <strong>조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_second.jpg" alt="조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최 수상"></span>
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <span class="new0"></span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-05</span>
+                          <strong>조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_third.jpg" alt="조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬"></span>
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
                   <ul>
+                    <li>
+                      <span class="new0"></span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-15</span>
+                          <strong>조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_fourth.jpg" alt="조폐공사, ‘4년 연속 지역사회공헌 인정기관’선정"></span>
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <span class="new0"></span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-06</span>
+                          <strong>조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_fifth.jpg" alt="조폐공사 화폐박물관, 한국서가협회 대전지회 ‘월당서회전’ 개최 수상"></span>
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <span class="new0"></span>
+                      <a href="#">
+                        <p class="txt">
+                          <span>2022-12-05</span>
+                          <strong>조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬</strong>
+                        </p>
+                        <p class="photo">
+                          <span><img src="images/bodo_sixth.jpg" alt="조폐공사, ‘일월오봉도(日月五峯圖) 기념메달’ 선봬"></span>
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <ul id="buttonList2">
+                  <li class="on"></li>
+                  <li></li>
+                </ul>
+                <a href="#" class="btn_more btn_bodo">더보기</a>
+              </div>
+              <div class="notice">
+                <div class="mar">
+                  <h4>공지사항</h4>
+                  <ul>
+                    <li>
+                      <span class="subject"><a href="#">법률자문 법인(고문변호사) 공개모집</a></span>
+                      <span class="date">2022-12-09</span>
+                    </li>
+                    <li>
+                      <span class="subject"><a href="#">한국조폐공사 2021년 부패방지 의무교육 실적 공개</a></span>
+                      <span class="date">2022-08-26</span>
+                    </li>
+                    <li>
+                      <span class="subject"><a href="#">상생협력센터 「콤비(KOMBI)」 입주기업 모집</a></span>
+                      <span class="date">2022-08-02</span>
+                    </li>
+                    <li>
+                      <span class="subject"><a href="#">공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항알림</a></span>
+                      <span class="date">2022-07-25</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="btn_more">더보기</a>
+                </div>
+              </div>
+              <div class="letter">
+                <div class="mar">
+                  <h4>화폐와 행복<span>화폐와 행복 11+12월호</span></h4>
+                  <div class="list">
+                    <a href="#"><img src="images/letter.png" alt="화폐와 행복 11+12월호"></a>
+                  </div>
+                  <a href="#" class="btn_more">더보기</a>
+                </div>
+              </div>
+              <div class="job">
+                <div class="mar">
+                  <a href="#">
+                    <h4>채용정보</h4>
+                    <div class="list">
+                      <p class="title">한국조폐공사 비상임이사 모집 공고</p>
+                      <p class="infor">
+                        <span><strong>시작</strong>2022-09-05</span>
+                        <span><strong>마감</strong>2022-09-13</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="movie">
+                <div class="mar">
+                  <h4>홍보동영상</h4>
+                  <div class="list">
+                    <a href="#">
+                      <img src="https://img.youtube.com/vi/r8gMefRXdjk/sddefault.jpg"
+                        alt="하이엔드 천상열차분야지도 기념 금메달 출시 | 한국조폐공사">
+                    </a>
+                  </div>
+                  <a href="https://www.youtube.com/user/prkomsco" title="새창이동,홍보동영상" target="_blank"
+                    class="btn_more btn_more_white">더보기</a>
+                </div>
+              </div>
+              <div class="cardnews">
+                <div class="mar">
+                  <h4>카드뉴스</h4>
+                  <div class="list">
+                    <a href="#">
+                      <img src="images/cardnews.jpg" alt="방탄소년단 데뷔 10주년 공식 기념메달' 출시">
+                    </a>
+                  </div>
+                  <a href="https://ko-kr.facebook.com/komsco/" target="_blank" title="카드뉴스,새창이동"
+                    class="btn_more  btn_more_white">더보기</a>
+                </div>
+              </div>
+              <div class="popupzone">
+                <div class="mar">
+                  <div class="control">
+                    <a href="#" class="btn_play"></a>
+                  </div>
+                  <div class="slide">
+                    <a href="http://www.gov.kr" target="_blank" title="새창이동">
+                      <img src="images/popupzone1.jpg"
+                        alt="정부24 www.gov.kr - 정부의 모든 서비스를 여기서 누려보세요. 정부서비스, 민원24, 정책.정보">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section service">
+          <div id="brandService">
+            <div class="layout">
+              <h3 class="title">KOMSCO <strong>Service</strong></h3>
+              <div class="cont cf">
+                <div class="suggest">
+                  <a href="#">
+                    <h4>
+                      <strong>국민이 正하다</strong>
+                      <span>고객님의 제안에 귀를 기울이고 있습니다.</span>
+                    </h4>
+                    <ul class="cf">
+                      <li>기업이미지홍보</li>
+                      <li>경영관련아이디어</li>
+                      <li>동반성장, 안전관련제안</li>
+                      <li>고객편의증진사항</li>
+                    </ul>
+                  </a>
+                </div>
+                <div class="link">
+                  <ul class="cf">
                     <li class="bn01">
-                      <div class="inner">
-                        <a href="#" class="on">
-                          <div class="title">
-                            <p>인쇄</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                      <a href="http://whistleblower.wowsurvey.com/setOffice.php?officecd=komsco&amp;rtnurl=http://whistleblower.wowsurvey.com/declare/intro.php"
+                        target="_blank" title="클린신고,새창이동">
+                        <p><span>클린신고</span><span>안내</span></p>
+                      </a>
                     </li>
                     <li class="bn02">
-                      <div class="inner">
-                        <a href="#">
-                          <div class="title">
-                            <p>압인</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                      <a href="#">
+                        <p><span>카드발급</span><span>조회</span></p>
+                      </a>
                     </li>
                     <li class="bn03">
-                      <div class="inner">
-                        <a href="#">
-                          <div class="title">
-                            <p>ID<br>(여권,카드)</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                      <a href="#">
+                        <p><span>화폐본부</span><span>견학신청</span></p>
+                      </a>
                     </li>
                     <li class="bn04">
-                      <div class="inner">
-                        <a href="#">
-                          <div class="title">
-                            <p>브랜드<br>보호사업</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                      <a href="#">
+                        <p><span>인재채용</span><span>안내</span></p>
+                      </a>
                     </li>
                     <li class="bn05">
-                      <div class="inner">
-                        <a href="#">
-                          <div class="title">
-                            <p>블록체인기반 모바일상품권</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                      <a href="#" target="_blank" title="새창이동,위조지폐 확인방법">
+                        <p><span>위조지폐</span><span>확인방법</span></p>
+                      </a>
                     </li>
-                    <li class="bn06">
-                      <div class="inner">
-                        <a href="#">
-                          <div class="title">
-                            <p>R&amp;D</p>
-                            <span>자세히보기</span>
-                          </div>
-                        </a>
-                      </div>
+                    <li class="bn06 ty2">
+                      <a href="#">
+                        <p>
+                          <strong>고객민원</strong>
+                          <span>상담/문의 및 자주하는 </span>
+                          <span>질문을 안내합니다.</span>
+                        </p>
+                      </a>
+                      <ul>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">온라인 민원</a></li>
+                      </ul>
+                    </li>
+                    <li class="bn07 ty2">
+                      <a href="#">
+                        <p><strong>CARD NEWS</strong><span>한국조폐공사의 사업을</span><span>카드뉴스로 확인하세요.</span></p>
+                      </a>
+                    </li>
+                    <li class="bn08 ty2">
+                      <a href="#">
+                        <p><strong>직원검색</strong><span>한국조폐공사의</span><span>임직원 정보를 안내합니다.</span></p>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section management">
-            <div id="brandManagement">
-              <div class="layout">
-                <div class="summery">
-                  <h3 class="title">KOMSCO <br><strong>Management</strong></h3>
-                  <p><span>KOMSCO는 열린경영으로 </span><span>국민과 함께하는 ‘행복한 세상 만들기’에 앞장서고 있습니다.</span></p>
-                </div>
-                <ul class="cf">
-                  <li>
-                    <a href="#" class="on">
-                      <p><strong>사회공헌</strong><span>사랑과 나눔으로 </span><span>이웃사랑을 실천</span></p>
-                      <span class="view">자세히 보기</span>
+        </div>
+        <div class="section business">
+          <div id="brandBusiness">
+            <h3 class="title">KOMSCO <strong>Business</strong></h3>
+            <div class="slider">
+              <a href="#" class="control prev">이전</a>
+              <a href="#" class="control next">다음</a>
+              <div class="move">
+                <ul>
+                  <li class="bn01">
+                    <div class="inner">
+                      <a href="#" class="on">
+                        <div class="title">
+                          <p>인쇄</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bn02">
+                    <div class="inner">
+                      <a href="#">
+                        <div class="title">
+                          <p>압인</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bn03">
+                    <div class="inner">
+                      <a href="#">
+                        <div class="title">
+                          <p>ID<br>(여권,카드)</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bn04">
+                    <div class="inner">
+                      <a href="#">
+                        <div class="title">
+                          <p>브랜드<br>보호사업</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bn05">
+                    <div class="inner">
+                      <a href="#">
+                        <div class="title">
+                          <p>블록체인기반 모바일상품권</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="bn06">
+                    <div class="inner">
+                      <a href="#">
+                        <div class="title">
+                          <p>R&amp;D</p>
+                          <span>자세히보기</span>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section management">
+          <div id="brandManagement">
+            <div class="layout">
+              <div class="summery">
+                <h3 class="title">KOMSCO <br><strong>Management</strong></h3>
+                <p><span>KOMSCO는 열린경영으로 </span><span>국민과 함께하는 ‘행복한 세상 만들기’에 앞장서고 있습니다.</span></p>
+              </div>
+              <ul class="cf">
+                <li>
+                  <a href="#" class="on">
+                    <p><strong>사회공헌</strong><span>사랑과 나눔으로 </span><span>이웃사랑을 실천</span></p>
+                    <span class="view">자세히 보기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p><strong>윤리경영</strong><span>세계 최고의 조폐ㆍ인증ㆍ </span><span>보안 서비스 기업</span></p>
+                    <span class="view">자세히 보기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p><strong>동반성장</strong><span> 중소기업과 상생협력 </span><span>및 동반성장</span></p>
+                    <span class="view">자세히 보기</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section link_banner">
+          <div class="layout">
+            <div class="js_slide">
+              <div class="control cf">
+                <a href="#" class="btn_left"></a>
+                <a href="#" class="btn_right"></a>
+              </div>
+              <div class="move">
+                <ul id="banner" class="cf">
+                  <li data-count="1">
+                    <a href="https://www.mobileid.go.kr/mip/hps/main.do" target="_blank" title="새창이동">
+                      <img src="images/link_banner1.jpg" alt="모바일신분증">
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <p><strong>윤리경영</strong><span>세계 최고의 조폐ㆍ인증ㆍ </span><span>보안 서비스 기업</span></p>
-                      <span class="view">자세히 보기</span>
+                  <li data-count="2">
+                    <a href="https://museum.komsco.com/" target="_blank" title="새창이동">
+                      <img src="images/link_banner2.jpg" alt="KOMSCO 화폐박물관">
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <p><strong>동반성장</strong><span> 중소기업과 상생협력 </span><span>및 동반성장</span></p>
-                      <span class="view">자세히 보기</span>
+                  <li data-count="3">
+                    <a href="https://ebid.komsco.com/check/login/login.jsp" target="_blank" title="새창이동">
+                      <img src="images/link_banner3.jpg" alt="KOMSCO 수주제품발주">
+                    </a>
+                  </li>
+                  <li data-count="4">
+                    <a href="http://www.smartbill.co.kr/" target="_blank" title="새창이동">
+                      <img src="images/link_banner4.jpg" alt="SmartBill">
+                    </a>
+                  </li>
+                  <li data-count="5">
+                    <a href="http://ebid.komsco.com/" target="_blank" title="새창이동">
+                      <img src="images/link_banner5.jpg" alt="KOMSCO 전자조달통합시스템">
+                    </a>
+                  </li>
+                  <li data-count="6">
+                    <a href="https://www.clean.go.kr/index.do" target="_blank" title="새창이동">
+                      <img src="images/link_banner6.jpg" alt="청렴포털">
+                    </a>
+                  </li>
+                  <li data-count="7">
+                    <a href="http://www.acrc.go.kr/acrc/index.do" target="_blank" title="새창이동">
+                      <img src="images/link_banner7.jpg" alt="국민권익위원회 공익신고">
+                    </a>
+                  </li>
+                  <li data-count="8">
+                    <a href="kor/84/appeal/info" target="_self">
+                      <img src="images/link_banner8.jpg" alt="KOMSCO 예산낭비신고센터">
+                    </a>
+                  </li>
+                  <li data-count="9">
+                    <a href="https://www.gov.kr/portal/main?Mcode=9999" target="_blank" title="새창이동">
+                      <img src="images/link_banner9.jpg" alt="정부24">
+                    </a>
+                  </li>
+                  <li data-count="10">
+                    <a href="https://www.safetyreport.go.kr/" target="_blank" title="새창이동">
+                      <img src="images/link_banner10.jpg" alt="안전신문고">
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="section link_banner">
-            <div class="layout">
-              <div class="js_slide">
-                <div class="control cf">
-                  <a href="#" class="btn_left"></a>
-                  <a href="#" class="btn_right"></a>
-                </div>
-                <div class="move">
-                  <ul id="banner" class="cf">
-                      <li data-count="1">
-                        <a href="https://www.mobileid.go.kr/mip/hps/main.do" target="_blank" title="새창이동">
-                          <img src="images/link_banner1.jpg" alt="모바일신분증">
-                        </a>
-                      </li>
-                      <li data-count="2">
-                        <a href="https://museum.komsco.com/" target="_blank" title="새창이동">
-                          <img src="images/link_banner2.jpg" alt="KOMSCO 화폐박물관">
-                        </a>
-                      </li>
-                      <li data-count="3">
-                        <a href="https://ebid.komsco.com/check/login/login.jsp" target="_blank" title="새창이동">
-                          <img src="images/link_banner3.jpg" alt="KOMSCO 수주제품발주">
-                        </a>
-                      </li>
-                      <li data-count="4">
-                        <a href="http://www.smartbill.co.kr/" target="_blank" title="새창이동">
-                          <img src="images/link_banner4.jpg" alt="SmartBill">
-                        </a>
-                      </li>
-                      <li data-count="5">
-                        <a href="http://ebid.komsco.com/" target="_blank" title="새창이동">
-                          <img src="images/link_banner5.jpg" alt="KOMSCO 전자조달통합시스템">
-                        </a>
-                      </li>
-                      <li data-count="6">
-                        <a href="https://www.clean.go.kr/index.do" target="_blank" title="새창이동">
-                          <img src="images/link_banner6.jpg" alt="청렴포털">
-                        </a>
-                      </li>
-                      <li data-count="7">
-                        <a href="http://www.acrc.go.kr/acrc/index.do" target="_blank" title="새창이동">
-                          <img src="images/link_banner7.jpg" alt="국민권익위원회 공익신고">
-                        </a>
-                      </li>
-                      <li data-count="8">
-                        <a href="kor/84/appeal/info" target="_self">
-                          <img src="images/link_banner8.jpg" alt="KOMSCO 예산낭비신고센터">
-                        </a>
-                      </li>
-                      <li data-count="9">
-                        <a href="https://www.gov.kr/portal/main?Mcode=9999" target="_blank" title="새창이동">
-                          <img src="images/link_banner9.jpg" alt="정부24">
-                        </a>
-                      </li>
-                      <li data-count="10">
-                        <a href="https://www.safetyreport.go.kr/" target="_blank" title="새창이동">
-                          <img src="images/link_banner10.jpg" alt="안전신문고">
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <ul id="section_nav" class="sec_0">
-            <li><a href="#" class="active"><span>Story</span></a></li>
-            <li><a href="#" class=""><span>News</span></a></li>
-            <li><a href="#" class=""><span>Service</span></a></li>
-            <li><a href="#" class=""><span>Business</span></a></li>
-            <li><a href="#" class=""><span>Management</span></a></li>
-          </ul>
         </div>
+        <ul id="section_nav" class="sec_0">
+          <li><a href="#" class="active"><span>Story</span></a></li>
+          <li><a href="#" class=""><span>News</span></a></li>
+          <li><a href="#" class=""><span>Service</span></a></li>
+          <li><a href="#" class=""><span>Business</span></a></li>
+          <li><a href="#" class=""><span>Management</span></a></li>
+        </ul>
       </div>
-      <!--//container-->
-      <div id="footer">
-        <div class="layout cf">
-          <ul class="menu_link cf">
-            <li><a href="#"><span>개인정보</span><span>처리방침</span></a></li>
-            <li><a href="#"><span>영상정보처리기기</span><span>운영방침</span></a></li>
-            <li><a href="#">오시는 길</a></li>
-          </ul>
-          <div class="site_box cf">
-            <div class="webwatch_wrap cf">
-              <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="새창이동,웹와치" target="_blank" class="webwatch"><img src="images/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"></a>
-              <ul class="sns_link cf">
-                <li class="fb"><a href="https://ko-kr.facebook.com/komsco/" target="_blank" title="새창이동, 페이스북">페이스북</a></li>
-                <li class="tw"><a href="https://twitter.com/komsco" target="_blank" title="새창이동, 트위터">트위터</a></li>
-                <li class="bl"><a href="https://komsco.tistory.com/" target="_blank" title="새창이동, 블로그">블로그</a></li>
-                <li class="yt"><a href="https://www.youtube.com/user/prkomsco" target="_blank" title="새창이동, 유튜브">유튜브</a></li>
-                <li class="insta"><a href="https://www.instagram.com/komsco_/" target="_blank" title="새창이동, 인스타그램">인스타그램</a></li>
-              </ul>
-              <a href="https://validator.w3.org/check?uri=https://davidcool0117.github.io/firstproject/" class="val" target="_blank" title="새창이동, HTML유효성검사"><img src="images/validator_html5_icon.png" alt="HTML유효성검사"></a>
-              <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://davidcool0117.github.io/firstproject/" target="_blank" title="새창이동, CSS유효성검사"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS유효성검사"></a>
-            </div>
-            <div class="relate_site">
-              <a href="#">패밀리사이트</a>
-              <ul>
-                <li>
-                  <a href="http://www.komsco.com" target="_blank" title="새창이동, 한국조폐공사 홈페이지">한국조폐공사</a>
-                </li>
-                <li>
-                  <a href="http://www.koreamint.com" target="_blank" title="새창이동, 한국조폐공사쇼핑몰">한국조폐공사쇼핑몰</a>
-                </li>
-                <li>
-                  <a href="http://www.bok.or.kr" target="_blank" title="새창이동, 한국은행 홈페이지">한국은행</a>
-                </li>
-                <li>
-                  <a href="http://www.kstamp.go.kr/sp2/sg/spsg0101.jsp" target="_blank" title="새창이동, 우표정보마당 홈페이지">우표정보마당</a>
-                </li>
-                <li>
-                  <a href="http://komscofriend.cafe24.com/dongwoo/index.asp" target="_blank" title="새창이동, 조폐동우회 홈페이지">조폐동우회</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <address>
-            <span>대구광역시 광진구 반포대로 9339</span>
-            <span class="tel">대표전화 : <a href="tel:1534-7406">1534-7406</a></span>
-          </address>
-          <p class="copy">Copyrightⓒ KOMSCO. All Rights Reserved.</p>
-        </div>
-      </div>
-      <!--//footer-->
-      <a href="#top" class="btn_top">TOP</a>
     </div>
-    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/date.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/popup.js"></script>
-  </body>
+    <!--//container-->
+    <div id="footer">
+      <div class="layout cf">
+        <ul class="menu_link cf">
+          <li><a href="#"><span>개인정보</span><span>처리방침</span></a></li>
+          <li><a href="#"><span>영상정보처리기기</span><span>운영방침</span></a></li>
+          <li><a href="#">오시는 길</a></li>
+        </ul>
+        <div class="site_box cf">
+          <div class="webwatch_wrap cf">
+            <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="새창이동,웹와치" target="_blank"
+              class="webwatch"><img src="images/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"
+                title="국가 공인 인증기관 : 웹와치"></a>
+            <ul class="sns_link cf">
+              <li class="fb"><a href="https://ko-kr.facebook.com/komsco/" target="_blank" title="새창이동, 페이스북">페이스북</a>
+              </li>
+              <li class="tw"><a href="https://twitter.com/komsco" target="_blank" title="새창이동, 트위터">트위터</a></li>
+              <li class="bl"><a href="https://komsco.tistory.com/" target="_blank" title="새창이동, 블로그">블로그</a></li>
+              <li class="yt"><a href="https://www.youtube.com/user/prkomsco" target="_blank" title="새창이동, 유튜브">유튜브</a>
+              </li>
+              <li class="insta"><a href="https://www.instagram.com/komsco_/" target="_blank"
+                  title="새창이동, 인스타그램">인스타그램</a></li>
+            </ul>
+            <a href="https://validator.w3.org/check?uri=https://davidcool0117.github.io/firstproject/" class="val"
+              target="_blank" title="새창이동, HTML유효성검사"><img src="images/validator_html5_icon.png" alt="HTML유효성검사"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://davidcool0117.github.io/firstproject/"
+              target="_blank" title="새창이동, CSS유효성검사"><img src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="CSS유효성검사"></a>
+          </div>
+          <div class="relate_site">
+            <a href="#">패밀리사이트</a>
+            <ul>
+              <li>
+                <a href="http://www.komsco.com" target="_blank" title="새창이동, 한국조폐공사 홈페이지">한국조폐공사</a>
+              </li>
+              <li>
+                <a href="http://www.koreamint.com" target="_blank" title="새창이동, 한국조폐공사쇼핑몰">한국조폐공사쇼핑몰</a>
+              </li>
+              <li>
+                <a href="http://www.bok.or.kr" target="_blank" title="새창이동, 한국은행 홈페이지">한국은행</a>
+              </li>
+              <li>
+                <a href="http://www.kstamp.go.kr/sp2/sg/spsg0101.jsp" target="_blank"
+                  title="새창이동, 우표정보마당 홈페이지">우표정보마당</a>
+              </li>
+              <li>
+                <a href="http://komscofriend.cafe24.com/dongwoo/index.asp" target="_blank"
+                  title="새창이동, 조폐동우회 홈페이지">조폐동우회</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <address>
+          <span>대구광역시 광진구 반포대로 9339</span>
+          <span class="tel">대표전화 : <a href="tel:1534-7406">1534-7406</a></span>
+        </address>
+        <p class="copy">Copyrightⓒ KOMSCO. All Rights Reserved.</p>
+      </div>
+    </div>
+    <!--//footer-->
+    <a href="#top" class="btn_top">TOP</a>
+  </div>
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/slide_map.js"></script>
+</body>
 </html>
